@@ -98,4 +98,47 @@ class Pila_max {
 		  */
 		Pila_max<T>& operator= ( const Pila_max<T> & otra );
 
+		/**
+		  *
+		  * @brief Comprueba si la pila está vacía
+		  *
+		  */
+		bool empty() const;
+
+		/**
+		  *
+		  * @brief Devuelve el tamaño de la pila
+		  *
+		  */
+		int size();
+
+		/**
+		  *
+		  * @brief Devuelve el elemento del tope de la pila
+		  *
+		  */
+		pareja<T> & top();
+
+		/**
+		  *
+		  * @brief Devuelve el elemento del tope de la pila constante
+		  *
+		  */
+		const pareja<T> & top() const;
+
+		/**
+		  *
+		  * @brief Añade un elemento encima del tope de la pila
+		  * @param nuevo Elemento que se va a añadir
+		  *
+		  */
+		void push( const T & nuevo );
+
+		/**
+		  *
+		  * @brief Quita el elemento del tope de la pila
+		  *
+		  */
+		void pop();
+
 };
