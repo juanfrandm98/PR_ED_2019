@@ -24,7 +24,7 @@
   * @brief T.D.A. Pila_max
   *
   *
-  * Una instancia @e v del tipo de dato abstracto Pila_max sobre un tipo @c T es
+  * Una instancia @e v del tipo de dato abstracto Pila_max sobre un tipo @c int es
   * una lista de pares de elementos <T,T> con un funcionamiento @e LIFO (Last In
   * First Out). En una pila, las operaciones de inserción y borrado de elementos
   * tienen lugar en uno de los extremos denominado @e Tope. Una Pila_max de longitud
@@ -50,13 +50,12 @@
   *
   */
 
-template <class T>
 class Pila_max {
 
 	private:
 
-		Cola<Pareja<T>> elementos; ///< Cola de elementos
-		T maximo;				///< Elemento máximo actual
+		Cola<Pareja> elementos; ///< Cola de elementos
+		int maximo;				///< Elemento máximo actual
 
 	public:
 
@@ -66,8 +65,7 @@ class Pila_max {
 		  * @brief Constructor por defecto
 		  *
 		  */
-		Pila_max( const Cola<T> & c = Cola<T>() ) {
-		}
+		Pila_max( );
 
 		/**
 		  *
@@ -75,7 +73,7 @@ class Pila_max {
 		  * @param original La Pila_max de la que se hará la copia.
 		  *
 		  */
-		Pila_max( const Pila_max<T> & original );
+		Pila_max( const Pila_max & original );
 
 		// -------------------- Destructor -------------------- //
 		/**
@@ -83,7 +81,8 @@ class Pila_max {
 		  * @brief Destructor
 		  *
 		  */
-		~Pila_max();
+		~Pila_max(){
+		}
 
 		// -------------------- Funciones -------------------- //
 		/**
@@ -92,7 +91,7 @@ class Pila_max {
 		  * @param otra La Pila_max que se va a asignar.
 		  *
 		  */
-		Pila_max & operator= ( const Pila_max<T> & otra );
+		Pila_max & operator= ( const Pila_max & otra );
 
 		/**
 		  *
@@ -113,14 +112,14 @@ class Pila_max {
 		  * @brief Devuelve el elemento del tope de la pila
 		  *
 		  */
-		Pareja<T> & top();
+		Pareja & top();
 
 		/**
 		  *
 		  * @brief Devuelve el elemento del tope de la pila constante
 		  *
 		  */
-		const Pareja<T> & top() const;
+		const Pareja & top() const;
 
 		/**
 		  *
@@ -128,7 +127,7 @@ class Pila_max {
 		  * @param nuevo Elemento que se va a añadir
 		  *
 		  */
-		void push( const T & nuevo );
+		void push( const int & nuevo );
 
 		/**
 		  *
