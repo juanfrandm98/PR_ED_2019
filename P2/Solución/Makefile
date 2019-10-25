@@ -15,17 +15,17 @@ documentacion:
 	
 # ************ Compilación de módulos ************
 
-$(BIN)/prueba : $(OBJ)/pruebacronologia.o $(OBJ)/Fecha_Historica.o $(OBJ)/Cronologia.o 
-	$(CXX) -o $(BIN)/prueba $(OBJ)/pruebacronologia.o $(OBJ)/Fecha_Historica.o $(OBJ)/Cronologia.o
+$(BIN)/prueba : $(OBJ)/pruebamicronologia.o $(OBJ)/Mi_Fecha_Historica.o $(OBJ)/Mi_Cronologia.o 
+	$(CXX) -o $(BIN)/prueba $(OBJ)/pruebamicronologia.o $(OBJ)/Mi_Fecha_Historica.o $(OBJ)/Mi_Cronologia.o
 
-$(OBJ)/pruebacronologia.o : $(INC)/Cronologia.h $(INC)/Fecha_Historica.h $(SRC)/pruebacronologia.cpp
-	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/pruebacronologia.o $(SRC)/pruebacronologia.cpp
+$(OBJ)/pruebamicronologia.o : $(INC)/Mi_Cronologia.h $(INC)/Mi_Fecha_Historica.h $(SRC)/pruebamicronologia.cpp
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/pruebamicronologia.o $(SRC)/pruebamicronologia.cpp
 
-$(OBJ)/Cronologia.o : $(INC)/Cronologia.h $(INC)/Fecha_Historica.h $(SRC)/Cronologia.cpp
-	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/Cronologia.o $(SRC)/Cronologia.cpp
+$(OBJ)/Mi_Cronologia.o : $(INC)/Mi_Cronologia.h $(INC)/Mi_Fecha_Historica.h $(SRC)/Mi_Cronologia.cpp
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/Mi_Cronologia.o $(SRC)/Mi_Cronologia.cpp
 
-$(OBJ)/Fecha_Historica.o : $(INC)/Fecha_Historica.h $(SRC)/Fecha_Historica.cpp
-	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/Fecha_Historica.o $(SRC)/Fecha_Historica.cpp
+$(OBJ)/Mi_Fecha_Historica.o : $(INC)/Mi_Fecha_Historica.h $(SRC)/Mi_Fecha_Historica.cpp
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/Mi_Fecha_Historica.o $(SRC)/Mi_Fecha_Historica.cpp
 
 # ************ Limpieza ************
 clean :
