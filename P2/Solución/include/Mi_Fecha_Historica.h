@@ -126,7 +126,7 @@ public:
 	/**
 	  *
 	  * @brief Operador de asignación.
-	  * @param f Mi_Fecha_Hitorica que asignar a this.
+	  * @param f Mi_Fecha_Hitorica a copien.
 	  * @return this
 	  *
 	  */
