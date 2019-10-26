@@ -6,7 +6,7 @@ CXX = g++
 CPPFLAGS = #-Wall -g
 
 
-all: $(BIN)/prueba
+all: $(BIN)/prueba $(BIN)/pruebafecha
 
 # ************ Generación de documentación ******************
 documentacion:
@@ -20,6 +20,12 @@ $(BIN)/prueba : $(OBJ)/pruebamicronologia.o $(OBJ)/Mi_Fecha_Historica.o $(OBJ)/M
 
 $(OBJ)/pruebamicronologia.o : $(INC)/Mi_Cronologia.h $(INC)/Mi_Fecha_Historica.h $(SRC)/pruebamicronologia.cpp
 	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/pruebamicronologia.o $(SRC)/pruebamicronologia.cpp
+
+$(BIN)/pruebafecha : $(OBJ)/pruebamifechahistorica.o $(OBJ)/Mi_Fecha_Historica.o
+	$(CXX) -o $(BIN)/pruebafecha $(OBJ)/pruebamifechahistorica.o $(OBJ)/Mi_Fecha_Historica.o
+
+$(OBJ)/pruebamifechahistorica.o : $(INC)/Mi_Fecha_Historica.h $(SRC)/pruebamifechahistorica.cpp
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/pruebamifechahistorica.o $(SRC)/pruebamifechahistorica.cpp
 
 $(OBJ)/Mi_Cronologia.o : $(INC)/Mi_Cronologia.h $(INC)/Mi_Fecha_Historica.h $(SRC)/Mi_Cronologia.cpp
 	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/Mi_Cronologia.o $(SRC)/Mi_Cronologia.cpp

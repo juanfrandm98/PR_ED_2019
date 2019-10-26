@@ -21,8 +21,8 @@ using namespace std;
   * Una instancia @e c del tipo de datos abstracto @c Mi_Fecha_Historica es un objeto
   * con cuatro campos: tres enteros y un vestor de Strings.
   *
-  * Uno de los enteros es la fecha base del conjunto de eventos y los otros dos son la base
-  * del vector dinámico que representamos como:
+  * Uno de los enteros es la fecha base del conjunto de eventos y los otros dos son la
+  * base del vector dinámico que representamos como:
   *
   * Año
   * Número de eventos
@@ -51,7 +51,8 @@ private:
 	  *
 	  * El invariante es \e rep.anio >= -9999 && rep.anio <= 9999
 	  *
-	  * Fijamos como límite que los años no sean ni menores de 9999 ni superiores a 9999.
+	  * Fijamos como límite que los años no sean ni menores de 9999 ni superiores a
+	  * 9999.
 	  *
 	  * @section faConjunto Función de abstracción
 	  *
@@ -72,13 +73,14 @@ private:
 	string *eventos;		/**< Vector de Strings que almacena los eventos históricos */
 
 	void resize( int r );	/**< Función privada para gestionar el vector dinámico de Strings */
+	void eliminaDuplicados(); /**< Función privada para eliminar eventos duplicados. */
 
 public:
 
 	/**
 	  *
-	  * @brief Constructor por defecto de la clase Crea una fecha histórica por defecto con año 0, con
-	  * el vector nulo y 0 num_eventos y reservados
+	  * @brief Constructor por defecto de la clase Crea una fecha histórica por
+	  * defecto con año 0, con el vector nulo y 0 num_eventos y reservados.
 	  */
 	Mi_Fecha_Historica();
 
@@ -121,7 +123,7 @@ public:
 	  * @pre anio == f.anio
 	  *
 	  */
-	const Mi_Fecha_Historica & operator+( const Mi_Fecha_Historica & f );
+	Mi_Fecha_Historica operator+( const Mi_Fecha_Historica & f );
 
 	/**
 	  *
@@ -147,6 +149,16 @@ public:
 	  *
 	  */
 	void aniadeEvento( string & nuevo_evento );
+
+	/**
+	  *
+	  * @brief Búsqueda los eventos que contengan un string.
+	  * @param clave String con el fragmento a buscar.
+	  * @param matches Mi_Fecha_Historica con los eventos encontrados.
+	  * @return Devuelve true o false indicando si hay o no algun match de la
+	  * palabra clave.
+	  */
+	bool buscarEventos( string clave, Mi_Fecha_Historica & matches );
 
 	/**
 	  *

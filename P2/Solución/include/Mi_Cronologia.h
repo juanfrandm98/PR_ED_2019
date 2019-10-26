@@ -57,7 +57,8 @@ private:
 	  *
 	  * @section invConjunto Invariante de la representación
 	  *
-	  * El invariante está ligado al de Mi_Fecha_Historica \e rep.anio >= -9999 && rep.anio <= 9999
+	  * El invariante está ligado al de Mi_Fecha_Historica \e rep.anio >= -9999 &&
+	  * rep.anio <= 9999
 	  *
 	  * @section faConjunto Función de abstracción
 	  *
@@ -92,8 +93,8 @@ public:
 
 	/**
 	  *
-	  * @brief Constructor por defecto de la clase. Crea una cronología por defecto con
-	  * 0 num_fechas y reservados y un vector nulo.
+	  * @brief Constructor por defecto de la clase. Crea una cronología por defecto
+	  * con 0 num_fechas y reservados y un vector nulo.
 	  *
 	  */
 	Mi_Cronologia();
@@ -104,7 +105,8 @@ public:
 	  * @param f Vector de Mi_Fecha_Historica.
 	  * @param n Número de elementos que contiene el vector f.
 	  * @return Crea una Mi_Cronologia con n Mi_Fecha_Historica.
-	  * @pre n debe ser un número positivo igual al número de objetos contenidos en el vector f.
+	  * @pre n debe ser un número positivo igual al número de objetos contenidos
+	  * en el vector f.
 	  *
 	  */
 	Mi_Cronologia( Mi_Fecha_Historica *f, int n );
@@ -139,6 +141,15 @@ public:
 
 	/**
 	  *
+	  * @brief Operador de suma.
+	  * @param c Mi_Cronologia que sumar a this.
+	  * @return Suma de las Mi_Cronologia.
+	  *
+	  */
+	Mi_Cronologia operator+( const Mi_Cronologia & c );
+
+	/**
+	  *
 	  * @brief Añade una Mi_Fecha_Historica a la cronología.
 	  * @param f Mi_Fecha_Historica a añadir.
 	  *
@@ -147,10 +158,34 @@ public:
 
 	/**
 	  *
+	  * @brief Buscador de Mi_Fecha_Historica dado un año.
+	  * @param anio Entero que indica el año a buscar.
+	  * @param f Mi_Fecha_Historica a escribir.
+	  * @return Devuelve true o false en función de si encuentra una 
+	  * Mi_Fecha_Historica con el año especificado.
+	  *
+	  */
+	bool buscarEventosAnio( int anio, Mi_Fecha_Historica & f );
+
+	/**
+	  *
+	  * @brief Buscador de Mi_Fecha_Historica dado una clave.
+	  * @param clave String que indica los eventos a buscar.
+	  * @param c Mi_Cronologia a escribir.
+	  * @return Devuelve true o false en función de si encuentra como mínimo
+	  * una Mi_Fecha_Historica con el string especificado en alguno de sus
+	  * eventos.
+	  *
+	  */
+	bool buscarEventosClave( string clave, Mi_Cronologia & c );
+
+	/**
+	  *
 	  * @brief Salida de una Cronologia a ostream.
 	  * @param os Stream de salida.
 	  * @param c Cronologia a escribir.
-	  * @post Se obtienen varias Mi_Fecha_Historica seguidas con su formato correspondiente.
+	  * @post Se obtienen varias Mi_Fecha_Historica seguidas con su formato 
+	  * correspondiente.
 	  *
 	  */
 	friend ostream & operator<< ( ostream & os, const Mi_Cronologia & c );
@@ -161,7 +196,8 @@ public:
 	  * @param is Stream de entrada.
 	  * @param c Cronologia leía en c.
 	  * @retval La Cronologia leía en c.
-	  * @pre La entrada tiene el formato de Mi_Fecha_Historica dividida num_fechas número de veces.
+	  * @pre La entrada tiene el formato de Mi_Fecha_Historica dividida num_fechas
+	  * número de veces.
 	  *
 	  */
 	friend istream & operator>> ( istream & is, Mi_Cronologia & c);

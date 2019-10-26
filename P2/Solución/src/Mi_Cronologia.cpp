@@ -76,6 +76,22 @@ Mi_Cronologia & Mi_Cronologia::operator= ( const Mi_Cronologia & c ) {
 	return *this;
 }
 
+// Operador de suma
+Mi_Cronologia Mi_Cronologia::operator+ ( const Mi_Cronologia & c ) {
+	Mi_Cronologia sumada;
+	sumada.num_fechas = 0;
+	sumada.reservados = reservados + c.reservados;
+	sumada.fechas = new Mi_Fecha_Historica[sumada.reservados];
+
+	for( int i = 0; i < num_fechas; i++ )
+		sumada.aniadeFecha( fechas[i] );
+	
+	for( int i = 0; i < c.num_fechas; i++ )
+		sumada.aniadeFecha( c.fechas[i] );
+
+	return sumada;
+}
+
 // Añade una Mi_Fecha_Historica
 void Mi_Cronologia::aniadeFecha( Mi_Fecha_Historica & f ) {
 	int posicion = existeFecha( f.getAnio() );
@@ -90,6 +106,36 @@ void Mi_Cronologia::aniadeFecha( Mi_Fecha_Historica & f ) {
 		if( num_fechas > 0 )
 			ordenar();
 	}
+}
+
+// Busca una Mi_Fecha_Historica en la Mi_Cronologia a partir de un año
+bool Mi_Cronologia::buscarEventosAnio( int anio, Mi_Fecha_Historica & f ) {
+	bool encontrado = false;
+	Mi_Fecha_Historica aux; f = aux;
+
+	for( int i = 0; i < num_fechas && !encontrado; i++ )
+		if( fechas[i].getAnio() == anio ) {
+			encontrado = true;
+			f = fechas[i];
+		}
+
+	return encontrado;
+}
+
+// Busca las Mi_Fecha_Historica en la Mi_Cronologia que contengan eventos que
+// contengan la clave
+bool Mi_Cronologia::buscarEventosClave( string clave, Mi_Cronologia & c ) {
+	bool encontrado = false;
+	Mi_Cronologia aux_c; c = aux_c;
+	Mi_Fecha_Historica aux_f;
+
+	for( int i = 0; i < num_fechas; i++ )
+		if( fechas[i].buscarEventos( clave, aux_f ) ) {
+			encontrado = true;
+			c.aniadeFecha( aux_f );
+		}
+
+	return encontrado;
 }
 
 // Operator <<
