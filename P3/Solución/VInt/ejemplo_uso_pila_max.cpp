@@ -17,7 +17,7 @@ int main() {
 	cout << "PUSH BIEN" << endl;
 
 	if( pila1.empty() )
-		//cout<<"empty"<<endl;
+		cout<<"empty"<<endl;
 
 	pila2 = pila1;
 	cout << "OPERATOR= BIEN" << endl;

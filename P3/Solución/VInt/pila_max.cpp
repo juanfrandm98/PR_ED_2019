@@ -10,8 +10,6 @@
 using namespace std;
 
 Pila_max::Pila_max() {
-	elementos = Cola<Pareja>();
-	maximo = -999999;
 }
 
 /* _________________________________________________________________________ */

@@ -10,7 +10,7 @@ all: $(BIN)/prueba $(BIN)/pruebafecha
 
 # ************ Generación de documentación ******************
 documentacion:
-	doxygen doc/doxys/Doxyfile
+	doxygen ./include
 
 	
 # ************ Compilación de módulos ************
