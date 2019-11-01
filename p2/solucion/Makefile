@@ -10,7 +10,7 @@ all: $(BIN)/prueba $(BIN)/pruebafecha
 
 # ************ Generación de documentación ******************
 documentacion:
-	doxygen ./include
+	doxygen ./include/Doxyfile
 
 	
 # ************ Compilación de módulos ************
@@ -39,4 +39,5 @@ clean :
 	rm -f $(OBJ)/*.o
 
 mrproper : clean
-	rm -f $(BIN)/* doc/html/*
+	rm -f $(BIN)/*
+	rm -r doc/*

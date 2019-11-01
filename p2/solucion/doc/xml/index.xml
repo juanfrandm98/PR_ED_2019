@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classMi__Cronologia" kind="class"><name>Mi_Cronologia</name>
+    <member refid="classMi__Cronologia_1a47204206ff199a4d87692f9aa597b1d1" kind="variable"><name>num_fechas</name></member>
+    <member refid="classMi__Cronologia_1aee845f8b8fb36628481eae850acd86c6" kind="variable"><name>reservados</name></member>
+    <member refid="classMi__Cronologia_1a0ddc4563895c3688c7ccf3f6c74ab4b8" kind="variable"><name>fechas</name></member>
+    <member refid="classMi__Cronologia_1a00af7299f7b4561fcce43896b62822cb" kind="function"><name>resize</name></member>
+    <member refid="classMi__Cronologia_1ae61a2052da6a75067bf42104f5e2fc71" kind="function"><name>ordenar</name></member>
+    <member refid="classMi__Cronologia_1a54715602ea88bc58d08446debdc463d2" kind="function"><name>existeFecha</name></member>
+    <member refid="classMi__Cronologia_1a2c02b349c6e9cef998dc3c8bb01c9302" kind="function"><name>Mi_Cronologia</name></member>
+    <member refid="classMi__Cronologia_1a68366120d95b5762a86599672a2a9d95" kind="function"><name>Mi_Cronologia</name></member>
+    <member refid="classMi__Cronologia_1a75a95223bcd65bc3c389d6320747906b" kind="function"><name>Mi_Cronologia</name></member>
+    <member refid="classMi__Cronologia_1a783f167a53417a9424edf6e7f967faba" kind="function"><name>~Mi_Cronologia</name></member>
+    <member refid="classMi__Cronologia_1acee7e8568eabe19b2af25226110d347e" kind="function"><name>operator=</name></member>
+    <member refid="classMi__Cronologia_1a59a598568b9b75df0b511830cbf3c265" kind="function"><name>operator+</name></member>
+    <member refid="classMi__Cronologia_1a85b51bae4f6d323cc4c9e3fde6a17dd0" kind="function"><name>aniadeFecha</name></member>
+    <member refid="classMi__Cronologia_1ab09be2cbe71d1e69125c6f6bc140bbe3" kind="function"><name>buscarEventosAnio</name></member>
+    <member refid="classMi__Cronologia_1a1c06b2a15330d95fb5e27554c2f8f042" kind="function"><name>buscarEventosClave</name></member>
+    <member refid="classMi__Cronologia_1ad49be1b2bf813aa3a43f81591c9c063f" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classMi__Cronologia_1afd5f853188b54329055e961c30023c18" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="classMi__Fecha__Historica" kind="class"><name>Mi_Fecha_Historica</name>
+    <member refid="classMi__Fecha__Historica_1a1174deb21fe0027f699ed97cb23f436a" kind="variable"><name>anio</name></member>
+    <member refid="classMi__Fecha__Historica_1a56e00419fcbc1b2a3577dd3b1e7c92cc" kind="variable"><name>num_eventos</name></member>
+    <member refid="classMi__Fecha__Historica_1a3908bf4d4c55d849c28b780c71dcaac5" kind="variable"><name>reservados</name></member>
+    <member refid="classMi__Fecha__Historica_1a55da34958da0541f54b0fe77159f7926" kind="variable"><name>eventos</name></member>
+    <member refid="classMi__Fecha__Historica_1abd5b547df00f486e29df8169eebd547e" kind="function"><name>resize</name></member>
+    <member refid="classMi__Fecha__Historica_1a70688726e98a7f05fb748596883d21c7" kind="function"><name>eliminaDuplicados</name></member>
+    <member refid="classMi__Fecha__Historica_1a8cca1a2d5b6ba5a80a36895193916533" kind="function"><name>Mi_Fecha_Historica</name></member>
+    <member refid="classMi__Fecha__Historica_1aa973a19925d54d651df50870e344a549" kind="function"><name>Mi_Fecha_Historica</name></member>
+    <member refid="classMi__Fecha__Historica_1a6c6ada45181c04df352eb7de3ba9f4f3" kind="function"><name>Mi_Fecha_Historica</name></member>
+    <member refid="classMi__Fecha__Historica_1a5833ff9e7bb6538c4a627f256ba005bb" kind="function"><name>~Mi_Fecha_Historica</name></member>
+    <member refid="classMi__Fecha__Historica_1a0ec5b9afe195a459d650edd0ad4872ee" kind="function"><name>operator+</name></member>
+    <member refid="classMi__Fecha__Historica_1a3d5e38dd79020073a75f85048d96da70" kind="function"><name>operator=</name></member>
+    <member refid="classMi__Fecha__Historica_1a1bbd2ef539e9bca93f3fe17eb1fb65b1" kind="function"><name>getAnio</name></member>
+    <member refid="classMi__Fecha__Historica_1a03045e5c96b565420bfe74d648c6d499" kind="function"><name>aniadeEvento</name></member>
+    <member refid="classMi__Fecha__Historica_1a0f9d7828682d415aab02f7aad2ba274e" kind="function"><name>buscarEventos</name></member>
+    <member refid="classMi__Fecha__Historica_1a1bbcaf7365db366eb227ed3f63132a9e" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classMi__Fecha__Historica_1ab11218c531391762b5a82d13261ca5c2" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="Mi__Cronologia_8h" kind="file"><name>Mi_Cronologia.h</name>
+  </compound>
+  <compound refid="Mi__Fecha__Historica_8h" kind="file"><name>Mi_Fecha_Historica.h</name>
+  </compound>
+  <compound refid="repConjunto" kind="page"><name>repConjunto</name>
+  </compound>
+</doxygenindex>

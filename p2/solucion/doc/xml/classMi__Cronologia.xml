@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMi__Cronologia" kind="class" language="C++" prot="public">
+    <compoundname>Mi_Cronologia</compoundname>
+    <includes refid="Mi__Cronologia_8h" local="no">Mi_Cronologia.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMi__Cronologia_1a47204206ff199a4d87692f9aa597b1d1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mi_Cronologia::num_fechas</definition>
+        <argsstring></argsstring>
+        <name>num_fechas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Número de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> almacenadas </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="84" column="1" bodyfile="Mi_Cronologia.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMi__Cronologia_1aee845f8b8fb36628481eae850acd86c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mi_Cronologia::reservados</definition>
+        <argsstring></argsstring>
+        <name>reservados</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Número de elementos reservados </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="85" column="1" bodyfile="Mi_Cronologia.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMi__Cronologia_1a0ddc4563895c3688c7ccf3f6c74ab4b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> *</type>
+        <definition>Mi_Fecha_Historica* Mi_Cronologia::fechas</definition>
+        <argsstring></argsstring>
+        <name>fechas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vector de fechas históricas </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="86" column="1" bodyfile="Mi_Cronologia.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMi__Cronologia_1a00af7299f7b4561fcce43896b62822cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mi_Cronologia::resize</definition>
+        <argsstring>(int r)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Función privada para gestionar el vector dinámico de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1ae61a2052da6a75067bf42104f5e2fc71" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mi_Cronologia::ordenar</definition>
+        <argsstring>()</argsstring>
+        <name>ordenar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Función privada para ordenar las fechas históricas por año </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a54715602ea88bc58d08446debdc463d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mi_Cronologia::existeFecha</definition>
+        <argsstring>(int a)</argsstring>
+        <name>existeFecha</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Función privada que devuelve la posición en fechas de la <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> con ese año (si existe) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="90" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMi__Cronologia_1a2c02b349c6e9cef998dc3c8bb01c9302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Cronologia::Mi_Cronologia</definition>
+        <argsstring>()</argsstring>
+        <name>Mi_Cronologia</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. Crea una cronología por defecto con 0 num_fechas y reservados y un vector nulo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a68366120d95b5762a86599672a2a9d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Cronologia::Mi_Cronologia</definition>
+        <argsstring>(Mi_Fecha_Historica *f, int n)</argsstring>
+        <name>Mi_Cronologia</name>
+        <param>
+          <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de elementos que contiene el vector f. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea una <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> con n <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref>. </para></simplesect>
+<simplesect kind="pre"><para>n debe ser un número positivo igual al número de objetos contenidos en el vector f. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a75a95223bcd65bc3c389d6320747906b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Cronologia::Mi_Cronologia</definition>
+        <argsstring>(const Mi_Cronologia &amp;c)</argsstring>
+        <name>Mi_Cronologia</name>
+        <param>
+          <type>const <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> que se quiere copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> con los datos de c. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a783f167a53417a9424edf6e7f967faba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Cronologia::~Mi_Cronologia</definition>
+        <argsstring>()</argsstring>
+        <name>~Mi_Cronologia</name>
+        <briefdescription>
+<para>Destructor de la clase. Hace un delete del vector de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="128" column="1" bodyfile="Mi_Cronologia.h" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1acee7e8568eabe19b2af25226110d347e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+        <definition>Mi_Cronologia&amp; Mi_Cronologia::operator=</definition>
+        <argsstring>(const Mi_Cronologia &amp;c)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> a copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> asignada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a59a598568b9b75df0b511830cbf3c265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref></type>
+        <definition>Mi_Cronologia Mi_Cronologia::operator+</definition>
+        <argsstring>(const Mi_Cronologia &amp;c)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Operador de suma. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> que sumar a this. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Suma de las <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a85b51bae4f6d323cc4c9e3fde6a17dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mi_Cronologia::aniadeFecha</definition>
+        <argsstring>(Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>aniadeFecha</name>
+        <param>
+          <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Añade una <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> a la cronología. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> a añadir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1ab09be2cbe71d1e69125c6f6bc140bbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mi_Cronologia::buscarEventosAnio</definition>
+        <argsstring>(int anio, Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>buscarEventosAnio</name>
+        <param>
+          <type>int</type>
+          <declname>anio</declname>
+        </param>
+        <param>
+          <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Buscador de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> dado un año. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entero que indica el año a buscar. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> a escribir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve true o false en función de si encuentra una <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> con el año especificado. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Cronologia_1a1c06b2a15330d95fb5e27554c2f8f042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mi_Cronologia::buscarEventosClave</definition>
+        <argsstring>(string clave, Mi_Cronologia &amp;c)</argsstring>
+        <name>buscarEventosClave</name>
+        <param>
+          <type>string</type>
+          <declname>clave</declname>
+        </param>
+        <param>
+          <type><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Buscador de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> dado una clave. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String que indica los eventos a buscar. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> a escribir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve true o false en función de si encuentra como mínimo una <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> con el string especificado en alguno de sus eventos. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="180" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMi__Cronologia_1ad49be1b2bf813aa3a43f81591c9c063f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Mi_Cronologia &amp;c)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Salida de una Cronologia a ostream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream de salida. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cronologia a escribir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se obtienen varias <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> seguidas con su formato correspondiente. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMi__Cronologia_1afd5f853188b54329055e961c30023c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Mi_Cronologia &amp;c)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de una Cronologia desde istream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream de entrada. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cronologia leía en c. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>La</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cronologia leía en c. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el formato de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> dividida num_fechas número de veces. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Cronologia.h" line="203" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TDA <ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de dato abstracto <computeroutput><ref refid="classMi__Cronologia" kindref="compound">Mi_Cronologia</ref></computeroutput> es un objeto con tres campos, dos enteros y un vector de objetos de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> Los dos enteros son utilizados para trabajar con el vector dinámicamente.</para><para>Lo representamos como: Año_1 Número_Eventos_1 Eventos_1:<itemizedlist>
+<listitem><para>Evento_1_1</para></listitem><listitem><para>...</para></listitem><listitem><para>Evento_1_M</para></listitem></itemizedlist>
+</para><para>...</para><para>Año_N Número_Eventos_N Eventos_N:<itemizedlist>
+<listitem><para>Evento_N_1</para></listitem><listitem><para>... _ Evento_N_M</para></listitem></itemizedlist>
+</para><para>Un ejemplo de uso: <programlisting></programlisting></para><para><simplesect kind="author"><para>Juan Francisco Díaz Moreno </para></simplesect>
+<simplesect kind="date"><para>Octubre de 2019 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="Mi_Cronologia.h" line="50" column="1" bodyfile="Mi_Cronologia.h" bodystart="50" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classMi__Cronologia_1a85b51bae4f6d323cc4c9e3fde6a17dd0" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>aniadeFecha</name></member>
+      <member refid="classMi__Cronologia_1ab09be2cbe71d1e69125c6f6bc140bbe3" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>buscarEventosAnio</name></member>
+      <member refid="classMi__Cronologia_1a1c06b2a15330d95fb5e27554c2f8f042" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>buscarEventosClave</name></member>
+      <member refid="classMi__Cronologia_1a54715602ea88bc58d08446debdc463d2" prot="private" virt="non-virtual"><scope>Mi_Cronologia</scope><name>existeFecha</name></member>
+      <member refid="classMi__Cronologia_1a0ddc4563895c3688c7ccf3f6c74ab4b8" prot="private" virt="non-virtual"><scope>Mi_Cronologia</scope><name>fechas</name></member>
+      <member refid="classMi__Cronologia_1a2c02b349c6e9cef998dc3c8bb01c9302" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>Mi_Cronologia</name></member>
+      <member refid="classMi__Cronologia_1a68366120d95b5762a86599672a2a9d95" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>Mi_Cronologia</name></member>
+      <member refid="classMi__Cronologia_1a75a95223bcd65bc3c389d6320747906b" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>Mi_Cronologia</name></member>
+      <member refid="classMi__Cronologia_1a47204206ff199a4d87692f9aa597b1d1" prot="private" virt="non-virtual"><scope>Mi_Cronologia</scope><name>num_fechas</name></member>
+      <member refid="classMi__Cronologia_1a59a598568b9b75df0b511830cbf3c265" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>operator+</name></member>
+      <member refid="classMi__Cronologia_1ad49be1b2bf813aa3a43f81591c9c063f" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classMi__Cronologia_1acee7e8568eabe19b2af25226110d347e" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>operator=</name></member>
+      <member refid="classMi__Cronologia_1afd5f853188b54329055e961c30023c18" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classMi__Cronologia_1ae61a2052da6a75067bf42104f5e2fc71" prot="private" virt="non-virtual"><scope>Mi_Cronologia</scope><name>ordenar</name></member>
+      <member refid="classMi__Cronologia_1aee845f8b8fb36628481eae850acd86c6" prot="private" virt="non-virtual"><scope>Mi_Cronologia</scope><name>reservados</name></member>
+      <member refid="classMi__Cronologia_1a00af7299f7b4561fcce43896b62822cb" prot="private" virt="non-virtual"><scope>Mi_Cronologia</scope><name>resize</name></member>
+      <member refid="classMi__Cronologia_1a783f167a53417a9424edf6e7f967faba" prot="public" virt="non-virtual"><scope>Mi_Cronologia</scope><name>~Mi_Cronologia</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

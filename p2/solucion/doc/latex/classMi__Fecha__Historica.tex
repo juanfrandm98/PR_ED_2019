@@ -1,0 +1,258 @@
+\section{Referencia de la Clase Mi\+\_\+\+Fecha\+\_\+\+Historica}
+\label{classMi__Fecha__Historica}\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+
+
+T\+DA \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}.  
+
+
+
+
+{\ttfamily \#include $<$Mi\+\_\+\+Fecha\+\_\+\+Historica.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classMi__Fecha__Historica_a8cca1a2d5b6ba5a80a36895193916533}} 
+\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase Crea una fecha histórica por defecto con año 0, con el vector nulo y 0 num\+\_\+eventos y reservados. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} (int a, int n, string $\ast$s)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} (const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Constructor de copia de la clase. \end{DoxyCompactList}\item 
+\mbox{\label{classMi__Fecha__Historica_a5833ff9e7bb6538c4a627f256ba005bb}} 
+\textbf{ $\sim$\+Mi\+\_\+\+Fecha\+\_\+\+Historica} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. Hace un delete del vector de Strings. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \textbf{ operator+} (const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Operador de suma. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \& \textbf{ operator=} (const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+int \textbf{ get\+Anio} ()
+\begin{DoxyCompactList}\small\item\em Método de acceso al Año de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. \end{DoxyCompactList}\item 
+void \textbf{ aniade\+Evento} (string \&nuevo\+\_\+evento)
+\begin{DoxyCompactList}\small\item\em Añade un evento. \end{DoxyCompactList}\item 
+bool \textbf{ buscar\+Eventos} (string clave, \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&matches)
+\begin{DoxyCompactList}\small\item\em Búsqueda los eventos que contengan un string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&os, const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Salida de un \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a ostream. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&is, \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Entrada de un \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T\+DA \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}} es un objeto con cuatro campos\+: tres enteros y un vestor de Strings.
+
+Uno de los enteros es la fecha base del conjunto de eventos y los otros dos son la base del vector dinámico que representamos como\+:
+
+Año Número de eventos Evento/s\+:
+\begin{DoxyItemize}
+\item Evento\+\_\+1
+\item Evento\+\_\+2
+\item ...
+\item Evento\+\_\+N
+\end{DoxyItemize}
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Autor}
+Juan Francisco Díaz Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Octubre de 2019 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classMi__Fecha__Historica_aa973a19925d54d651df50870e344a549}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{Mi\+\_\+\+Fecha\+\_\+\+Historica()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mi\+\_\+\+Fecha\+\_\+\+Historica\+::\+Mi\+\_\+\+Fecha\+\_\+\+Historica (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{n,  }\item[{string $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em a} & Año del evento a construir. \\
+\hline
+{\em n} & Número de eventos que contiene el vector s \\
+\hline
+{\em s} & Vector de Strings con los eventos de ese año. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea Mi\+\_\+\+Fecha\+\_\+\+Hitorica con año a y n eventos asociados. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+a debe ser $>$= -\/9999 y $<$=9999. 
+\end{DoxyPrecond}
+\mbox{\label{classMi__Fecha__Historica_a6c6ada45181c04df352eb7de3ba9f4f3}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{Mi\+\_\+\+Fecha\+\_\+\+Historica()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mi\+\_\+\+Fecha\+\_\+\+Historica\+::\+Mi\+\_\+\+Fecha\+\_\+\+Historica (\begin{DoxyParamCaption}\item[{const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto de la clase que se quiere copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} con los datos de f. 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classMi__Fecha__Historica_a03045e5c96b565420bfe74d648c6d499}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!aniade\+Evento@{aniade\+Evento}}
+\index{aniade\+Evento@{aniade\+Evento}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{aniade\+Evento()}
+{\footnotesize\ttfamily void Mi\+\_\+\+Fecha\+\_\+\+Historica\+::aniade\+Evento (\begin{DoxyParamCaption}\item[{string \&}]{nuevo\+\_\+evento }\end{DoxyParamCaption})}
+
+
+
+Añade un evento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo\+\_\+evento} & String con el evento a añadir. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classMi__Fecha__Historica_a0f9d7828682d415aab02f7aad2ba274e}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!buscar\+Eventos@{buscar\+Eventos}}
+\index{buscar\+Eventos@{buscar\+Eventos}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{buscar\+Eventos()}
+{\footnotesize\ttfamily bool Mi\+\_\+\+Fecha\+\_\+\+Historica\+::buscar\+Eventos (\begin{DoxyParamCaption}\item[{string}]{clave,  }\item[{\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{matches }\end{DoxyParamCaption})}
+
+
+
+Búsqueda los eventos que contengan un string. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em clave} & String con el fragmento a buscar. \\
+\hline
+{\em matches} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} con los eventos encontrados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true o false indicando si hay o no algun match de la palabra clave. 
+\end{DoxyReturn}
+\mbox{\label{classMi__Fecha__Historica_a1bbd2ef539e9bca93f3fe17eb1fb65b1}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!get\+Anio@{get\+Anio}}
+\index{get\+Anio@{get\+Anio}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{get\+Anio()}
+{\footnotesize\ttfamily int Mi\+\_\+\+Fecha\+\_\+\+Historica\+::get\+Anio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método de acceso al Año de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. 
+
+\begin{DoxyReturn}{Devuelve}
+int con el valor del campo anio. 
+\end{DoxyReturn}
+\mbox{\label{classMi__Fecha__Historica_a0ec5b9afe195a459d650edd0ad4872ee}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!operator+@{operator+}}
+\index{operator+@{operator+}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{operator+()}
+{\footnotesize\ttfamily \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} Mi\+\_\+\+Fecha\+\_\+\+Historica\+::operator+ (\begin{DoxyParamCaption}\item[{const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Operador de suma. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} que sumar a this. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Suma de las \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+anio == f.\+anio 
+\end{DoxyPrecond}
+\mbox{\label{classMi__Fecha__Historica_a3d5e38dd79020073a75f85048d96da70}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!operator=@{operator=}}
+\index{operator=@{operator=}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica}\& Mi\+\_\+\+Fecha\+\_\+\+Historica\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Mi\+\_\+\+Fecha\+\_\+\+Hitorica a copien. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+this 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\label{classMi__Fecha__Historica_a1bbcaf7365db366eb227ed3f63132a9e}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de un \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a ostream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida. \\
+\hline
+{\em f} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Se muestra f en formato \char`\"{}anio\#num\+\_\+eventos\#evento1\#evento2\#...\#evento\+N\char`\"{} 
+\end{DoxyPostcond}
+\mbox{\label{classMi__Fecha__Historica_ab11218c531391762b5a82d13261ca5c2}} 
+\index{Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Mi\+\_\+\+Fecha\+\_\+\+Historica@{Mi\+\_\+\+Fecha\+\_\+\+Historica}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de un \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} desde istream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & Stream de entrada. \\
+\hline
+{\em f} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} que recibe el valor. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em El} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} leído en f. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondición}
+La entrada tiene el formato \char`\"{}anio\#num\+\_\+eventos\#evento1\#...\#evento\+N\char`\"{} 
+\end{DoxyPrecond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica.\+h}\end{DoxyCompactItemize}

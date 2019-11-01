@@ -1,0 +1,265 @@
+\section{Referencia de la Clase Mi\+\_\+\+Cronologia}
+\label{classMi__Cronologia}\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+
+
+T\+DA \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia}.  
+
+
+
+
+{\ttfamily \#include $<$Mi\+\_\+\+Cronologia.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classMi__Cronologia_a2c02b349c6e9cef998dc3c8bb01c9302}} 
+\textbf{ Mi\+\_\+\+Cronologia} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. Crea una cronología por defecto con 0 num\+\_\+fechas y reservados y un vector nulo. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Cronologia} (\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} $\ast$f, int n)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Cronologia} (const \textbf{ Mi\+\_\+\+Cronologia} \&c)
+\begin{DoxyCompactList}\small\item\em Constructor de copia de la clase. \end{DoxyCompactList}\item 
+\mbox{\label{classMi__Cronologia_a783f167a53417a9424edf6e7f967faba}} 
+\textbf{ $\sim$\+Mi\+\_\+\+Cronologia} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. Hace un delete del vector de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Cronologia} \& \textbf{ operator=} (const \textbf{ Mi\+\_\+\+Cronologia} \&c)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\textbf{ Mi\+\_\+\+Cronologia} \textbf{ operator+} (const \textbf{ Mi\+\_\+\+Cronologia} \&c)
+\begin{DoxyCompactList}\small\item\em Operador de suma. \end{DoxyCompactList}\item 
+void \textbf{ aniade\+Fecha} (\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Añade una \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a la cronología. \end{DoxyCompactList}\item 
+bool \textbf{ buscar\+Eventos\+Anio} (int anio, \textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&f)
+\begin{DoxyCompactList}\small\item\em Buscador de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} dado un año. \end{DoxyCompactList}\item 
+bool \textbf{ buscar\+Eventos\+Clave} (string clave, \textbf{ Mi\+\_\+\+Cronologia} \&c)
+\begin{DoxyCompactList}\small\item\em Buscador de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} dado una clave. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&os, const \textbf{ Mi\+\_\+\+Cronologia} \&c)
+\begin{DoxyCompactList}\small\item\em Salida de una Cronologia a ostream. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&is, \textbf{ Mi\+\_\+\+Cronologia} \&c)
+\begin{DoxyCompactList}\small\item\em Entrada de una Cronologia desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T\+DA \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia}. 
+
+Una instancia {\itshape c} del tipo de dato abstracto {\ttfamily \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia}} es un objeto con tres campos, dos enteros y un vector de objetos de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} Los dos enteros son utilizados para trabajar con el vector dinámicamente.
+
+Lo representamos como\+: Año\+\_\+1 Número\+\_\+\+Eventos\+\_\+1 Eventos\+\_\+1\+:
+\begin{DoxyItemize}
+\item Evento\+\_\+1\+\_\+1
+\item ...
+\item Evento\+\_\+1\+\_\+M
+\end{DoxyItemize}
+
+...
+
+Año\+\_\+N Número\+\_\+\+Eventos\+\_\+N Eventos\+\_\+N\+:
+\begin{DoxyItemize}
+\item Evento\+\_\+\+N\+\_\+1
+\item ... \+\_\+ Evento\+\_\+\+N\+\_\+M
+\end{DoxyItemize}
+
+Un ejemplo de uso\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Autor}
+Juan Francisco Díaz Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Octubre de 2019 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classMi__Cronologia_a68366120d95b5762a86599672a2a9d95}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{Mi\+\_\+\+Cronologia()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mi\+\_\+\+Cronologia\+::\+Mi\+\_\+\+Cronologia (\begin{DoxyParamCaption}\item[{\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} $\ast$}]{f,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Vector de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. \\
+\hline
+{\em n} & Número de elementos que contiene el vector f. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea una \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} con n \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica}. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+n debe ser un número positivo igual al número de objetos contenidos en el vector f. 
+\end{DoxyPrecond}
+\mbox{\label{classMi__Cronologia_a75a95223bcd65bc3c389d6320747906b}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{Mi\+\_\+\+Cronologia()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mi\+\_\+\+Cronologia\+::\+Mi\+\_\+\+Cronologia (\begin{DoxyParamCaption}\item[{const \textbf{ Mi\+\_\+\+Cronologia} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia de la clase. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} que se quiere copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} con los datos de c. 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classMi__Cronologia_a85b51bae4f6d323cc4c9e3fde6a17dd0}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!aniade\+Fecha@{aniade\+Fecha}}
+\index{aniade\+Fecha@{aniade\+Fecha}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{aniade\+Fecha()}
+{\footnotesize\ttfamily void Mi\+\_\+\+Cronologia\+::aniade\+Fecha (\begin{DoxyParamCaption}\item[{\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Añade una \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a la cronología. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a añadir. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classMi__Cronologia_ab09be2cbe71d1e69125c6f6bc140bbe3}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!buscar\+Eventos\+Anio@{buscar\+Eventos\+Anio}}
+\index{buscar\+Eventos\+Anio@{buscar\+Eventos\+Anio}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{buscar\+Eventos\+Anio()}
+{\footnotesize\ttfamily bool Mi\+\_\+\+Cronologia\+::buscar\+Eventos\+Anio (\begin{DoxyParamCaption}\item[{int}]{anio,  }\item[{\textbf{ Mi\+\_\+\+Fecha\+\_\+\+Historica} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Buscador de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} dado un año. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em anio} & Entero que indica el año a buscar. \\
+\hline
+{\em f} & \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true o false en función de si encuentra una \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} con el año especificado. 
+\end{DoxyReturn}
+\mbox{\label{classMi__Cronologia_a1c06b2a15330d95fb5e27554c2f8f042}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!buscar\+Eventos\+Clave@{buscar\+Eventos\+Clave}}
+\index{buscar\+Eventos\+Clave@{buscar\+Eventos\+Clave}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{buscar\+Eventos\+Clave()}
+{\footnotesize\ttfamily bool Mi\+\_\+\+Cronologia\+::buscar\+Eventos\+Clave (\begin{DoxyParamCaption}\item[{string}]{clave,  }\item[{\textbf{ Mi\+\_\+\+Cronologia} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Buscador de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} dado una clave. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em clave} & String que indica los eventos a buscar. \\
+\hline
+{\em c} & \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true o false en función de si encuentra como mínimo una \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} con el string especificado en alguno de sus eventos. 
+\end{DoxyReturn}
+\mbox{\label{classMi__Cronologia_a59a598568b9b75df0b511830cbf3c265}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!operator+@{operator+}}
+\index{operator+@{operator+}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{operator+()}
+{\footnotesize\ttfamily \textbf{ Mi\+\_\+\+Cronologia} Mi\+\_\+\+Cronologia\+::operator+ (\begin{DoxyParamCaption}\item[{const \textbf{ Mi\+\_\+\+Cronologia} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Operador de suma. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} que sumar a this. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Suma de las \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia}. 
+\end{DoxyReturn}
+\mbox{\label{classMi__Cronologia_acee7e8568eabe19b2af25226110d347e}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!operator=@{operator=}}
+\index{operator=@{operator=}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Mi\+\_\+\+Cronologia}\& Mi\+\_\+\+Cronologia\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Mi\+\_\+\+Cronologia} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & \doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Mi\+\_\+\+Cronologia}{p.}{classMi__Cronologia} asignada. 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\label{classMi__Cronologia_ad49be1b2bf813aa3a43f81591c9c063f}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \textbf{ Mi\+\_\+\+Cronologia} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de una Cronologia a ostream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida. \\
+\hline
+{\em c} & Cronologia a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Se obtienen varias \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} seguidas con su formato correspondiente. 
+\end{DoxyPostcond}
+\mbox{\label{classMi__Cronologia_afd5f853188b54329055e961c30023c18}} 
+\index{Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Mi\+\_\+\+Cronologia@{Mi\+\_\+\+Cronologia}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\textbf{ Mi\+\_\+\+Cronologia} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de una Cronologia desde istream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & Stream de entrada. \\
+\hline
+{\em c} & Cronologia leía en c. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em La} & Cronologia leía en c. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondición}
+La entrada tiene el formato de \doxyref{Mi\+\_\+\+Fecha\+\_\+\+Historica}{p.}{classMi__Fecha__Historica} dividida num\+\_\+fechas número de veces. 
+\end{DoxyPrecond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mi\+\_\+\+Cronologia.\+h}\end{DoxyCompactItemize}

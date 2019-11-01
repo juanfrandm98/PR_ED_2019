@@ -1,0 +1,46 @@
+.TH "repConjunto" 3 "Martes, 29 de Octubre de 2019" "ClaseMi_Cronologia" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+repConjuntoRep del TDA \fBMi_Cronologia\fP 
+ \- 
+.SH "Invariante de la representación"
+.PP
+El invariante está ligado al de \fBMi_Fecha_Historica\fP \fIrep\&.anio\fP >= -9999 && rep\&.anio <= 9999
+.SH "Función de abstracción"
+.PP
+Un objeto válido \fIrep\fP del TDA Cronología representa al valor: Año_1 Número_Eventos_1 Eventos_1:
+.IP "\(bu" 2
+Evento_1_1
+.IP "\(bu" 2
+\&.\&.\&.
+.IP "\(bu" 2
+Evento_1_M
+.PP
+.PP
+\&.\&.\&.
+.PP
+Año_N Número_Eventos_N Eventos_N:
+.IP "\(bu" 2
+Evento_N_1
+.IP "\(bu" 2
+\&.\&.\&. _ Evento_N_M
+.PP
+.SH "Invariante de la representación"
+.PP
+El invariante es \fIrep\&.anio\fP >= -9999 && rep\&.anio <= 9999
+.PP
+Fijamos como límite que los años no sean ni menores de 9999 ni superiores a 9999\&.
+.SH "Función de abstracción"
+.PP
+Un objeto válido \fIrep\fP del TDA \fBMi_Fecha_Historica\fP representa al valor
+.PP
+Año Número de eventos Evento/s:
+.IP "\(bu" 2
+Evento_1
+.IP "\(bu" 2
+\&.\&.\&.
+.IP "\(bu" 2
+Evento_N 
+.PP
+

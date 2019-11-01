@@ -1,0 +1,269 @@
+.TH "Mi_Fecha_Historica" 3 "Martes, 29 de Octubre de 2019" "ClaseMi_Cronologia" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Mi_Fecha_Historica \- TDA \fBMi_Fecha_Historica\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Mi_Fecha_Historica\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBMi_Fecha_Historica\fP ()"
+.br
+.RI "Constructor por defecto de la clase Crea una fecha histórica por defecto con año 0, con el vector nulo y 0 num_eventos y reservados\&. "
+.ti -1c
+.RI "\fBMi_Fecha_Historica\fP (int a, int n, string *s)"
+.br
+.RI "Constructor de la clase\&. "
+.ti -1c
+.RI "\fBMi_Fecha_Historica\fP (const \fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Constructor de copia de la clase\&. "
+.ti -1c
+.RI "\fB~Mi_Fecha_Historica\fP ()"
+.br
+.RI "Destructor de la clase\&. Hace un delete del vector de Strings\&. "
+.ti -1c
+.RI "\fBMi_Fecha_Historica\fP \fBoperator+\fP (const \fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Operador de suma\&. "
+.ti -1c
+.RI "\fBMi_Fecha_Historica\fP & \fBoperator=\fP (const \fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "int \fBgetAnio\fP ()"
+.br
+.RI "Método de acceso al Año de \fBMi_Fecha_Historica\fP\&. "
+.ti -1c
+.RI "void \fBaniadeEvento\fP (string &nuevo_evento)"
+.br
+.RI "Añade un evento\&. "
+.ti -1c
+.RI "bool \fBbuscarEventos\fP (string clave, \fBMi_Fecha_Historica\fP &matches)"
+.br
+.RI "Búsqueda los eventos que contengan un string\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Salida de un \fBMi_Fecha_Historica\fP a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Entrada de un \fBMi_Fecha_Historica\fP desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+TDA \fBMi_Fecha_Historica\fP\&. 
+
+Una instancia \fIc\fP del tipo de datos abstracto \fC\fBMi_Fecha_Historica\fP\fP es un objeto con cuatro campos: tres enteros y un vestor de Strings\&.
+.PP
+Uno de los enteros es la fecha base del conjunto de eventos y los otros dos son la base del vector dinámico que representamos como:
+.PP
+Año Número de eventos Evento/s:
+.IP "\(bu" 2
+Evento_1
+.IP "\(bu" 2
+Evento_2
+.IP "\(bu" 2
+\&.\&.\&.
+.IP "\(bu" 2
+Evento_N
+.PP
+.PP
+Un ejemplo de su uso: 
+.PP
+.nf
+
+.fi
+.PP
+.PP
+\fBAutor:\fP
+.RS 4
+Juan Francisco Díaz Moreno 
+.RE
+.PP
+\fBFecha:\fP
+.RS 4
+Octubre de 2019 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Mi_Fecha_Historica::Mi_Fecha_Historica (int a, int n, string * s)"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIa\fP Año del evento a construir\&. 
+.br
+\fIn\fP Número de eventos que contiene el vector s 
+.br
+\fIs\fP Vector de Strings con los eventos de ese año\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Crea Mi_Fecha_Hitorica con año a y n eventos asociados\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+a debe ser >= -9999 y <=9999\&. 
+.RE
+.PP
+
+.SS "Mi_Fecha_Historica::Mi_Fecha_Historica (const \fBMi_Fecha_Historica\fP & f)"
+
+.PP
+Constructor de copia de la clase\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP Objeto de la clase que se quiere copiar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Crea \fBMi_Fecha_Historica\fP con los datos de f\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Mi_Fecha_Historica::aniadeEvento (string & nuevo_evento)"
+
+.PP
+Añade un evento\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInuevo_evento\fP String con el evento a añadir\&. 
+.RE
+.PP
+
+.SS "bool Mi_Fecha_Historica::buscarEventos (string clave, \fBMi_Fecha_Historica\fP & matches)"
+
+.PP
+Búsqueda los eventos que contengan un string\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIclave\fP String con el fragmento a buscar\&. 
+.br
+\fImatches\fP \fBMi_Fecha_Historica\fP con los eventos encontrados\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true o false indicando si hay o no algun match de la palabra clave\&. 
+.RE
+.PP
+
+.SS "int Mi_Fecha_Historica::getAnio ()"
+
+.PP
+Método de acceso al Año de \fBMi_Fecha_Historica\fP\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+int con el valor del campo anio\&. 
+.RE
+.PP
+
+.SS "\fBMi_Fecha_Historica\fP Mi_Fecha_Historica::operator+ (const \fBMi_Fecha_Historica\fP & f)"
+
+.PP
+Operador de suma\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP \fBMi_Fecha_Historica\fP que sumar a this\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Suma de las \fBMi_Fecha_Historica\fP\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+anio == f\&.anio 
+.RE
+.PP
+
+.SS "\fBMi_Fecha_Historica\fP& Mi_Fecha_Historica::operator= (const \fBMi_Fecha_Historica\fP & f)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP Mi_Fecha_Hitorica a copien\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+this 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, const \fBMi_Fecha_Historica\fP & f)\fC [friend]\fP"
+
+.PP
+Salida de un \fBMi_Fecha_Historica\fP a ostream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIos\fP Stream de salida\&. 
+.br
+\fIf\fP \fBMi_Fecha_Historica\fP a escribir\&. 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+Se muestra f en formato 'anio#num_eventos#evento1#evento2#\&.\&.\&.#eventoN' 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBMi_Fecha_Historica\fP & f)\fC [friend]\fP"
+
+.PP
+Entrada de un \fBMi_Fecha_Historica\fP desde istream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIis\fP Stream de entrada\&. 
+.br
+\fIf\fP \fBMi_Fecha_Historica\fP que recibe el valor\&. 
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fIEl\fP \fBMi_Fecha_Historica\fP leído en f\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+La entrada tiene el formato 'anio#num_eventos#evento1#\&.\&.\&.#eventoN' 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para ClaseMi_Cronologia del código fuente\&.

@@ -1,0 +1,274 @@
+.TH "Mi_Cronologia" 3 "Martes, 29 de Octubre de 2019" "ClaseMi_Cronologia" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Mi_Cronologia \- TDA \fBMi_Cronologia\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Mi_Cronologia\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBMi_Cronologia\fP ()"
+.br
+.RI "Constructor por defecto de la clase\&. Crea una cronología por defecto con 0 num_fechas y reservados y un vector nulo\&. "
+.ti -1c
+.RI "\fBMi_Cronologia\fP (\fBMi_Fecha_Historica\fP *f, int n)"
+.br
+.RI "Constructor de la clase\&. "
+.ti -1c
+.RI "\fBMi_Cronologia\fP (const \fBMi_Cronologia\fP &c)"
+.br
+.RI "Constructor de copia de la clase\&. "
+.ti -1c
+.RI "\fB~Mi_Cronologia\fP ()"
+.br
+.RI "Destructor de la clase\&. Hace un delete del vector de \fBMi_Fecha_Historica\fP\&. "
+.ti -1c
+.RI "\fBMi_Cronologia\fP & \fBoperator=\fP (const \fBMi_Cronologia\fP &c)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "\fBMi_Cronologia\fP \fBoperator+\fP (const \fBMi_Cronologia\fP &c)"
+.br
+.RI "Operador de suma\&. "
+.ti -1c
+.RI "void \fBaniadeFecha\fP (\fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Añade una \fBMi_Fecha_Historica\fP a la cronología\&. "
+.ti -1c
+.RI "bool \fBbuscarEventosAnio\fP (int anio, \fBMi_Fecha_Historica\fP &f)"
+.br
+.RI "Buscador de \fBMi_Fecha_Historica\fP dado un año\&. "
+.ti -1c
+.RI "bool \fBbuscarEventosClave\fP (string clave, \fBMi_Cronologia\fP &c)"
+.br
+.RI "Buscador de \fBMi_Fecha_Historica\fP dado una clave\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBMi_Cronologia\fP &c)"
+.br
+.RI "Salida de una Cronologia a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBMi_Cronologia\fP &c)"
+.br
+.RI "Entrada de una Cronologia desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+TDA \fBMi_Cronologia\fP\&. 
+
+Una instancia \fIc\fP del tipo de dato abstracto \fC\fBMi_Cronologia\fP\fP es un objeto con tres campos, dos enteros y un vector de objetos de \fBMi_Fecha_Historica\fP Los dos enteros son utilizados para trabajar con el vector dinámicamente\&.
+.PP
+Lo representamos como: Año_1 Número_Eventos_1 Eventos_1:
+.IP "\(bu" 2
+Evento_1_1
+.IP "\(bu" 2
+\&.\&.\&.
+.IP "\(bu" 2
+Evento_1_M
+.PP
+.PP
+\&.\&.\&.
+.PP
+Año_N Número_Eventos_N Eventos_N:
+.IP "\(bu" 2
+Evento_N_1
+.IP "\(bu" 2
+\&.\&.\&. _ Evento_N_M
+.PP
+.PP
+Un ejemplo de uso: 
+.PP
+.nf
+
+.fi
+.PP
+.PP
+\fBAutor:\fP
+.RS 4
+Juan Francisco Díaz Moreno 
+.RE
+.PP
+\fBFecha:\fP
+.RS 4
+Octubre de 2019 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Mi_Cronologia::Mi_Cronologia (\fBMi_Fecha_Historica\fP * f, int n)"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP Vector de \fBMi_Fecha_Historica\fP\&. 
+.br
+\fIn\fP Número de elementos que contiene el vector f\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Crea una \fBMi_Cronologia\fP con n \fBMi_Fecha_Historica\fP\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+n debe ser un número positivo igual al número de objetos contenidos en el vector f\&. 
+.RE
+.PP
+
+.SS "Mi_Cronologia::Mi_Cronologia (const \fBMi_Cronologia\fP & c)"
+
+.PP
+Constructor de copia de la clase\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIc\fP \fBMi_Cronologia\fP que se quiere copiar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Crea \fBMi_Cronologia\fP con los datos de c\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Mi_Cronologia::aniadeFecha (\fBMi_Fecha_Historica\fP & f)"
+
+.PP
+Añade una \fBMi_Fecha_Historica\fP a la cronología\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIf\fP \fBMi_Fecha_Historica\fP a añadir\&. 
+.RE
+.PP
+
+.SS "bool Mi_Cronologia::buscarEventosAnio (int anio, \fBMi_Fecha_Historica\fP & f)"
+
+.PP
+Buscador de \fBMi_Fecha_Historica\fP dado un año\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIanio\fP Entero que indica el año a buscar\&. 
+.br
+\fIf\fP \fBMi_Fecha_Historica\fP a escribir\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true o false en función de si encuentra una \fBMi_Fecha_Historica\fP con el año especificado\&. 
+.RE
+.PP
+
+.SS "bool Mi_Cronologia::buscarEventosClave (string clave, \fBMi_Cronologia\fP & c)"
+
+.PP
+Buscador de \fBMi_Fecha_Historica\fP dado una clave\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIclave\fP String que indica los eventos a buscar\&. 
+.br
+\fIc\fP \fBMi_Cronologia\fP a escribir\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true o false en función de si encuentra como mínimo una \fBMi_Fecha_Historica\fP con el string especificado en alguno de sus eventos\&. 
+.RE
+.PP
+
+.SS "\fBMi_Cronologia\fP Mi_Cronologia::operator+ (const \fBMi_Cronologia\fP & c)"
+
+.PP
+Operador de suma\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIc\fP \fBMi_Cronologia\fP que sumar a this\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Suma de las \fBMi_Cronologia\fP\&. 
+.RE
+.PP
+
+.SS "\fBMi_Cronologia\fP& Mi_Cronologia::operator= (const \fBMi_Cronologia\fP & c)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIc\fP \fBMi_Cronologia\fP a copiar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBMi_Cronologia\fP asignada\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, const \fBMi_Cronologia\fP & c)\fC [friend]\fP"
+
+.PP
+Salida de una Cronologia a ostream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIos\fP Stream de salida\&. 
+.br
+\fIc\fP Cronologia a escribir\&. 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+Se obtienen varias \fBMi_Fecha_Historica\fP seguidas con su formato correspondiente\&. 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBMi_Cronologia\fP & c)\fC [friend]\fP"
+
+.PP
+Entrada de una Cronologia desde istream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIis\fP Stream de entrada\&. 
+.br
+\fIc\fP Cronologia leía en c\&. 
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fILa\fP Cronologia leía en c\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+La entrada tiene el formato de \fBMi_Fecha_Historica\fP dividida num_fechas número de veces\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para ClaseMi_Cronologia del código fuente\&.

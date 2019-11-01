@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="repConjunto" kind="page">
+    <compoundname>repConjunto</compoundname>
+    <title>Rep del TDA Mi_Cronologia</title>
+    <detaileddescription>
+<sect1 id="repConjunto_1invConjunto">
+<title>Invariante de la representación</title>
+<para>El invariante está ligado al de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> <emphasis>rep.anio</emphasis> &gt;= -9999 &amp;&amp; rep.anio &lt;= 9999</para></sect1>
+<sect1 id="repConjunto_1faConjunto">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA Cronología representa al valor: Año_1 Número_Eventos_1 Eventos_1:<itemizedlist>
+<listitem><para>Evento_1_1</para></listitem><listitem><para>...</para></listitem><listitem><para>Evento_1_M</para></listitem></itemizedlist>
+</para><para>...</para><para>Año_N Número_Eventos_N Eventos_N:<itemizedlist>
+<listitem><para>Evento_N_1</para></listitem><listitem><para>... _ Evento_N_M</para></listitem></itemizedlist>
+</para></sect1>
+<sect1 id="repConjunto_1invConjunto">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>rep.anio</emphasis> &gt;= -9999 &amp;&amp; rep.anio &lt;= 9999</para><para>Fijamos como límite que los años no sean ni menores de 9999 ni superiores a 9999.</para></sect1>
+<sect1 id="repConjunto_1faConjunto">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> representa al valor</para><para>Año Número de eventos Evento/s:<itemizedlist>
+<listitem><para>Evento_1</para></listitem><listitem><para>...</para></listitem><listitem><para>Evento_N </para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

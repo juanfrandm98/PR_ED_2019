@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classMi__Fecha__Historica" kind="class" language="C++" prot="public">
+    <compoundname>Mi_Fecha_Historica</compoundname>
+    <includes refid="Mi__Fecha__Historica_8h" local="no">Mi_Fecha_Historica.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMi__Fecha__Historica_1a1174deb21fe0027f699ed97cb23f436a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mi_Fecha_Historica::anio</definition>
+        <argsstring></argsstring>
+        <name>anio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Año </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="70" column="1" bodyfile="Mi_Fecha_Historica.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMi__Fecha__Historica_1a56e00419fcbc1b2a3577dd3b1e7c92cc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mi_Fecha_Historica::num_eventos</definition>
+        <argsstring></argsstring>
+        <name>num_eventos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Número de eventos históricos almacenados en este Año </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="71" column="1" bodyfile="Mi_Fecha_Historica.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMi__Fecha__Historica_1a3908bf4d4c55d849c28b780c71dcaac5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mi_Fecha_Historica::reservados</definition>
+        <argsstring></argsstring>
+        <name>reservados</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Número de elementos reservados </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="72" column="1" bodyfile="Mi_Fecha_Historica.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMi__Fecha__Historica_1a55da34958da0541f54b0fe77159f7926" prot="private" static="no" mutable="no">
+        <type>string *</type>
+        <definition>string* Mi_Fecha_Historica::eventos</definition>
+        <argsstring></argsstring>
+        <name>eventos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vector de Strings que almacena los eventos históricos </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="73" column="1" bodyfile="Mi_Fecha_Historica.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMi__Fecha__Historica_1abd5b547df00f486e29df8169eebd547e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mi_Fecha_Historica::resize</definition>
+        <argsstring>(int r)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>int</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Función privada para gestionar el vector dinámico de Strings </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a70688726e98a7f05fb748596883d21c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mi_Fecha_Historica::eliminaDuplicados</definition>
+        <argsstring>()</argsstring>
+        <name>eliminaDuplicados</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Función privada para eliminar eventos duplicados. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a8cca1a2d5b6ba5a80a36895193916533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Fecha_Historica::Mi_Fecha_Historica</definition>
+        <argsstring>()</argsstring>
+        <name>Mi_Fecha_Historica</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase Crea una fecha histórica por defecto con año 0, con el vector nulo y 0 num_eventos y reservados. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1aa973a19925d54d651df50870e344a549" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Fecha_Historica::Mi_Fecha_Historica</definition>
+        <argsstring>(int a, int n, string *s)</argsstring>
+        <name>Mi_Fecha_Historica</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Año del evento a construir. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de eventos que contiene el vector s </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector de Strings con los eventos de ese año. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea Mi_Fecha_Hitorica con año a y n eventos asociados. </para></simplesect>
+<simplesect kind="pre"><para>a debe ser &gt;= -9999 y &lt;=9999. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a6c6ada45181c04df352eb7de3ba9f4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Fecha_Historica::Mi_Fecha_Historica</definition>
+        <argsstring>(const Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>Mi_Fecha_Historica</name>
+        <param>
+          <type>const <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia de la clase. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Objeto de la clase que se quiere copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> con los datos de f. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a5833ff9e7bb6538c4a627f256ba005bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mi_Fecha_Historica::~Mi_Fecha_Historica</definition>
+        <argsstring>()</argsstring>
+        <name>~Mi_Fecha_Historica</name>
+        <briefdescription>
+<para>Destructor de la clase. Hace un delete del vector de Strings. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="113" column="1" bodyfile="Mi_Fecha_Historica.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a0ec5b9afe195a459d650edd0ad4872ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref></type>
+        <definition>Mi_Fecha_Historica Mi_Fecha_Historica::operator+</definition>
+        <argsstring>(const Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Operador de suma. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> que sumar a this. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Suma de las <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref>. </para></simplesect>
+<simplesect kind="pre"><para>anio == f.anio </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a3d5e38dd79020073a75f85048d96da70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+        <definition>Mi_Fecha_Historica&amp; Mi_Fecha_Historica::operator=</definition>
+        <argsstring>(const Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mi_Fecha_Hitorica a copien. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>this </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a1bbd2ef539e9bca93f3fe17eb1fb65b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mi_Fecha_Historica::getAnio</definition>
+        <argsstring>()</argsstring>
+        <name>getAnio</name>
+        <briefdescription>
+<para>Método de acceso al Año de <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int con el valor del campo anio. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a03045e5c96b565420bfe74d648c6d499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mi_Fecha_Historica::aniadeEvento</definition>
+        <argsstring>(string &amp;nuevo_evento)</argsstring>
+        <name>aniadeEvento</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>nuevo_evento</declname>
+        </param>
+        <briefdescription>
+<para>Añade un evento. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nuevo_evento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String con el evento a añadir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMi__Fecha__Historica_1a0f9d7828682d415aab02f7aad2ba274e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mi_Fecha_Historica::buscarEventos</definition>
+        <argsstring>(string clave, Mi_Fecha_Historica &amp;matches)</argsstring>
+        <name>buscarEventos</name>
+        <param>
+          <type>string</type>
+          <declname>clave</declname>
+        </param>
+        <param>
+          <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>matches</declname>
+        </param>
+        <briefdescription>
+<para>Búsqueda los eventos que contengan un string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String con el fragmento a buscar. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>matches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> con los eventos encontrados. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve true o false indicando si hay o no algun match de la palabra clave. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="161" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classMi__Fecha__Historica_1a1bbcaf7365db366eb227ed3f63132a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Salida de un <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> a ostream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream de salida. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> a escribir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se muestra f en formato &quot;anio#num_eventos#evento1#evento2#...#eventoN&quot; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classMi__Fecha__Historica_1ab11218c531391762b5a82d13261ca5c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, Mi_Fecha_Historica &amp;f)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de un <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> desde istream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream de entrada. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> que recibe el valor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>El</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref> leído en f. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el formato &quot;anio#num_eventos#evento1#...#eventoN&quot; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Mi_Fecha_Historica.h" line="182" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>TDA <ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de datos abstracto <computeroutput><ref refid="classMi__Fecha__Historica" kindref="compound">Mi_Fecha_Historica</ref></computeroutput> es un objeto con cuatro campos: tres enteros y un vestor de Strings.</para><para>Uno de los enteros es la fecha base del conjunto de eventos y los otros dos son la base del vector dinámico que representamos como:</para><para>Año Número de eventos Evento/s:<itemizedlist>
+<listitem><para>Evento_1</para></listitem><listitem><para>Evento_2</para></listitem><listitem><para>...</para></listitem><listitem><para>Evento_N</para></listitem></itemizedlist>
+</para><para>Un ejemplo de su uso: <programlisting></programlisting></para><para><simplesect kind="author"><para>Juan Francisco Díaz Moreno </para></simplesect>
+<simplesect kind="date"><para>Octubre de 2019 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="Mi_Fecha_Historica.h" line="43" column="1" bodyfile="Mi_Fecha_Historica.h" bodystart="43" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classMi__Fecha__Historica_1a03045e5c96b565420bfe74d648c6d499" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>aniadeEvento</name></member>
+      <member refid="classMi__Fecha__Historica_1a1174deb21fe0027f699ed97cb23f436a" prot="private" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>anio</name></member>
+      <member refid="classMi__Fecha__Historica_1a0f9d7828682d415aab02f7aad2ba274e" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>buscarEventos</name></member>
+      <member refid="classMi__Fecha__Historica_1a70688726e98a7f05fb748596883d21c7" prot="private" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>eliminaDuplicados</name></member>
+      <member refid="classMi__Fecha__Historica_1a55da34958da0541f54b0fe77159f7926" prot="private" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>eventos</name></member>
+      <member refid="classMi__Fecha__Historica_1a1bbd2ef539e9bca93f3fe17eb1fb65b1" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>getAnio</name></member>
+      <member refid="classMi__Fecha__Historica_1a8cca1a2d5b6ba5a80a36895193916533" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>Mi_Fecha_Historica</name></member>
+      <member refid="classMi__Fecha__Historica_1aa973a19925d54d651df50870e344a549" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>Mi_Fecha_Historica</name></member>
+      <member refid="classMi__Fecha__Historica_1a6c6ada45181c04df352eb7de3ba9f4f3" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>Mi_Fecha_Historica</name></member>
+      <member refid="classMi__Fecha__Historica_1a56e00419fcbc1b2a3577dd3b1e7c92cc" prot="private" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>num_eventos</name></member>
+      <member refid="classMi__Fecha__Historica_1a0ec5b9afe195a459d650edd0ad4872ee" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>operator+</name></member>
+      <member refid="classMi__Fecha__Historica_1a1bbcaf7365db366eb227ed3f63132a9e" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classMi__Fecha__Historica_1a3d5e38dd79020073a75f85048d96da70" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>operator=</name></member>
+      <member refid="classMi__Fecha__Historica_1ab11218c531391762b5a82d13261ca5c2" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classMi__Fecha__Historica_1a3908bf4d4c55d849c28b780c71dcaac5" prot="private" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>reservados</name></member>
+      <member refid="classMi__Fecha__Historica_1abd5b547df00f486e29df8169eebd547e" prot="private" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>resize</name></member>
+      <member refid="classMi__Fecha__Historica_1a5833ff9e7bb6538c4a627f256ba005bb" prot="public" virt="non-virtual"><scope>Mi_Fecha_Historica</scope><name>~Mi_Fecha_Historica</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
