@@ -6,11 +6,10 @@
   */
 
 #include <cassert>
+#include <iostream>
+#include "pila_max.h"
 
 using namespace std;
-
-Pila_max::Pila_max() {
-}
 
 /* _________________________________________________________________________ */
 
@@ -41,72 +40,60 @@ int Pila_max::size () const {
 
 /* _________________________________________________________________________ */
 
-Pareja & Pila_max::top () {
+Pareja Pila_max::top () {
 	assert( elementos.num_elementos() > 0 );
-	Cola<Pareja> aux;
-
-	while( !elementos.vacia() ) {
-		aux.poner( elementos.frente() );
-		elementos.quitar();
-	}
-
-	Pareja tope = aux.frente();
-
-	while( !aux.vacia() ) {
-		elementos.poner( aux.frente() );
-		aux.quitar();
-	}
-
-	return tope;
+	return elementos.frente();
 }
 
 /* _________________________________________________________________________ */
 
 const Pareja & Pila_max::top () const {
-	cout << "Comienzo top" << endl;
 	assert( elementos.num_elementos() > 0 );
-	Cola<Pareja> aux1;
-	Cola<Pareja> aux2 = elementos;
-
-	cout << elementos.num_elementos() << endl;
-
-	for( int i = 0; i < elementos.num_elementos() - 2; i++ ) {
-		cout << i << endl;
-		aux1.poner( aux2.frente() );
-		aux2.quitar();
-	}
-
-	Pareja tope = aux2.frente();
-
-	return tope;
+	return elementos.frente();
 }
 
 /* _________________________________________________________________________ */
 
 void Pila_max::push ( const int & nuevo ) {
-	if( nuevo > maximo || elementos.vacia() )
-		maximo = nuevo;
+	if( elementos.num_elementos() > 0 ) {
+		Cola<Pareja> aux = elementos;
 
-	Pareja nueva = Pareja( nuevo, maximo );
-	elementos.poner( nueva );
+		while( !elementos.vacia() )
+			elementos.quitar();
+
+		if( nuevo > maximo )
+			maximo = nuevo;
+
+		elementos.poner( Pareja( nuevo, maximo ) );
+
+		while( !aux.vacia() ) {
+			elementos.poner( aux.frente() );
+			aux.quitar();
+		}
+
+	} else {
+		Pareja nueva( nuevo, nuevo );
+		elementos.poner( nueva );
+	}
 }
 
 
 /* _________________________________________________________________________ */
 
 void Pila_max::pop () {
-	assert( elementos.num_elementos() > 0 );
-	Cola<Pareja> aux;
-
-	while( !elementos.vacia() ) {
-		aux.poner( elementos. frente() );
+	if( elementos.num_elementos() > 0 )
 		elementos.quitar();
-	}
+}
 
-	aux.quitar();
+/* _________________________________________________________________________ */
 
-	while( !aux.vacia() ) {
-		elementos.poner( aux.frente() );
+ostream & operator<< ( ostream & os, const Pila_max & p ) {
+	Cola<Pareja> aux = p.elementos;
+
+	while( !aux.vacia() ){
+		cout << aux.frente();
 		aux.quitar();
 	}
+
+	return os;
 }

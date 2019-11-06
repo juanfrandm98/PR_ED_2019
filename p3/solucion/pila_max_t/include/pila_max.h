@@ -14,11 +14,6 @@
 #include "pareja.h"
 #include <cassert>
 
-// ostream & operator<< ( ostream & os, const pareja & p ) {
-// 	os << "Elemento: " << p.elemento << " Máximo: " << p.maximo << endl;
-// 	return os;
-// }
-
 /**
   *
   * @brief T.D.A. Pila_max
@@ -50,13 +45,12 @@
   *
   */
 
-template <class T>
 class Pila_max {
 
 	private:
 
-		Cola<Pareja<T>> elementos; ///< Cola de elementos
-		T maximo;				///< Elemento máximo actual
+		Cola<Pareja> elementos; ///< Cola de elementos
+		int maximo;				///< Elemento máximo actual
 
 	public:
 
@@ -66,7 +60,8 @@ class Pila_max {
 		  * @brief Constructor por defecto
 		  *
 		  */
-		Pila_max( const Cola<T> & c = Cola<T>() ) {
+		Pila_max() {
+			maximo = 0;
 		}
 
 		/**
@@ -75,7 +70,7 @@ class Pila_max {
 		  * @param original La Pila_max de la que se hará la copia.
 		  *
 		  */
-		Pila_max( const Pila_max<T> & original );
+		Pila_max( const Pila_max & original );
 
 		// -------------------- Destructor -------------------- //
 		/**
@@ -83,7 +78,9 @@ class Pila_max {
 		  * @brief Destructor
 		  *
 		  */
-		~Pila_max();
+		~Pila_max(){
+			maximo = 0;
+		}
 
 		// -------------------- Funciones -------------------- //
 		/**
@@ -92,7 +89,7 @@ class Pila_max {
 		  * @param otra La Pila_max que se va a asignar.
 		  *
 		  */
-		Pila_max & operator= ( const Pila_max<T> & otra );
+		Pila_max & operator= ( const Pila_max & otra );
 
 		/**
 		  *
@@ -113,14 +110,14 @@ class Pila_max {
 		  * @brief Devuelve el elemento del tope de la pila
 		  *
 		  */
-		Pareja<T> & top();
+		Pareja top();
 
 		/**
 		  *
 		  * @brief Devuelve el elemento del tope de la pila constante
 		  *
 		  */
-		const Pareja<T> & top() const;
+		const Pareja & top() const;
 
 		/**
 		  *
@@ -128,7 +125,7 @@ class Pila_max {
 		  * @param nuevo Elemento que se va a añadir
 		  *
 		  */
-		void push( const T & nuevo );
+		void push( const int & nuevo );
 
 		/**
 		  *
@@ -137,8 +134,9 @@ class Pila_max {
 		  */
 		void pop();
 
+		friend ostream & operator<< ( ostream & os, const Pila_max & p );
+
 };
 
-#include <pila_max.cpp>
 
 #endif // __Pila_max_H__
