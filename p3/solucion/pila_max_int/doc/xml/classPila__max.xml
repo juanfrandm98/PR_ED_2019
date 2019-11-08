@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classPila__max" kind="class" language="C++" prot="public">
+    <compoundname>Pila_max</compoundname>
+    <includes refid="pila__max_8h" local="no">pila_max.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPila__max_1a8ccbbd6f29c30c4751b386e9934f9a11" prot="private" static="no" mutable="no">
+        <type><ref refid="classCola" kindref="compound">Cola</ref>&lt; <ref refid="structPareja" kindref="compound">Pareja</ref> &gt;</type>
+        <definition>Cola&lt;Pareja&gt; Pila_max::elementos</definition>
+        <argsstring></argsstring>
+        <name>elementos</name>
+        <briefdescription>
+<para><ref refid="classCola" kindref="compound">Cola</ref> de elementos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="52" column="1" bodyfile="pila_max.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPila__max_1a370a57d543e4a8ed58c09e1021241dae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Pila_max::maximo</definition>
+        <argsstring></argsstring>
+        <name>maximo</name>
+        <briefdescription>
+<para>Elemento máximo actual. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="53" column="1" bodyfile="pila_max.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPila__max_1ae615cbe816ccc0db7c08502ac5199f8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pila_max::Pila_max</definition>
+        <argsstring>()</argsstring>
+        <name>Pila_max</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="63" column="1" bodyfile="pila_max.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1ad3ba74519ba880a8adef96da5c5ddb1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pila_max::Pila_max</definition>
+        <argsstring>(const Pila_max &amp;original)</argsstring>
+        <name>Pila_max</name>
+        <param>
+          <type>const <ref refid="classPila__max" kindref="compound">Pila_max</ref> &amp;</type>
+          <declname>original</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copias. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La <ref refid="classPila__max" kindref="compound">Pila_max</ref> de la que se hará la copia. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pila_max::~Pila_max</definition>
+        <argsstring>()</argsstring>
+        <name>~Pila_max</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="81" column="1" bodyfile="pila_max.h" bodystart="81" bodyend="83"/>
+        <references refid="classPila__max_1a7dc0a7335a89655ef0475e72068a9e18">operator=</references>
+        <references refid="classPila__max_1a6aa534cdac52d5576d3e50807ef61a6a">empty</references>
+        <references refid="classPila__max_1a9284959a34f28fbd177318b38b4195f6">size</references>
+        <references refid="classPila__max_1aab44a77298759a47fcf0aca8ddaf82b2">top</references>
+        <references refid="classPila__max_1a8fde31da92cd96e5def65d93e6623238">push</references>
+        <references refid="classPila__max_1aa149cba100c07ff6cae7de33277e8230">pop</references>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a7dc0a7335a89655ef0475e72068a9e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPila__max" kindref="compound">Pila_max</ref> &amp;</type>
+        <definition>Pila_max&amp; Pila_max::operator=</definition>
+        <argsstring>(const Pila_max &amp;otra)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classPila__max" kindref="compound">Pila_max</ref> &amp;</type>
+          <declname>otra</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>otra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La <ref refid="classPila__max" kindref="compound">Pila_max</ref> que se va a asignar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="92" column="1"/>
+        <referencedby refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" compoundref="pila__max_8h" startline="81" endline="83">~Pila_max</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a6aa534cdac52d5576d3e50807ef61a6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pila_max::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Comprueba si la pila está vacía. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="99" column="1"/>
+        <referencedby refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" compoundref="pila__max_8h" startline="81" endline="83">~Pila_max</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a9284959a34f28fbd177318b38b4195f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pila_max::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Devuelve el tamaño de la pila. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="106" column="1"/>
+        <referencedby refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" compoundref="pila__max_8h" startline="81" endline="83">~Pila_max</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1aab44a77298759a47fcf0aca8ddaf82b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPareja" kindref="compound">Pareja</ref></type>
+        <definition>Pareja Pila_max::top</definition>
+        <argsstring>()</argsstring>
+        <name>top</name>
+        <briefdescription>
+<para>Devuelve el elemento del tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="113" column="1"/>
+        <referencedby refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" compoundref="pila__max_8h" startline="81" endline="83">~Pila_max</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a74b4ec15b010e7a439784ce99e4b5d45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structPareja" kindref="compound">Pareja</ref> &amp;</type>
+        <definition>const Pareja&amp; Pila_max::top</definition>
+        <argsstring>() const</argsstring>
+        <name>top</name>
+        <briefdescription>
+<para>Devuelve el elemento del tope de la pila constante. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1a8fde31da92cd96e5def65d93e6623238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pila_max::push</definition>
+        <argsstring>(const int &amp;nuevo)</argsstring>
+        <name>push</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>nuevo</declname>
+        </param>
+        <briefdescription>
+<para>Añade un elemento encima del tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nuevo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Elemento que se va a añadir </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="128" column="1"/>
+        <referencedby refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" compoundref="pila__max_8h" startline="81" endline="83">~Pila_max</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPila__max_1aa149cba100c07ff6cae7de33277e8230" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pila_max::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+<para>Quita el elemento del tope de la pila. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="135" column="1"/>
+        <referencedby refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" compoundref="pila__max_8h" startline="81" endline="83">~Pila_max</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classPila__max_1a39a3e586a6410983625297fe2e13b9e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Pila_max &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classPila__max" kindref="compound">Pila_max</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pila_max.h" line="137" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classPila__max" kindref="compound">Pila_max</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>v</emphasis> del tipo de dato abstracto <ref refid="classPila__max" kindref="compound">Pila_max</ref> sobre un tipo <computeroutput>int</computeroutput> es una lista de pares de elementos &lt;int,int&gt; con un funcionamiento <emphasis>LIFO</emphasis> (Last In First Out). En una pila, las operaciones de inserción y borrado de elementos tienen lugar en uno de los extremos denominado <emphasis>Tope</emphasis>. Una <ref refid="classPila__max" kindref="compound">Pila_max</ref> de longitud <emphasis>n</emphasis> la denotamos:</para><para><itemizedlist>
+<listitem><para>[&lt;a1,max{a1...an}&gt;,&lt;a2,max{a2...an}&gt;,&lt;a3,max{a3...an}&gt;,...,&lt;an,an&gt;]</para></listitem></itemizedlist>
+</para><para>donde <emphasis>ai</emphasis> es el elemento de la posición i-ésima y <emphasis>max{ai</emphasis>...aj} es el máximo del conjunto de * elementos que van desde <emphasis>ai</emphasis> hasta <emphasis>aj</emphasis>.</para><para>En esta pila, tendremos acceso únicamente al elemento del <emphasis>Tope</emphasis>, es decir, a <emphasis>an</emphasis>. El borrado o consulta de un elemento será sobre <emphasis>an</emphasis>, y la inserción de un nuevo elemento se hará sobre éste, quedando el elemento insertado como <emphasis>Tope</emphasis> de la pila.</para><para>Si <emphasis>n</emphasis> == 0, diremos que la pila está vacía.</para><para>El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la <ref refid="classPila__max" kindref="compound">Pila_max</ref>.</para><para><simplesect kind="author"><para>Juan Francisco Díaz Moreno </para></simplesect>
+<simplesect kind="date"><para>Octubre 2019 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="pila_max.h" line="48" column="1" bodyfile="pila_max.h" bodystart="48" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classPila__max_1a8ccbbd6f29c30c4751b386e9934f9a11" prot="private" virt="non-virtual"><scope>Pila_max</scope><name>elementos</name></member>
+      <member refid="classPila__max_1a6aa534cdac52d5576d3e50807ef61a6a" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>empty</name></member>
+      <member refid="classPila__max_1a370a57d543e4a8ed58c09e1021241dae" prot="private" virt="non-virtual"><scope>Pila_max</scope><name>maximo</name></member>
+      <member refid="classPila__max_1a39a3e586a6410983625297fe2e13b9e8" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classPila__max_1a7dc0a7335a89655ef0475e72068a9e18" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>operator=</name></member>
+      <member refid="classPila__max_1ae615cbe816ccc0db7c08502ac5199f8f" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>Pila_max</name></member>
+      <member refid="classPila__max_1ad3ba74519ba880a8adef96da5c5ddb1a" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>Pila_max</name></member>
+      <member refid="classPila__max_1aa149cba100c07ff6cae7de33277e8230" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>pop</name></member>
+      <member refid="classPila__max_1a8fde31da92cd96e5def65d93e6623238" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>push</name></member>
+      <member refid="classPila__max_1a9284959a34f28fbd177318b38b4195f6" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>size</name></member>
+      <member refid="classPila__max_1aab44a77298759a47fcf0aca8ddaf82b2" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>top</name></member>
+      <member refid="classPila__max_1a74b4ec15b010e7a439784ce99e4b5d45" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>top</name></member>
+      <member refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" prot="public" virt="non-virtual"><scope>Pila_max</scope><name>~Pila_max</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

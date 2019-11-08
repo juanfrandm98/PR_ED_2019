@@ -13,14 +13,16 @@ using namespace std;
 
 /* _________________________________________________________________________ */
 
-Pila_max::Pila_max ( const Pila_max & original ) {
+template <class T>
+Pila_max<T>::Pila_max ( const Pila_max<T> & original ) {
 	elementos = original.elementos;
 	maximo = original.maximo;
 }
 
 /* _________________________________________________________________________ */
 
-Pila_max & Pila_max::operator= ( const Pila_max & otra ) {
+template <class T>
+Pila_max<T> & Pila_max<T>::operator= ( const Pila_max<T> & otra ) {
 	elementos = otra.elementos;
 	maximo = otra.maximo;
 	return *this;
@@ -28,35 +30,40 @@ Pila_max & Pila_max::operator= ( const Pila_max & otra ) {
 
 /* _________________________________________________________________________ */
 
-bool Pila_max::empty () const {
+template <class T>
+bool Pila_max<T>::empty () const {
 	return elementos.vacia();
 }
 
 /* _________________________________________________________________________ */
 
-int Pila_max::size () const {
+template <class T>
+int Pila_max<T>::size () const {
 	return elementos.num_elementos();
 }
 
 /* _________________________________________________________________________ */
 
-Pareja Pila_max::top () {
+template <class T>
+Pareja<T> Pila_max<T>::top () {
 	assert( elementos.num_elementos() > 0 );
 	return elementos.frente();
 }
 
 /* _________________________________________________________________________ */
 
-const Pareja & Pila_max::top () const {
+template <class T>
+const Pareja<T> & Pila_max<T>::top () const {
 	assert( elementos.num_elementos() > 0 );
 	return elementos.frente();
 }
 
 /* _________________________________________________________________________ */
 
-void Pila_max::push ( const int & nuevo ) {
+template <class T>
+void Pila_max<T>::push ( const T & nuevo ) {
 	if( elementos.num_elementos() > 0 ) {
-		Cola<Pareja> aux = elementos;
+		Cola<Pareja<T>> aux = elementos;
 
 		while( !elementos.vacia() )
 			elementos.quitar();
@@ -64,7 +71,7 @@ void Pila_max::push ( const int & nuevo ) {
 		if( nuevo > maximo )
 			maximo = nuevo;
 
-		elementos.poner( Pareja( nuevo, maximo ) );
+		elementos.poner( Pareja<T>( nuevo, maximo ) );
 
 		while( !aux.vacia() ) {
 			elementos.poner( aux.frente() );
@@ -72,7 +79,7 @@ void Pila_max::push ( const int & nuevo ) {
 		}
 
 	} else {
-		Pareja nueva( nuevo, nuevo );
+		Pareja<T> nueva( nuevo, nuevo );
 		elementos.poner( nueva );
 	}
 }
@@ -80,15 +87,17 @@ void Pila_max::push ( const int & nuevo ) {
 
 /* _________________________________________________________________________ */
 
-void Pila_max::pop () {
+template <class T>
+void Pila_max<T>::pop () {
 	if( elementos.num_elementos() > 0 )
 		elementos.quitar();
 }
 
 /* _________________________________________________________________________ */
 
-ostream & operator<< ( ostream & os, const Pila_max & p ) {
-	Cola<Pareja> aux = p.elementos;
+template <class T>
+ostream & operator<< ( ostream & os, const Pila_max<T> & p ) {
+	Cola<Pareja<T>> aux = p.elementos;
 
 	while( !aux.vacia() ){
 		cout << aux.frente();

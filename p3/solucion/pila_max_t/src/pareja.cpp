@@ -3,12 +3,14 @@
 
 using namespace std;
 
-Pareja::Pareja( const int & elem, const int & max ){
+template <class T>
+Pareja<T>::Pareja( const T & elem, const T & max ){
 	elemento = elem;
 	maximo = max;
 }
 
-Pareja & Pareja::operator=( const Pareja & otra ) {
+template <class T>
+Pareja<T> & Pareja<T>::operator=( const Pareja<T> & otra ) {
 	if( this != &otra ) {
 		elemento = otra.elemento;
 		maximo = otra.maximo;
@@ -17,7 +19,8 @@ Pareja & Pareja::operator=( const Pareja & otra ) {
 	return *this;
 }
 
-ostream & operator<< ( ostream & os, const Pareja & p ) {
+template <class T>
+ostream & operator<< ( ostream & os, const Pareja<T> & p ) {
 	os << "Elemento: " << p.elemento << " Máximo: " << p.maximo << endl;
 	return os;
 }

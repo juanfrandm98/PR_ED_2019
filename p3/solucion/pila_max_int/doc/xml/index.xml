@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="structCola_1_1Celda" kind="struct"><name>Cola::Celda</name>
+    <member refid="structCola_1_1Celda_1af84ab659f7018e350c890fc6abb8a338" kind="variable"><name>elemento</name></member>
+    <member refid="structCola_1_1Celda_1a7c389dfd00b09d44632a6d179c79961b" kind="variable"><name>siguiente</name></member>
+    <member refid="structCola_1_1Celda_1a1ae66a8f4dad33d2bc811f0ac13150b9" kind="function"><name>Celda</name></member>
+    <member refid="structCola_1_1Celda_1a5a9b9c79bfac971bdaab7eaa49d68bf9" kind="function"><name>Celda</name></member>
+  </compound>
+  <compound refid="classCola" kind="class"><name>Cola</name>
+    <member refid="classCola_1a0f332c0bfe8206335b94491cf63aaa67" kind="variable"><name>primera</name></member>
+    <member refid="classCola_1af25f40617cc0430aab121898486a6d8d" kind="variable"><name>ultima</name></member>
+    <member refid="classCola_1aba9d5dd07641ceda78b84f1929cde0f4" kind="variable"><name>num_elem</name></member>
+    <member refid="classCola_1aea3a971c7c522618f4dc972e8b4ff153" kind="function"><name>Cola</name></member>
+    <member refid="classCola_1a2249ab5603a92fddb8bd9bb55abeaa24" kind="function"><name>Cola</name></member>
+    <member refid="classCola_1af4d55930921c93c626006ba2e842530b" kind="function"><name>~Cola</name></member>
+    <member refid="classCola_1a60c90eb3c3c49860e9bd1a39c370eba5" kind="function"><name>operator=</name></member>
+    <member refid="classCola_1a2c746a66289cd4f90d4e43f712b72fb6" kind="function"><name>vacia</name></member>
+    <member refid="classCola_1a1df4ad2b50116ef22e77ad3f77b02d29" kind="function"><name>frente</name></member>
+    <member refid="classCola_1abd603daab25efd7131049f98ea09c175" kind="function"><name>frente</name></member>
+    <member refid="classCola_1a4a902e5805ae74f8d80c6f3267fd14c4" kind="function"><name>poner</name></member>
+    <member refid="classCola_1a320766ddc7020424052c99e5c82a105d" kind="function"><name>quitar</name></member>
+    <member refid="classCola_1a26e5b0df5411aa23114d790f0a8c023b" kind="function"><name>num_elementos</name></member>
+  </compound>
+  <compound refid="structPareja" kind="struct"><name>Pareja</name>
+    <member refid="structPareja_1a2b2078c7a1f388c44e9a271339816960" kind="variable"><name>elemento</name></member>
+    <member refid="structPareja_1ac5a1af10db807f8ba0f1fa1ba04b8a2c" kind="variable"><name>maximo</name></member>
+    <member refid="structPareja_1a2337141aae96a34f60651a8499e20ecb" kind="function"><name>Pareja</name></member>
+    <member refid="structPareja_1a5ac526ff73a4232293cc9c04be4fecc7" kind="function"><name>Pareja</name></member>
+    <member refid="structPareja_1aa6938ace7b6953a72c892a892c89abe6" kind="function"><name>operator=</name></member>
+    <member refid="structPareja_1af67c929edd2d143f9523fc10cba0102e" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classPila__max" kind="class"><name>Pila_max</name>
+    <member refid="classPila__max_1a8ccbbd6f29c30c4751b386e9934f9a11" kind="variable"><name>elementos</name></member>
+    <member refid="classPila__max_1a370a57d543e4a8ed58c09e1021241dae" kind="variable"><name>maximo</name></member>
+    <member refid="classPila__max_1ae615cbe816ccc0db7c08502ac5199f8f" kind="function"><name>Pila_max</name></member>
+    <member refid="classPila__max_1ad3ba74519ba880a8adef96da5c5ddb1a" kind="function"><name>Pila_max</name></member>
+    <member refid="classPila__max_1a3fce223a88d6dfb8430ec9a6c331b232" kind="function"><name>~Pila_max</name></member>
+    <member refid="classPila__max_1a7dc0a7335a89655ef0475e72068a9e18" kind="function"><name>operator=</name></member>
+    <member refid="classPila__max_1a6aa534cdac52d5576d3e50807ef61a6a" kind="function"><name>empty</name></member>
+    <member refid="classPila__max_1a9284959a34f28fbd177318b38b4195f6" kind="function"><name>size</name></member>
+    <member refid="classPila__max_1aab44a77298759a47fcf0aca8ddaf82b2" kind="function"><name>top</name></member>
+    <member refid="classPila__max_1a74b4ec15b010e7a439784ce99e4b5d45" kind="function"><name>top</name></member>
+    <member refid="classPila__max_1a8fde31da92cd96e5def65d93e6623238" kind="function"><name>push</name></member>
+    <member refid="classPila__max_1aa149cba100c07ff6cae7de33277e8230" kind="function"><name>pop</name></member>
+    <member refid="classPila__max_1a39a3e586a6410983625297fe2e13b9e8" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="cola_8h" kind="file"><name>cola.h</name>
+  </compound>
+  <compound refid="pareja_8h" kind="file"><name>pareja.h</name>
+  </compound>
+  <compound refid="pila__max_8h" kind="file"><name>pila_max.h</name>
+  </compound>
+</doxygenindex>

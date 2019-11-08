@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classCola" kind="class" language="C++" prot="public">
+    <compoundname>Cola</compoundname>
+    <includes refid="cola_8h" local="no">cola.h</includes>
+    <innerclass refid="structCola_1_1Celda" prot="private">Cola::Celda</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCola_1a0f332c0bfe8206335b94491cf63aaa67" prot="private" static="no" mutable="no">
+        <type>Celda *</type>
+        <definition>Celda* Cola&lt; T &gt;::primera</definition>
+        <argsstring></argsstring>
+        <name>primera</name>
+        <briefdescription>
+<para>Puntero al primer nodo de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="66" column="1" bodyfile="cola.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCola_1af25f40617cc0430aab121898486a6d8d" prot="private" static="no" mutable="no">
+        <type>Celda *</type>
+        <definition>Celda* Cola&lt; T &gt;::ultima</definition>
+        <argsstring></argsstring>
+        <name>ultima</name>
+        <briefdescription>
+<para>Puntero al último nodo de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="67" column="1" bodyfile="cola.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCola_1aba9d5dd07641ceda78b84f1929cde0f4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cola&lt; T &gt;::num_elem</definition>
+        <argsstring></argsstring>
+        <name>num_elem</name>
+        <briefdescription>
+<para>Número de elementos de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="68" column="1" bodyfile="cola.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCola_1aea3a971c7c522618f4dc972e8b4ff153" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cola&lt; T &gt;::Cola</definition>
+        <argsstring>()</argsstring>
+        <name>Cola</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="75" column="1" bodyfile="cola.h" bodystart="75" bodyend="76"/>
+        <referencedby refid="classCola_1aea3a971c7c522618f4dc972e8b4ff153" compoundref="cola_8h" startline="75" endline="76">Cola&lt; Pareja &gt;::Cola</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a2249ab5603a92fddb8bd9bb55abeaa24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cola&lt; T &gt;::Cola</definition>
+        <argsstring>(const Cola&lt; T &gt; &amp;original)</argsstring>
+        <name>Cola</name>
+        <param>
+          <type>const <ref refid="classCola" kindref="compound">Cola</ref>&lt; T &gt; &amp;</type>
+          <declname>original</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copias. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La cola de la que se hará la copia. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1af4d55930921c93c626006ba2e842530b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cola&lt; T &gt;::~Cola</definition>
+        <argsstring>()</argsstring>
+        <name>~Cola</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="86" column="1"/>
+        <referencedby refid="classCola_1aea3a971c7c522618f4dc972e8b4ff153" compoundref="cola_8h" startline="75" endline="76">Cola&lt; Pareja &gt;::Cola</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a60c90eb3c3c49860e9bd1a39c370eba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCola" kindref="compound">Cola</ref> &amp;</type>
+        <definition>Cola&amp; Cola&lt; T &gt;::operator=</definition>
+        <argsstring>(const Cola&lt; T &gt; &amp;otra)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCola" kindref="compound">Cola</ref>&lt; T &gt; &amp;</type>
+          <declname>otra</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>otra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La cola que se va a asignar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="92" column="1"/>
+        <referencedby refid="classCola_1aea3a971c7c522618f4dc972e8b4ff153" compoundref="cola_8h" startline="75" endline="76">Cola&lt; Pareja &gt;::Cola</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a2c746a66289cd4f90d4e43f712b72fb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cola&lt; T &gt;::vacia</definition>
+        <argsstring>() const</argsstring>
+        <name>vacia</name>
+        <briefdescription>
+<para>Comprueba si la cola está vacía. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="96" column="1" bodyfile="cola.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a1df4ad2b50116ef22e77ad3f77b02d29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Cola&lt; T &gt;::frente</definition>
+        <argsstring>()</argsstring>
+        <name>frente</name>
+        <briefdescription>
+<para>Devuelve el elemento del frente de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="102" column="1" bodyfile="cola.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1abd603daab25efd7131049f98ea09c175" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Cola&lt; T &gt;::frente</definition>
+        <argsstring>() const</argsstring>
+        <name>frente</name>
+        <briefdescription>
+<para>Devuelve el elemento del frente de una cola constante. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="109" column="1" bodyfile="cola.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a4a902e5805ae74f8d80c6f3267fd14c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cola&lt; T &gt;::poner</definition>
+        <argsstring>(const T &amp;elem)</argsstring>
+        <name>poner</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+<para>Añade un elemento al final de la cola. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Elemento que se va a añadir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="117" column="1"/>
+        <referencedby refid="classCola_1abd603daab25efd7131049f98ea09c175" compoundref="cola_8h" startline="109" endline="112">Cola&lt; Pareja &gt;::frente</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a320766ddc7020424052c99e5c82a105d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cola&lt; T &gt;::quitar</definition>
+        <argsstring>()</argsstring>
+        <name>quitar</name>
+        <briefdescription>
+<para>Quita el elemento del frente de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="121" column="1"/>
+        <referencedby refid="classCola_1abd603daab25efd7131049f98ea09c175" compoundref="cola_8h" startline="109" endline="112">Cola&lt; Pareja &gt;::frente</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCola_1a26e5b0df5411aa23114d790f0a8c023b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Cola&lt; T &gt;::num_elementos</definition>
+        <argsstring>() const</argsstring>
+        <name>num_elementos</name>
+        <briefdescription>
+<para>Devuelve el número de elementos de la cola. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cola.h" line="125" column="1" bodyfile="cola.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classCola" kindref="compound">Cola</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de dato abstracto <ref refid="classCola" kindref="compound">Cola</ref> sobre un dominio <emphasis>T</emphasis> es una sucesión finita de elementos del mismo con un funcionamiento <emphasis>FIFO</emphasis> (First In, First Out}). En una cola, las operaciowhile( !pila1.empty() ) { p = pila1.top(); pila1.pop(); cout &lt;&lt; &quot;(&quot; &lt;&lt; p.elemento &lt;&lt; &quot;,&quot; &lt;&lt; p.maximo &lt;&lt; &quot;)&quot; &lt;&lt; endl; }nes de inserción tienen lugar en uno de los extremos, denominado <emphasis>final</emphasis> de la cola, mientras que el borrado y consulta se lleva a cabo en el otro extremo, denominado <emphasis>frente</emphasis> de la cola. Una cola de longitud <emphasis>n</emphasis> la denotamos</para><para><itemizedlist>
+<listitem><para>&lt;a1,a2,a3,..,an&lt;</para></listitem></itemizedlist>
+</para><para>En esta cola, tendremos acceso únicamente al elemento del <emphasis>Frente</emphasis>, es decir, a <emphasis>a1</emphasis>. El borrado o consulta de un elemento será sobre <emphasis>a1</emphasis>, mientras que la inserción de un nuevo elemento se hará después de <emphasis>an</emphasis> (final de la cola).</para><para>Si n=0 diremos que la cola está vacía.</para><para>El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la cola.</para><para><simplesect kind="author"><para>J. Fdez-Valdivia </para></simplesect>
+<simplesect kind="date"><para>Octubre 2011 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="cola.h" line="45" column="1" bodyfile="cola.h" bodystart="45" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classCola_1aea3a971c7c522618f4dc972e8b4ff153" prot="public" virt="non-virtual"><scope>Cola</scope><name>Cola</name></member>
+      <member refid="classCola_1a2249ab5603a92fddb8bd9bb55abeaa24" prot="public" virt="non-virtual"><scope>Cola</scope><name>Cola</name></member>
+      <member refid="classCola_1a1df4ad2b50116ef22e77ad3f77b02d29" prot="public" virt="non-virtual"><scope>Cola</scope><name>frente</name></member>
+      <member refid="classCola_1abd603daab25efd7131049f98ea09c175" prot="public" virt="non-virtual"><scope>Cola</scope><name>frente</name></member>
+      <member refid="classCola_1aba9d5dd07641ceda78b84f1929cde0f4" prot="private" virt="non-virtual"><scope>Cola</scope><name>num_elem</name></member>
+      <member refid="classCola_1a26e5b0df5411aa23114d790f0a8c023b" prot="public" virt="non-virtual"><scope>Cola</scope><name>num_elementos</name></member>
+      <member refid="classCola_1a60c90eb3c3c49860e9bd1a39c370eba5" prot="public" virt="non-virtual"><scope>Cola</scope><name>operator=</name></member>
+      <member refid="classCola_1a4a902e5805ae74f8d80c6f3267fd14c4" prot="public" virt="non-virtual"><scope>Cola</scope><name>poner</name></member>
+      <member refid="classCola_1a0f332c0bfe8206335b94491cf63aaa67" prot="private" virt="non-virtual"><scope>Cola</scope><name>primera</name></member>
+      <member refid="classCola_1a320766ddc7020424052c99e5c82a105d" prot="public" virt="non-virtual"><scope>Cola</scope><name>quitar</name></member>
+      <member refid="classCola_1af25f40617cc0430aab121898486a6d8d" prot="private" virt="non-virtual"><scope>Cola</scope><name>ultima</name></member>
+      <member refid="classCola_1a2c746a66289cd4f90d4e43f712b72fb6" prot="public" virt="non-virtual"><scope>Cola</scope><name>vacia</name></member>
+      <member refid="classCola_1af4d55930921c93c626006ba2e842530b" prot="public" virt="non-virtual"><scope>Cola</scope><name>~Cola</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

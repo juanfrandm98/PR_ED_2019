@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structPareja" kind="struct" language="C++" prot="public">
+    <compoundname>Pareja</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPareja_1afa9d6dba83a1c784b35a9b4cb137156e" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Pareja&lt; T &gt;::elemento</definition>
+        <argsstring></argsstring>
+        <name>elemento</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pareja.h" line="10" column="1" bodyfile="pareja.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPareja_1a6257ef13aafd987c1dbb009ae6233672" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Pareja&lt; T &gt;::maximo</definition>
+        <argsstring></argsstring>
+        <name>maximo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pareja.h" line="11" column="1" bodyfile="pareja.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structPareja_1a3f455cc2290002e7166f0de28aae715c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pareja&lt; T &gt;::Pareja</definition>
+        <argsstring>()</argsstring>
+        <name>Pareja</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pareja.h" line="13" column="1" bodyfile="pareja.h" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structPareja_1aa4fc53a53cb6d55f92aa8548efad5347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Pareja&lt; T &gt;::Pareja</definition>
+        <argsstring>(const T &amp;elem, const T &amp;max)</argsstring>
+        <name>Pareja</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>elem</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pareja.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structPareja_1ae1d453413e936f7f401f903e5faef948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structPareja" kindref="compound">Pareja</ref>&lt; T &gt; &amp;</type>
+        <definition>Pareja&lt;T&gt;&amp; Pareja&lt; T &gt;::operator=</definition>
+        <argsstring>(const Pareja&lt; T &gt; &amp;otra)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structPareja" kindref="compound">Pareja</ref>&lt; T &gt; &amp;</type>
+          <declname>otra</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pareja.h" line="18" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structPareja_1a72e8f0ce7bc1ee5dbfbcebb06791cc76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, const Pareja&lt; U &gt; &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structPareja" kindref="compound">Pareja</ref>&lt; U &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pareja.h" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="pareja.h" line="9" column="1" bodyfile="pareja.h" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structPareja_1afa9d6dba83a1c784b35a9b4cb137156e" prot="public" virt="non-virtual"><scope>Pareja</scope><name>elemento</name></member>
+      <member refid="structPareja_1a6257ef13aafd987c1dbb009ae6233672" prot="public" virt="non-virtual"><scope>Pareja</scope><name>maximo</name></member>
+      <member refid="structPareja_1a72e8f0ce7bc1ee5dbfbcebb06791cc76" prot="public" virt="non-virtual"><scope>Pareja</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structPareja_1ae1d453413e936f7f401f903e5faef948" prot="public" virt="non-virtual"><scope>Pareja</scope><name>operator=</name></member>
+      <member refid="structPareja_1a3f455cc2290002e7166f0de28aae715c" prot="public" virt="non-virtual"><scope>Pareja</scope><name>Pareja</name></member>
+      <member refid="structPareja_1aa4fc53a53cb6d55f92aa8548efad5347" prot="public" virt="non-virtual"><scope>Pareja</scope><name>Pareja</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

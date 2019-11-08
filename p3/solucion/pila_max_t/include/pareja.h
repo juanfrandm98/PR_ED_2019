@@ -5,20 +5,22 @@
 
 using namespace std;
 
+template <class T>
 struct Pareja {
-	int elemento;
-	int maximo;
+	T elemento;
+	T maximo;
 
-	Pareja(){
-		elemento = 0;
-		maximo = 0;
+	Pareja() : elemento(0), maximo(0) {
 	}
 
-	Pareja( const int & elem, const int & max );
+	Pareja( const T & elem, const T & max );
 
-	Pareja & operator= ( const Pareja & otra );
+	Pareja<T> & operator= ( const Pareja<T> & otra );
 
-	friend ostream & operator<< ( ostream & os, const Pareja & p );
+	template <class U>
+	friend ostream & operator<< ( ostream & os, const Pareja<U> & p );
 };
+
+#include "../src/pareja.cpp"
 
 #endif

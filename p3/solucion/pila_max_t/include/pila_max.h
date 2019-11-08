@@ -45,12 +45,13 @@
   *
   */
 
+template <class T>
 class Pila_max {
 
 	private:
 
-		Cola<Pareja> elementos; ///< Cola de elementos
-		int maximo;				///< Elemento máximo actual
+		Cola<Pareja<T>> elementos; 		///< Cola de elementos
+		T maximo;				///< Elemento máximo actual
 
 	public:
 
@@ -60,8 +61,7 @@ class Pila_max {
 		  * @brief Constructor por defecto
 		  *
 		  */
-		Pila_max() {
-			maximo = 0;
+		Pila_max() : maximo(0) {;
 		}
 
 		/**
@@ -78,9 +78,7 @@ class Pila_max {
 		  * @brief Destructor
 		  *
 		  */
-		~Pila_max(){
-			maximo = 0;
-		}
+		~Pila_max(){}
 
 		// -------------------- Funciones -------------------- //
 		/**
@@ -89,7 +87,7 @@ class Pila_max {
 		  * @param otra La Pila_max que se va a asignar.
 		  *
 		  */
-		Pila_max & operator= ( const Pila_max & otra );
+		Pila_max<T> & operator= ( const Pila_max & otra );
 
 		/**
 		  *
@@ -110,14 +108,14 @@ class Pila_max {
 		  * @brief Devuelve el elemento del tope de la pila
 		  *
 		  */
-		Pareja top();
+		Pareja<T> top();
 
 		/**
 		  *
 		  * @brief Devuelve el elemento del tope de la pila constante
 		  *
 		  */
-		const Pareja & top() const;
+		const Pareja<T> & top() const;
 
 		/**
 		  *
@@ -125,7 +123,7 @@ class Pila_max {
 		  * @param nuevo Elemento que se va a añadir
 		  *
 		  */
-		void push( const int & nuevo );
+		void push( const T & nuevo );
 
 		/**
 		  *
@@ -134,9 +132,11 @@ class Pila_max {
 		  */
 		void pop();
 
-		friend ostream & operator<< ( ostream & os, const Pila_max & p );
+		template <class U>
+		friend ostream & operator<< ( ostream & os, const Pila_max<U> & p );
 
 };
 
+#include "../src/pila_max.cpp"
 
 #endif // __Pila_max_H__

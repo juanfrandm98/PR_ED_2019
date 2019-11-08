@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ClasePila_Max(Int): Fichero Fuente pila_max.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ClasePila_Max(Int)
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pila_max.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pila__max_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef __Pila_max_H__</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define __Pila_max_H__</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cola_8h.html">cola.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;pareja.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classPila__max.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPila__max.html">Pila_max</a> {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classCola.html">Cola&lt;Pareja&gt;</a> elementos; </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">int</span> maximo;             </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// -------------------- Constructores -------------------- //</span></div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classPila__max.html#ae615cbe816ccc0db7c08502ac5199f8f">   63</a></span>&#160;<span class="comment"></span>        <a class="code" href="classPila__max.html#ae615cbe816ccc0db7c08502ac5199f8f">Pila_max</a>() {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            maximo = 0;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classPila__max.html#ae615cbe816ccc0db7c08502ac5199f8f">Pila_max</a>( <span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max</a> &amp; original );</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// -------------------- Destructor -------------------- //</span></div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classPila__max.html#a3fce223a88d6dfb8430ec9a6c331b232">   81</a></span>&#160;<span class="comment"></span>        <a class="code" href="classPila__max.html#a3fce223a88d6dfb8430ec9a6c331b232">~Pila_max</a>(){</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            maximo = 0;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// -------------------- Funciones -------------------- //</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span>        <a class="code" href="classPila__max.html">Pila_max</a> &amp; <a class="code" href="classPila__max.html#a7dc0a7335a89655ef0475e72068a9e18">operator= </a>( <span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max</a> &amp; otra );</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classPila__max.html#a6aa534cdac52d5576d3e50807ef61a6a">empty</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classPila__max.html#a9284959a34f28fbd177318b38b4195f6">size</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="structPareja.html">Pareja</a> <a class="code" href="classPila__max.html#aab44a77298759a47fcf0aca8ddaf82b2">top</a>();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">const</span> <a class="code" href="structPareja.html">Pareja</a> &amp; <a class="code" href="classPila__max.html#aab44a77298759a47fcf0aca8ddaf82b2">top</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPila__max.html#a8fde31da92cd96e5def65d93e6623238">push</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> &amp; nuevo );</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPila__max.html#aa149cba100c07ff6cae7de33277e8230">pop</a>();</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">friend</span> ostream &amp; operator&lt;&lt; ( ostream &amp; os, <span class="keyword">const</span> <a class="code" href="classPila__max.html">Pila_max</a> &amp; p );</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif // __Pila_max_H__</span></div><div class="ttc" id="classPila__max_html_a7dc0a7335a89655ef0475e72068a9e18"><div class="ttname"><a href="classPila__max.html#a7dc0a7335a89655ef0475e72068a9e18">Pila_max::operator=</a></div><div class="ttdeci">Pila_max &amp; operator=(const Pila_max &amp;otra)</div><div class="ttdoc">Operador de asignación. </div></div>
+<div class="ttc" id="classPila__max_html_aab44a77298759a47fcf0aca8ddaf82b2"><div class="ttname"><a href="classPila__max.html#aab44a77298759a47fcf0aca8ddaf82b2">Pila_max::top</a></div><div class="ttdeci">Pareja top()</div><div class="ttdoc">Devuelve el elemento del tope de la pila. </div></div>
+<div class="ttc" id="classCola_html"><div class="ttname"><a href="classCola.html">Cola&lt; Pareja &gt;</a></div></div>
+<div class="ttc" id="classPila__max_html"><div class="ttname"><a href="classPila__max.html">Pila_max</a></div><div class="ttdoc">T.D.A. Pila_max. </div><div class="ttdef"><b>Definition:</b> pila_max.h:48</div></div>
+<div class="ttc" id="classPila__max_html_a8fde31da92cd96e5def65d93e6623238"><div class="ttname"><a href="classPila__max.html#a8fde31da92cd96e5def65d93e6623238">Pila_max::push</a></div><div class="ttdeci">void push(const int &amp;nuevo)</div><div class="ttdoc">Añade un elemento encima del tope de la pila. </div></div>
+<div class="ttc" id="classPila__max_html_a9284959a34f28fbd177318b38b4195f6"><div class="ttname"><a href="classPila__max.html#a9284959a34f28fbd177318b38b4195f6">Pila_max::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Devuelve el tamaño de la pila. </div></div>
+<div class="ttc" id="classPila__max_html_a3fce223a88d6dfb8430ec9a6c331b232"><div class="ttname"><a href="classPila__max.html#a3fce223a88d6dfb8430ec9a6c331b232">Pila_max::~Pila_max</a></div><div class="ttdeci">~Pila_max()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> pila_max.h:81</div></div>
+<div class="ttc" id="structPareja_html"><div class="ttname"><a href="structPareja.html">Pareja</a></div><div class="ttdef"><b>Definition:</b> pareja.h:8</div></div>
+<div class="ttc" id="classPila__max_html_aa149cba100c07ff6cae7de33277e8230"><div class="ttname"><a href="classPila__max.html#aa149cba100c07ff6cae7de33277e8230">Pila_max::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdoc">Quita el elemento del tope de la pila. </div></div>
+<div class="ttc" id="classPila__max_html_ae615cbe816ccc0db7c08502ac5199f8f"><div class="ttname"><a href="classPila__max.html#ae615cbe816ccc0db7c08502ac5199f8f">Pila_max::Pila_max</a></div><div class="ttdeci">Pila_max()</div><div class="ttdoc">Constructor por defecto. </div><div class="ttdef"><b>Definition:</b> pila_max.h:63</div></div>
+<div class="ttc" id="classPila__max_html_a6aa534cdac52d5576d3e50807ef61a6a"><div class="ttname"><a href="classPila__max.html#a6aa534cdac52d5576d3e50807ef61a6a">Pila_max::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Comprueba si la pila está vacía. </div></div>
+<div class="ttc" id="cola_8h_html"><div class="ttname"><a href="cola_8h.html">cola.h</a></div><div class="ttdoc">Fichero cabecera del TDA Cola. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

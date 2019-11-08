@@ -1,0 +1,136 @@
+.TH "Pila_max" 3 "Viernes, 8 de Noviembre de 2019" "ClasePila_Max(Int)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Pila_max \- T\&.D\&.A\&. \fBPila_max\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <pila_max\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBPila_max\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBPila_max\fP (const \fBPila_max\fP &original)"
+.br
+.RI "Constructor de copias\&. "
+.ti -1c
+.RI "\fB~Pila_max\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBPila_max\fP & \fBoperator=\fP (const \fBPila_max\fP &otra)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "bool \fBempty\fP () const"
+.br
+.RI "Comprueba si la pila está vacía\&. "
+.ti -1c
+.RI "int \fBsize\fP () const"
+.br
+.RI "Devuelve el tamaño de la pila\&. "
+.ti -1c
+.RI "\fBPareja\fP \fBtop\fP ()"
+.br
+.RI "Devuelve el elemento del tope de la pila\&. "
+.ti -1c
+.RI "const \fBPareja\fP & \fBtop\fP () const"
+.br
+.RI "Devuelve el elemento del tope de la pila constante\&. "
+.ti -1c
+.RI "void \fBpush\fP (const int &nuevo)"
+.br
+.RI "Añade un elemento encima del tope de la pila\&. "
+.ti -1c
+.RI "void \fBpop\fP ()"
+.br
+.RI "Quita el elemento del tope de la pila\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, const \fBPila_max\fP &p)"
+.br
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBPila_max\fP\&. 
+
+Una instancia \fIv\fP del tipo de dato abstracto \fBPila_max\fP sobre un tipo \fCint\fP es una lista de pares de elementos <int,int> con un funcionamiento \fILIFO\fP (Last In First Out)\&. En una pila, las operaciones de inserción y borrado de elementos tienen lugar en uno de los extremos denominado \fITope\fP\&. Una \fBPila_max\fP de longitud \fIn\fP la denotamos:
+.PP
+.IP "\(bu" 2
+[<a1,max{a1\&.\&.\&.an}>,<a2,max{a2\&.\&.\&.an}>,<a3,max{a3\&.\&.\&.an}>,\&.\&.\&.,<an,an>]
+.PP
+.PP
+donde \fIai\fP es el elemento de la posición i-ésima y \fImax{ai\fP\&.\&.\&.aj} es el máximo del conjunto de * elementos que van desde \fIai\fP hasta \fIaj\fP\&.
+.PP
+En esta pila, tendremos acceso únicamente al elemento del \fITope\fP, es decir, a \fIan\fP\&. El borrado o consulta de un elemento será sobre \fIan\fP, y la inserción de un nuevo elemento se hará sobre éste, quedando el elemento insertado como \fITope\fP de la pila\&.
+.PP
+Si \fIn\fP == 0, diremos que la pila está vacía\&.
+.PP
+El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la \fBPila_max\fP\&.
+.PP
+\fBAutor:\fP
+.RS 4
+Juan Francisco Díaz Moreno 
+.RE
+.PP
+\fBFecha:\fP
+.RS 4
+Octubre 2019 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Pila_max::Pila_max (const \fBPila_max\fP & original)"
+
+.PP
+Constructor de copias\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIoriginal\fP La \fBPila_max\fP de la que se hará la copia\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "\fBPila_max\fP& Pila_max::operator= (const \fBPila_max\fP & otra)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIotra\fP La \fBPila_max\fP que se va a asignar\&. 
+.RE
+.PP
+
+.PP
+Referenciado por ~Pila_max()\&.
+.SS "void Pila_max::push (const int & nuevo)"
+
+.PP
+Añade un elemento encima del tope de la pila\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInuevo\fP Elemento que se va a añadir 
+.RE
+.PP
+
+.PP
+Referenciado por ~Pila_max()\&.
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para ClasePila_Max(Int) del código fuente\&.

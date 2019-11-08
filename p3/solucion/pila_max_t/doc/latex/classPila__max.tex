@@ -1,0 +1,143 @@
+\section{Referencia de la plantilla de la Clase Pila\+\_\+max$<$ T $>$}
+\label{classPila__max}\index{Pila\+\_\+max$<$ T $>$@{Pila\+\_\+max$<$ T $>$}}
+
+
+T.\+D.\+A. \doxyref{Pila\+\_\+max}{p.}{classPila__max}.  
+
+
+
+
+{\ttfamily \#include $<$pila\+\_\+max.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classPila__max_a2a7e17c656ae00679fd66b2102508f4c}} 
+\textbf{ Pila\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\textbf{ Pila\+\_\+max} (const \textbf{ Pila\+\_\+max} \&original)
+\begin{DoxyCompactList}\small\item\em Constructor de copias. \end{DoxyCompactList}\item 
+\mbox{\label{classPila__max_a860c4516a5d558e4d493b4f051b23980}} 
+\textbf{ $\sim$\+Pila\+\_\+max} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\textbf{ Pila\+\_\+max}$<$ T $>$ \& \textbf{ operator=} (const \textbf{ Pila\+\_\+max} \&otra)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\label{classPila__max_af246b3e681de3558be251fe1dff2e5cb}} 
+bool \textbf{ empty} () const
+\begin{DoxyCompactList}\small\item\em Comprueba si la pila está vacía. \end{DoxyCompactList}\item 
+\mbox{\label{classPila__max_a33bddf30f1ec18e2fb0206787aebba67}} 
+int \textbf{ size} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño de la pila. \end{DoxyCompactList}\item 
+\mbox{\label{classPila__max_a104f7c2eb6f29e5403cadfd5dc97d47e}} 
+\textbf{ Pareja}$<$ T $>$ \textbf{ top} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el elemento del tope de la pila. \end{DoxyCompactList}\item 
+\mbox{\label{classPila__max_ace23b0ff31c995f7d22b3ace2bd7ec1b}} 
+const \textbf{ Pareja}$<$ T $>$ \& \textbf{ top} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el elemento del tope de la pila constante. \end{DoxyCompactList}\item 
+void \textbf{ push} (const T \&nuevo)
+\begin{DoxyCompactList}\small\item\em Añade un elemento encima del tope de la pila. \end{DoxyCompactList}\item 
+\mbox{\label{classPila__max_a57a94fd9fda9114f8cf7d616fc18ab17}} 
+void \textbf{ pop} ()
+\begin{DoxyCompactList}\small\item\em Quita el elemento del tope de la pila. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classPila__max_a65c021412c3a1cebeb919f0a3f515240}} 
+{\footnotesize template$<$class U $>$ }\\ostream \& {\bfseries operator$<$$<$} (ostream \&os, const \textbf{ Pila\+\_\+max}$<$ U $>$ \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Pila\+\_\+max$<$ T $>$}
+
+T.\+D.\+A. \doxyref{Pila\+\_\+max}{p.}{classPila__max}. 
+
+Una instancia {\itshape v} del tipo de dato abstracto \doxyref{Pila\+\_\+max}{p.}{classPila__max} sobre un tipo {\ttfamily T} es una lista de pares de elementos $<$T,T$>$ con un funcionamiento {\itshape L\+I\+FO} (Last In First Out). En una pila, las operaciones de inserción y borrado de elementos tienen lugar en uno de los extremos denominado {\itshape Tope}. Una \doxyref{Pila\+\_\+max}{p.}{classPila__max} de longitud {\itshape n} la denotamos\+:
+
+
+\begin{DoxyItemize}
+\item [$<$a1,max\{a1...an\}$>$,$<$a2,max\{a2...an\}$>$,$<$a3,max\{a3...an\}$>$,...,$<$an,an$>$]
+\end{DoxyItemize}
+
+donde {\itshape ai} es el elemento de la posición i-\/ésima y {\itshape max\{ai}...aj\} es el máximo del conjunto de $\ast$ elementos que van desde {\itshape ai} hasta {\itshape aj}.
+
+En esta pila, tendremos acceso únicamente al elemento del {\itshape Tope}, es decir, a {\itshape an}. El borrado o consulta de un elemento será sobre {\itshape an}, y la inserción de un nuevo elemento se hará sobre éste, quedando el elemento insertado como {\itshape Tope} de la pila.
+
+Si {\itshape n} == 0, diremos que la pila está vacía.
+
+El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la \doxyref{Pila\+\_\+max}{p.}{classPila__max}.
+
+\begin{DoxyAuthor}{Autor}
+Juan Francisco Díaz Moreno 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Octubre 2019 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classPila__max_acf2044530009246f6fce270eac113b7e}} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!Pila\+\_\+max@{Pila\+\_\+max}}
+\index{Pila\+\_\+max@{Pila\+\_\+max}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{Pila\+\_\+max()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\textbf{ Pila\+\_\+max}$<$ T $>$\+::\textbf{ Pila\+\_\+max} (\begin{DoxyParamCaption}\item[{const \textbf{ Pila\+\_\+max}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})}
+
+
+
+Constructor de copias. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em original} & La \doxyref{Pila\+\_\+max}{p.}{classPila__max} de la que se hará la copia. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classPila__max_a7763cbb3226873f556605aea90d87b39}} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!operator=@{operator=}}
+\index{operator=@{operator=}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\textbf{ Pila\+\_\+max}$<$T$>$\& \textbf{ Pila\+\_\+max}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Pila\+\_\+max}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otra} & La \doxyref{Pila\+\_\+max}{p.}{classPila__max} que se va a asignar. \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Pila\+\_\+max$<$ T $>$\+::$\sim$\+Pila\+\_\+max().
+
+\mbox{\label{classPila__max_a5da235d07e21eb93f9da64c29a6eb718}} 
+\index{Pila\+\_\+max@{Pila\+\_\+max}!push@{push}}
+\index{push@{push}!Pila\+\_\+max@{Pila\+\_\+max}}
+\subsubsection{push()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \textbf{ Pila\+\_\+max}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{nuevo }\end{DoxyParamCaption})}
+
+
+
+Añade un elemento encima del tope de la pila. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo} & Elemento que se va a añadir \\
+\hline
+\end{DoxyParams}
+
+
+Referenciado por Pila\+\_\+max$<$ T $>$\+::$\sim$\+Pila\+\_\+max().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ pila\+\_\+max.\+h}\end{DoxyCompactItemize}
