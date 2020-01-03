@@ -32,9 +32,21 @@ JuegoLetras::JuegoLetras( const JuegoLetras & J ) {
 	
 }
 
+JuegoLetras & JuegoLetras::operator= ( const JuegoLetras & J ) {
+
+	if( this != &J ) {
+		diccionario = J.diccionario;
+		bolsaLetras = J.bolsaLetras;
+		conjuntoLetras = J.conjuntoLetras;
+	}
+
+	return *this;
+
+}
+
 void JuegoLetras::play() {
 
-	cout << "----- COMENZANDO PARTIDA DE LETRAS -----" << endl << endl;
+	cout << endl << "--------- COMENZANDO PARTIDA DE LETRAS ----------" << endl << endl;
 
 	int num_letras;
 	cout << "Selecciona el número de letras de tu mano: ";
@@ -91,6 +103,8 @@ void JuegoLetras::play() {
 		cout << "¡¡¡GANA LA IA!!!" << endl;
 
 	}
+
+	cout << endl << "-------------------------------------------------" << endl << endl;
 
 }
 

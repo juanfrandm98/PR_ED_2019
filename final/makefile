@@ -5,7 +5,8 @@ BIN = bin
 CXX = g++
 CPPFLAGS = #-Wall -g
 
-all: $(BIN)/usoletra $(BIN)/usoconjuntoletras $(BIN)/usodiccionario $(BIN)/usojuegoletras
+# all: $(BIN)/usoletra $(BIN)/usoconjuntoletras $(BIN)/usodiccionario $(BIN)/usojuegoletras
+all: $(BIN)/practicafinal 
 
 # LETRA
 $(BIN)/usoletra : $(OBJ)/usoletra.o $(OBJ)/letra.o
@@ -50,6 +51,20 @@ $(OBJ)/juegoletras.o : $(SRC)/juegoletras.cpp $(INC)/juegoletras.h $(INC)/diccio
 # BOLSALETRAS
 $(OBJ)/bolsaletras.o : $(SRC)/bolsaletras.cpp $(INC)/bolsaletras.h $(INC)/diccionario.h
 	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/bolsaletras.o $(SRC)/bolsaletras.cpp
+
+# JUEGO
+$(BIN)/practicafinal : $(OBJ)/practicafinal.o $(OBJ)/juego.o $(OBJ)/juegoletras.o $(OBJ)/diccionario.o $(OBJ)/bolsaletras.o $(OBJ)/conjuntoletras.o $(OBJ)/letra.o $(OBJ)/juegocifras.o
+	$(CXX) -o $(BIN)/practicafinal $(OBJ)/practicafinal.o $(OBJ)/juego.o $(OBJ)/juegoletras.o $(OBJ)/diccionario.o $(OBJ)/bolsaletras.o $(OBJ)/conjuntoletras.o $(OBJ)/letra.o $(OBJ)/juegocifras.o
+
+$(OBJ)/practicafinal.o : $(SRC)/practicafinal.cpp $(OBJ)/juego.o $(OBJ)/diccionario.o
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/practicafinal.o $(SRC)/practicafinal.cpp
+
+$(OBJ)/juego.o : $(SRC)/juego.cpp $(INC)/juego.h $(INC)/juegoletras.h $(INC)/juegocifras.h $(INC)/diccionario.h
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/juego.o $(SRC)/juego.cpp
+
+# JUEGOCIFRAS
+$(OBJ)/juegocifras.o : $(SRC)/juegocifras.cpp $(INC)/juegocifras.h
+	$(CXX) $(CPPFLAGS) -I./$(INC) -c -o $(OBJ)/juegocifras.o $(SRC)/juegocifras.cpp
 
 clean :
 	echo "Limpiando..."

@@ -21,8 +21,8 @@ using namespace std;
   *
   * @brief T.D.A. JuegoLetras
   *
-  * Una instancia @e c del tipo de datos abstracto @c Juego es un objeto con
-  * 3 campos:
+  * Una instancia @e c del tipo de datos abstracto @c JuegoLetras es un objeto
+  * con 3 campos:
   *
   *		- Un diccionario que incluye las palabras que se podrán adivinar en
   *		  la partida de Letras.
@@ -128,6 +128,15 @@ public:
 	  *
 	  */
 	JuegoLetras( const JuegoLetras & J );
+
+	/**
+	  *
+	  * @brief Operador de asignación.
+	  * @param D JuegoLetras a asignar.
+	  * @return JuegoLetras asignado.
+	  *
+	  */
+	JuegoLetras & operator= ( const JuegoLetras & J );
 
 	/**
 	  *
