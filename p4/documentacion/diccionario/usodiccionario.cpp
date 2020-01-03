@@ -34,22 +34,26 @@ ostream & operator<<(ostream & os, const Diccionario<string,string> & D){
 istream & operator >>(istream & is,Diccionario<string,string> &D){
 	  int np;
 	  is>>np;
+	  cout << "Num palabras: " << np << endl;
 	  is.ignore();//quitamos \n
 	  Diccionario<string,string> Daux;
 	  for (int i=0;i<np; i++){
 		    string clave;
 
 		    getline(is,clave); 
+
+		    cout << "Palabra: " << clave << endl;
 		    
 		    int ns;
 		    is>>ns; 
+		    cout << "Num significados: " << ns << endl;
 		    is.ignore();//quitamos \n
 		    list<string>laux;
 		    for (int j=0;j<ns; j++){
 			      string s;
 			      getline(is,s);
 			      
-			      // cout<<"Significado leido "<<s<<endl;
+			      cout<<"Significado leido "<<s<<endl;
 			      laux.insert(laux.end(),s);
 		    }
 		    Daux.Insertar(clave,laux);		      
@@ -78,6 +82,8 @@ int main(){
 
 cin>>D;
 cout<<D;
+
+cout << "COUT terminado" << endl;
 
 string a;
 

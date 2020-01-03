@@ -79,6 +79,14 @@ private:
 		this->datos.erase( datos.begin(), datos.end() );
 	}
 
+	// Añade una nueva palabra
+	void Nueva ( const T & clave, const list<U> & info ) {
+		data<T,U> nueva;
+		nueva.clave = clave;
+		nueva.info = info;
+		datos.insert( nueva );
+	}
+
 public:
 
 	// -------------------- Constructores -------------------- //
@@ -109,6 +117,15 @@ public:
 
 	/**
 	  *
+	  * @brief Operador de asignación.
+	  * @param D Diccionario a asignar.
+	  * @return Diccionario asignado.
+	  *
+	  */
+	Diccionario<T,U> & operator= ( const Diccionario<T,U> & D );
+
+	/**
+	  *
 	  * @brief Busca una clave en el Diccionario.
 	  * @param clave Clave a buscar.
 	  * @param it_out Si la clave existe, dejará este iterador apuntando al sitio
@@ -116,7 +133,7 @@ public:
 	  * @return Devuelve true si encuentra la clave y false si no.
 	  *
 	  */
-	bool esta_clave( const T & clave, iterator it_out );
+	bool esta_clave( const T & clave, typename list<data<T,U>>::iterator & it_out );
 
 	/**
 	  *
@@ -150,18 +167,17 @@ public:
 	  * @brief Devuelve el tamaño del diccionario.
 	  *
 	  */
-	int size() const {
-		return datos.size();
-	}
+	int size() const;
 
 	/**
 	  *
 	  * @brief Clase para iterar sobre el Diccionario
 	  *
 	  */
+	template <class V, class W>
 	class iterator {
 	private:
-		list< data<T,U> >::iterator it;
+		typename list< data<V,W> >::iterator it;
 	
 	public:
 
@@ -193,15 +209,44 @@ public:
 	  * @brief Inicializa un iterador al comienzo del Diccionario
 	  *
 	  */
-	iterator begin();
+	typename list<data<T,U> >::iterator begin();
 
 	/**
 	  *
 	  * @brief Inicializa un iterador al final del Diccionario
 	  *
 	  */
-	iterator end();
+	typename list<data<T,U> >::iterator end();
+
+	/**
+	  *
+	  * @brief Salida de un Diccionario a ostream.
+	  * @param os Stream de salida.
+	  * @param D Diccionario a escribir.
+	  * @post Se obtiene el Diccionario con el formato correspondiente.
+	  *
+	  */
+	template <class A, class B>
+	friend ostream & operator<< ( ostream & os, Diccionario<A,B> & D );
+
+	/**
+	  *
+	  * @brief Entrada de un Diccionario desde istream.
+	  * @param is Stream de entrada.
+	  * @param D Diccionario en el que se escribe.
+	  * @retval El Diccionario leído.
+	  * @pre La entrada tiene el siguiente formato:
+	  		- Número de claves
+	  		- Clave-iésima retorno de carro
+	  		- Número de informaciones asociadas a la siguiente línea
+	  		- Información asociada (una por línea)
+	  *
+	  */
+	template <class A, class B>
+	friend istream & operator>> ( istream & is, Diccionario<A,B> & D );
 
 };
 
-#endif;
+#include "../src/diccionario.cpp"
+
+#endif
