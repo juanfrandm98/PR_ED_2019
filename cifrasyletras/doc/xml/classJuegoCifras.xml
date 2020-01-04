@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classJuegoCifras" kind="class" language="C++" prot="public">
+    <compoundname>JuegoCifras</compoundname>
+    <includes refid="juegocifras_8h" local="no">juegocifras.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJuegoCifras_1adac40f3ba260f1b315411e3826d8a943" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; JuegoCifras::allNumbers</definition>
+        <argsstring></argsstring>
+        <name>allNumbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="36" column="1" bodyfile="juegocifras.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJuegoCifras_1ad74483512f80be61798867506c52900b" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; JuegoCifras::nums</definition>
+        <argsstring></argsstring>
+        <name>nums</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="37" column="1" bodyfile="juegocifras.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJuegoCifras_1a67987acdf119dfcf699b14b57168fca5" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; JuegoCifras::operators</definition>
+        <argsstring></argsstring>
+        <name>operators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="38" column="1" bodyfile="juegocifras.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJuegoCifras_1aafe44f2f99a12d0f3b593745b831c9d0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int JuegoCifras::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="39" column="1" bodyfile="juegocifras.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classJuegoCifras_1a7c26a451dd12e02be8a18337d8b26a82" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int JuegoCifras::determine</definition>
+        <argsstring>(int size)</argsstring>
+        <name>determine</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="42" column="1" bodyfile="juegocifras.h" bodystart="42" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoCifras_1a9a6b615a84205e72d5c05bb61ac5ea06" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoCifras::printCorrect</definition>
+        <argsstring>(int a)</argsstring>
+        <name>printCorrect</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="57" column="1" bodyfile="juegocifras.h" bodystart="57" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJuegoCifras_1a308de82d664964c7cb41d86f94f23856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JuegoCifras::JuegoCifras</definition>
+        <argsstring>()</argsstring>
+        <name>JuegoCifras</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoCifras_1a2708cbdc61b680335eb8987bad4ca117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoCifras::inicializarTurno</definition>
+        <argsstring>()</argsstring>
+        <name>inicializarTurno</name>
+        <briefdescription>
+<para>Función que inicializa una partida, obteniendo los 6 números y el objetivo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoCifras_1a0170464447e77073a7dd122f53e20a5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoCifras::pausaTerminar</definition>
+        <argsstring>()</argsstring>
+        <name>pausaTerminar</name>
+        <briefdescription>
+<para>Función que imita una pausa para que el jugador piense. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoCifras_1a81398cc3ffcd0f154b943fad2c0e08a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoCifras::play</definition>
+        <argsstring>()</argsstring>
+        <name>play</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegocifras.h" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classJuegoCifras" kindref="compound">JuegoCifras</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Permite jugar partidas de Cifras.</para><para>Juan Francisco Díaz Moreno, mim42 (<ulink url="https://github.com/mim42/countdown-solver">https://github.com/mim42/countdown-solver</ulink>) <simplesect kind="date"><para>Enero 2020 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="juegocifras.h" line="32" column="1" bodyfile="juegocifras.h" bodystart="32" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classJuegoCifras_1adac40f3ba260f1b315411e3826d8a943" prot="private" virt="non-virtual"><scope>JuegoCifras</scope><name>allNumbers</name></member>
+      <member refid="classJuegoCifras_1a7c26a451dd12e02be8a18337d8b26a82" prot="private" virt="non-virtual"><scope>JuegoCifras</scope><name>determine</name></member>
+      <member refid="classJuegoCifras_1a2708cbdc61b680335eb8987bad4ca117" prot="public" virt="non-virtual"><scope>JuegoCifras</scope><name>inicializarTurno</name></member>
+      <member refid="classJuegoCifras_1a308de82d664964c7cb41d86f94f23856" prot="public" virt="non-virtual"><scope>JuegoCifras</scope><name>JuegoCifras</name></member>
+      <member refid="classJuegoCifras_1ad74483512f80be61798867506c52900b" prot="private" virt="non-virtual"><scope>JuegoCifras</scope><name>nums</name></member>
+      <member refid="classJuegoCifras_1a67987acdf119dfcf699b14b57168fca5" prot="private" virt="non-virtual"><scope>JuegoCifras</scope><name>operators</name></member>
+      <member refid="classJuegoCifras_1a0170464447e77073a7dd122f53e20a5f" prot="public" virt="non-virtual"><scope>JuegoCifras</scope><name>pausaTerminar</name></member>
+      <member refid="classJuegoCifras_1a81398cc3ffcd0f154b943fad2c0e08a1" prot="public" virt="non-virtual"><scope>JuegoCifras</scope><name>play</name></member>
+      <member refid="classJuegoCifras_1a9a6b615a84205e72d5c05bb61ac5ea06" prot="private" virt="non-virtual"><scope>JuegoCifras</scope><name>printCorrect</name></member>
+      <member refid="classJuegoCifras_1aafe44f2f99a12d0f3b593745b831c9d0" prot="private" virt="non-virtual"><scope>JuegoCifras</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

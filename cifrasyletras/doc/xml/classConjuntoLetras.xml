@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classConjuntoLetras" kind="class" language="C++" prot="public">
+    <compoundname>ConjuntoLetras</compoundname>
+    <includes refid="conjuntoletras_8h" local="no">conjuntoletras.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classConjuntoLetras_1a5f715c4846c57d131ccb93af455d2e91" prot="private" static="no" mutable="no">
+        <type>set&lt; <ref refid="classLetra" kindref="compound">Letra</ref> &gt;</type>
+        <definition>set&lt;Letra&gt; ConjuntoLetras::letras</definition>
+        <argsstring></argsstring>
+        <name>letras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="32" column="1" bodyfile="conjuntoletras.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classConjuntoLetras_1af3321229476bf7a6ea8ce8158671188f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConjuntoLetras::copiar</definition>
+        <argsstring>(const ConjuntoLetras &amp;C)</argsstring>
+        <name>copiar</name>
+        <param>
+          <type>const <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="35" column="1" bodyfile="conjuntoletras.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a00f1fe856f24eee125ceb8a5a4d8b841" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConjuntoLetras::borrar</definition>
+        <argsstring>()</argsstring>
+        <name>borrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="41" column="1" bodyfile="conjuntoletras.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classConjuntoLetras_1a6a0499ee4013bcff4f9fca106bdf739f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConjuntoLetras::ConjuntoLetras</definition>
+        <argsstring>()</argsstring>
+        <name>ConjuntoLetras</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="52" column="1" bodyfile="conjuntoletras.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a4641813a60306fd2c035d5ed89b63051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConjuntoLetras::ConjuntoLetras</definition>
+        <argsstring>(const ConjuntoLetras &amp;C)</argsstring>
+        <name>ConjuntoLetras</name>
+        <param>
+          <type>const <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Conjunto de letras que se va a copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1aade19a878cc0ae5f9eb94b024a5970a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ConjuntoLetras::ConjuntoLetras</definition>
+        <argsstring>(const set&lt; Letra &gt; &amp;conjunto)</argsstring>
+        <name>ConjuntoLetras</name>
+        <param>
+          <type>const set&lt; <ref refid="classLetra" kindref="compound">Letra</ref> &gt; &amp;</type>
+          <declname>conjunto</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parámetros. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conjunto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set de letras. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a545cc5009ef7a03632aae56acb922661" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ConjuntoLetras::~ConjuntoLetras</definition>
+        <argsstring>()</argsstring>
+        <name>~ConjuntoLetras</name>
+        <briefdescription>
+<para>Destructor de la clase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="75" column="1" bodyfile="conjuntoletras.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a902e31a34ed99477ef9eb5d927375730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConjuntoLetras::setLetras</definition>
+        <argsstring>(const set&lt; Letra &gt; &amp;conjunto)</argsstring>
+        <name>setLetras</name>
+        <param>
+          <type>const set&lt; <ref refid="classLetra" kindref="compound">Letra</ref> &gt; &amp;</type>
+          <declname>conjunto</declname>
+        </param>
+        <briefdescription>
+<para>Setter de las letras. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conjunto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set de letras. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1adacfb0afaa6875e898fb74cfb82dde6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>set&lt; <ref refid="classLetra" kindref="compound">Letra</ref> &gt;</type>
+        <definition>set&lt;Letra&gt; ConjuntoLetras::getLetras</definition>
+        <argsstring>()</argsstring>
+        <name>getLetras</name>
+        <briefdescription>
+<para>Getter de las letras. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1adb0960e9e7a46a30572a84bb8f154b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ConjuntoLetras::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Devuelve el tamaño del conjunto de letras. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tamaño del conjunto de letras. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a5d16fab60acd978706b48c96b76c414e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char ConjuntoLetras::mejorLetra</definition>
+        <argsstring>()</argsstring>
+        <name>mejorLetra</name>
+        <briefdescription>
+<para>Devuelve la letra con mejor puntuación. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classLetra" kindref="compound">Letra</ref> con mayor puntuación. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a36ad9d45332141528c9496973b4a32c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ConjuntoLetras::puntosLetra</definition>
+        <argsstring>(const char &amp;letra)</argsstring>
+        <name>puntosLetra</name>
+        <param>
+          <type>const char &amp;</type>
+          <declname>letra</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve la puntuación de una letra. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>letra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classLetra" kindref="compound">Letra</ref> cuya puntuación se quiere conocer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Puntuación de la letra dada o -1 si no se encuentra. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1a56a8674158da0fd41f807ece4b010d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConjuntoLetras::insertarLetra</definition>
+        <argsstring>(const Letra &amp;L)</argsstring>
+        <name>insertarLetra</name>
+        <param>
+          <type>const <ref refid="classLetra" kindref="compound">Letra</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Inserta una nueva letra en el conjunto de letras. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classLetra" kindref="compound">Letra</ref> a insertar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classConjuntoLetras_1ab5ba34427b145dfd19b5c798832aaf26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> &amp;</type>
+        <definition>ConjuntoLetras&amp; ConjuntoLetras::operator=</definition>
+        <argsstring>(const ConjuntoLetras &amp;C)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> a asignar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> asignado. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classConjuntoLetras_1a2bf98947859e69ca0855fe70eb0343ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;os, ConjuntoLetras &amp;C)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Salida de un <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> a ostream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream de salida. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> a escribir. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="post"><para>Se obtiene el <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> con el formato adecuado. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classConjuntoLetras_1af5ad9e43f9a723151641010c62c9e8c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend istream &amp;</type>
+        <definition>istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(istream &amp;is, ConjuntoLetras &amp;C)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <briefdescription>
+<para>Entrada de un <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> desde istream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Stream de entrada. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> en el que se escribe. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>El</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref> leído. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>La entrada tiene el siguiente formato: Número de letras <ref refid="classLetra" kindref="compound">Letra</ref> Puntos Repeticiones <ref refid="classLetra" kindref="compound">Letra</ref> Puntos Repeticiones ... </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conjuntoletras.h" line="157" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de datos abstracto <computeroutput><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref></computeroutput> es un objeto con un conjunto de Letras que permite trabajar con ellas.</para><para>Juan Francisco Díaz Moreno  Diciembre 2019 </para>    </detaileddescription>
+    <location file="conjuntoletras.h" line="28" column="1" bodyfile="conjuntoletras.h" bodystart="28" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classConjuntoLetras_1a00f1fe856f24eee125ceb8a5a4d8b841" prot="private" virt="non-virtual"><scope>ConjuntoLetras</scope><name>borrar</name></member>
+      <member refid="classConjuntoLetras_1a6a0499ee4013bcff4f9fca106bdf739f" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>ConjuntoLetras</name></member>
+      <member refid="classConjuntoLetras_1a4641813a60306fd2c035d5ed89b63051" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>ConjuntoLetras</name></member>
+      <member refid="classConjuntoLetras_1aade19a878cc0ae5f9eb94b024a5970a3" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>ConjuntoLetras</name></member>
+      <member refid="classConjuntoLetras_1af3321229476bf7a6ea8ce8158671188f" prot="private" virt="non-virtual"><scope>ConjuntoLetras</scope><name>copiar</name></member>
+      <member refid="classConjuntoLetras_1adacfb0afaa6875e898fb74cfb82dde6f" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>getLetras</name></member>
+      <member refid="classConjuntoLetras_1a56a8674158da0fd41f807ece4b010d56" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>insertarLetra</name></member>
+      <member refid="classConjuntoLetras_1a5f715c4846c57d131ccb93af455d2e91" prot="private" virt="non-virtual"><scope>ConjuntoLetras</scope><name>letras</name></member>
+      <member refid="classConjuntoLetras_1a5d16fab60acd978706b48c96b76c414e" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>mejorLetra</name></member>
+      <member refid="classConjuntoLetras_1a2bf98947859e69ca0855fe70eb0343ff" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classConjuntoLetras_1ab5ba34427b145dfd19b5c798832aaf26" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>operator=</name></member>
+      <member refid="classConjuntoLetras_1af5ad9e43f9a723151641010c62c9e8c0" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>operator&gt;&gt;</name></member>
+      <member refid="classConjuntoLetras_1a36ad9d45332141528c9496973b4a32c6" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>puntosLetra</name></member>
+      <member refid="classConjuntoLetras_1a902e31a34ed99477ef9eb5d927375730" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>setLetras</name></member>
+      <member refid="classConjuntoLetras_1adb0960e9e7a46a30572a84bb8f154b13" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>size</name></member>
+      <member refid="classConjuntoLetras_1a545cc5009ef7a03632aae56acb922661" prot="public" virt="non-virtual"><scope>ConjuntoLetras</scope><name>~ConjuntoLetras</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

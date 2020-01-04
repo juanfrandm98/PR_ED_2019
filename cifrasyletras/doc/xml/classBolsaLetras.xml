@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classBolsaLetras" kind="class" language="C++" prot="public">
+    <compoundname>BolsaLetras</compoundname>
+    <includes refid="bolsaletras_8h" local="no">bolsaletras.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBolsaLetras_1a02f39e69f4feff0f2a0b5a06e1fd9cab" prot="private" static="no" mutable="no">
+        <type>vector&lt; char &gt;</type>
+        <definition>vector&lt;char&gt; BolsaLetras::bolsa</definition>
+        <argsstring></argsstring>
+        <name>bolsa</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="32" column="1" bodyfile="bolsaletras.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBolsaLetras_1aa36cdcb8151ad265921a9d3722227630" prot="private" static="no" mutable="no">
+        <type>vector&lt; char &gt;</type>
+        <definition>vector&lt;char&gt; BolsaLetras::letras_en_juego</definition>
+        <argsstring></argsstring>
+        <name>letras_en_juego</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="33" column="1" bodyfile="bolsaletras.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBolsaLetras_1a37685bb7aef98f579a687a0f60687956" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::copiarBolsa</definition>
+        <argsstring>(const vector&lt; char &gt; &amp;b)</argsstring>
+        <name>copiarBolsa</name>
+        <param>
+          <type>const vector&lt; char &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="36" column="1" bodyfile="bolsaletras.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1ac6ac71e74e9d21e2d868b553c9e8ae78" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::copiarLetras</definition>
+        <argsstring>(const vector&lt; char &gt; &amp;l)</argsstring>
+        <name>copiarLetras</name>
+        <param>
+          <type>const vector&lt; char &gt; &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="43" column="1" bodyfile="bolsaletras.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1a6885bc889e19078991d8239f051afb71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::copiarBolsaLetras</definition>
+        <argsstring>(const BolsaLetras &amp;B)</argsstring>
+        <name>copiarBolsaLetras</name>
+        <param>
+          <type>const <ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="50" column="1" bodyfile="bolsaletras.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1a362ad0f316910699985bfc143d7a92b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::ordenarCaracteres</definition>
+        <argsstring>(vector&lt; char &gt; &amp;v)</argsstring>
+        <name>ordenarCaracteres</name>
+        <param>
+          <type>vector&lt; char &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="56" column="1" bodyfile="bolsaletras.h" bodystart="56" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBolsaLetras_1a2e269014b3a51359195e7b288a4b37c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BolsaLetras::BolsaLetras</definition>
+        <argsstring>()</argsstring>
+        <name>BolsaLetras</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="89" column="1" bodyfile="bolsaletras.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1ad9dd803449733fd51772b82a63c6962f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BolsaLetras::BolsaLetras</definition>
+        <argsstring>(const BolsaLetras &amp;B)</argsstring>
+        <name>BolsaLetras</name>
+        <param>
+          <type>const <ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bolsa de letras que se va a copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1acbba50a7374a1f5bf672d2e7f58f24c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BolsaLetras::BolsaLetras</definition>
+        <argsstring>(const vector&lt; char &gt; &amp;b)</argsstring>
+        <name>BolsaLetras</name>
+        <param>
+          <type>const vector&lt; char &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parámetros. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bolsa con las letras. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1abfd2e3e27f18fc20e674a50d8ee6b0b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref> &amp;</type>
+        <definition>BolsaLetras&amp; BolsaLetras::operator=</definition>
+        <argsstring>(const BolsaLetras &amp;B)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref> a copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref> copiada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1a2ecf80e5f2fe6866a8fc31a5df59d64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::setBolsa</definition>
+        <argsstring>(const vector&lt; char &gt; &amp;b)</argsstring>
+        <name>setBolsa</name>
+        <param>
+          <type>const vector&lt; char &gt; &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Setter de la bolsa de letras. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bolsa. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1a2f62af97ee973d8e7b566f97522620d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; char &gt;</type>
+        <definition>vector&lt;char&gt; BolsaLetras::getBolsa</definition>
+        <argsstring>()</argsstring>
+        <name>getBolsa</name>
+        <briefdescription>
+<para>Getter de la bolsa de letras. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Bolsa. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1ab82225ca3c292135821c84eb057c215e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; char &gt;</type>
+        <definition>vector&lt;char&gt; BolsaLetras::getLetrasEnJuego</definition>
+        <argsstring>()</argsstring>
+        <name>getLetrasEnJuego</name>
+        <briefdescription>
+<para>Getter de las letras en juego. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Letras_en_juego. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1a1ef97ff91356ebbbda756ff762e2a99d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; BolsaLetras::posibilidades</definition>
+        <argsstring>(const Diccionario &amp;D)</argsstring>
+        <name>posibilidades</name>
+        <param>
+          <type>const <ref refid="classDiccionario" kindref="compound">Diccionario</ref> &amp;</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+<para>Devuelve las palabras que puedan formarse con letras_en_juego. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDiccionario" kindref="compound">Diccionario</ref> en el que comprobar las palabras. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Palabras que se pueden formar. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1af09636a6a54a08727cd08714ca18f36f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::letrasAleatorias</definition>
+        <argsstring>(const int &amp;num_letras)</argsstring>
+        <name>letrasAleatorias</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>num_letras</declname>
+        </param>
+        <briefdescription>
+<para>Genera una nueva mano de letras_en_juego. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_letras</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de letras que se quiere obtener. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1a1ee76f852041be288811182e993ae854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BolsaLetras::imprimirLetrasEnJuego</definition>
+        <argsstring>()</argsstring>
+        <name>imprimirLetrasEnJuego</name>
+        <briefdescription>
+<para>Muestra por pantalla las letras en juego. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classBolsaLetras_1abae7d6b4fe48a811ea07504886a724b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BolsaLetras::comprobarPalabra</definition>
+        <argsstring>(string palabra)</argsstring>
+        <name>comprobarPalabra</name>
+        <param>
+          <type>string</type>
+          <declname>palabra</declname>
+        </param>
+        <briefdescription>
+<para>Comprueba si una palabra puede formarse con las letras de la mano actual. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>palabra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Palabra a comprobar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve true si la palabra se puede formar con las letras de letras_en_juego. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bolsaletras.h" line="174" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Juan Francisco Díaz Moreno  Enero 2020 </para>    </detaileddescription>
+    <location file="bolsaletras.h" line="28" column="1" bodyfile="bolsaletras.h" bodystart="28" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classBolsaLetras_1a02f39e69f4feff0f2a0b5a06e1fd9cab" prot="private" virt="non-virtual"><scope>BolsaLetras</scope><name>bolsa</name></member>
+      <member refid="classBolsaLetras_1a2e269014b3a51359195e7b288a4b37c6" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>BolsaLetras</name></member>
+      <member refid="classBolsaLetras_1ad9dd803449733fd51772b82a63c6962f" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>BolsaLetras</name></member>
+      <member refid="classBolsaLetras_1acbba50a7374a1f5bf672d2e7f58f24c8" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>BolsaLetras</name></member>
+      <member refid="classBolsaLetras_1abae7d6b4fe48a811ea07504886a724b9" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>comprobarPalabra</name></member>
+      <member refid="classBolsaLetras_1a37685bb7aef98f579a687a0f60687956" prot="private" virt="non-virtual"><scope>BolsaLetras</scope><name>copiarBolsa</name></member>
+      <member refid="classBolsaLetras_1a6885bc889e19078991d8239f051afb71" prot="private" virt="non-virtual"><scope>BolsaLetras</scope><name>copiarBolsaLetras</name></member>
+      <member refid="classBolsaLetras_1ac6ac71e74e9d21e2d868b553c9e8ae78" prot="private" virt="non-virtual"><scope>BolsaLetras</scope><name>copiarLetras</name></member>
+      <member refid="classBolsaLetras_1a2f62af97ee973d8e7b566f97522620d7" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>getBolsa</name></member>
+      <member refid="classBolsaLetras_1ab82225ca3c292135821c84eb057c215e" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>getLetrasEnJuego</name></member>
+      <member refid="classBolsaLetras_1a1ee76f852041be288811182e993ae854" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>imprimirLetrasEnJuego</name></member>
+      <member refid="classBolsaLetras_1aa36cdcb8151ad265921a9d3722227630" prot="private" virt="non-virtual"><scope>BolsaLetras</scope><name>letras_en_juego</name></member>
+      <member refid="classBolsaLetras_1af09636a6a54a08727cd08714ca18f36f" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>letrasAleatorias</name></member>
+      <member refid="classBolsaLetras_1abfd2e3e27f18fc20e674a50d8ee6b0b3" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>operator=</name></member>
+      <member refid="classBolsaLetras_1a362ad0f316910699985bfc143d7a92b1" prot="private" virt="non-virtual"><scope>BolsaLetras</scope><name>ordenarCaracteres</name></member>
+      <member refid="classBolsaLetras_1a1ef97ff91356ebbbda756ff762e2a99d" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>posibilidades</name></member>
+      <member refid="classBolsaLetras_1a2ecf80e5f2fe6866a8fc31a5df59d64b" prot="public" virt="non-virtual"><scope>BolsaLetras</scope><name>setBolsa</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

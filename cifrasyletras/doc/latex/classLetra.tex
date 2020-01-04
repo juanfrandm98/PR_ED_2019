@@ -1,0 +1,270 @@
+\section{Referencia de la Clase Letra}
+\label{classLetra}\index{Letra@{Letra}}
+
+
+T.\+D.\+A. \doxyref{Letra}{p.}{classLetra}.  
+
+
+
+
+{\ttfamily \#include $<$letra.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classLetra_a2e236c67e3630258c6d3d9f2a9e66709}} 
+\textbf{ Letra} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\textbf{ Letra} (const \textbf{ Letra} \&L)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\textbf{ Letra} (const char \&l, const int \&punt, const int \&rep)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\label{classLetra_a3b9ef1dfc6861f580023b22c3904f44e}} 
+\textbf{ $\sim$\+Letra} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \textbf{ set\+Letra} (const char \&l)
+\begin{DoxyCompactList}\small\item\em Setter de letra. \end{DoxyCompactList}\item 
+\mbox{\label{classLetra_a8762606c8207c44f6693016202d8a0b4}} 
+char \textbf{ get\+Letra} () const
+\begin{DoxyCompactList}\small\item\em Getter de letra. \end{DoxyCompactList}\item 
+void \textbf{ set\+Puntos} (const int \&punt)
+\begin{DoxyCompactList}\small\item\em Setter de puntos. \end{DoxyCompactList}\item 
+int \textbf{ get\+Puntos} () const
+\begin{DoxyCompactList}\small\item\em Getter de puntos. \end{DoxyCompactList}\item 
+void \textbf{ set\+Repeticiones} (const int \&rep)
+\begin{DoxyCompactList}\small\item\em Setter de repeticiones. \end{DoxyCompactList}\item 
+\mbox{\label{classLetra_af943473b6ed3beec0ba8f203fca78eca}} 
+int \textbf{ get\+Repeticiones} () const
+\begin{DoxyCompactList}\small\item\em Getter de repeticiones. \end{DoxyCompactList}\item 
+\textbf{ Letra} \& \textbf{ operator=} (const \textbf{ Letra} \&L)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+bool \textbf{ operator==} (const \textbf{ Letra} \&L) const
+\begin{DoxyCompactList}\small\item\em Operador igual igual. \end{DoxyCompactList}\item 
+bool \textbf{ operator$<$} (const \textbf{ Letra} \&L) const
+\begin{DoxyCompactList}\small\item\em Operador menor que. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&os, \textbf{ Letra} \&L)
+\begin{DoxyCompactList}\small\item\em Salida de una \doxyref{Letra}{p.}{classLetra} a ostream. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&is, \textbf{ Letra} \&L)
+\begin{DoxyCompactList}\small\item\em Entrada de una \doxyref{Letra}{p.}{classLetra} desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Letra}{p.}{classLetra}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \doxyref{Letra}{p.}{classLetra}} es un objeto con cuatro campos\+: un char y dos enteros.
+
+El char indica la letra que se está almacenando y los enteros indican su puntuación y el número de repeticiones que tiene en un diccionario.
+
+Juan Francisco Díaz Moreno \begin{DoxyDate}{Fecha}
+Diciembre 2019 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classLetra_a4a9043a661643c729024bb36f93e5530}} 
+\index{Letra@{Letra}!Letra@{Letra}}
+\index{Letra@{Letra}!Letra@{Letra}}
+\subsubsection{Letra()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Letra\+::\+Letra (\begin{DoxyParamCaption}\item[{const \textbf{ Letra} \&}]{L }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em L} & \doxyref{Letra}{p.}{classLetra} que se va a copiar. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classLetra_a5585e6c2b66b02ae83498883d2391ed6}} 
+\index{Letra@{Letra}!Letra@{Letra}}
+\index{Letra@{Letra}!Letra@{Letra}}
+\subsubsection{Letra()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Letra\+::\+Letra (\begin{DoxyParamCaption}\item[{const char \&}]{l,  }\item[{const int \&}]{punt,  }\item[{const int \&}]{rep }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em l} & \doxyref{Letra}{p.}{classLetra}. \\
+\hline
+{\em punt} & Puntuación de la letra. \\
+\hline
+{\em rep} & Número de repeticiones de la letra en el \doxyref{Diccionario}{p.}{classDiccionario}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classLetra_a032d3df56fbd01acfce1e667d1e2297c}} 
+\index{Letra@{Letra}!get\+Puntos@{get\+Puntos}}
+\index{get\+Puntos@{get\+Puntos}!Letra@{Letra}}
+\subsubsection{get\+Puntos()}
+{\footnotesize\ttfamily int Letra\+::get\+Puntos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter de puntos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em l} & \doxyref{Letra}{p.}{classLetra}. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classLetra_a34ee9760a2ccf4f2dbfadd2597eca29f}} 
+\index{Letra@{Letra}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Letra@{Letra}}
+\subsubsection{operator$<$()}
+{\footnotesize\ttfamily bool Letra\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \textbf{ Letra} \&}]{L }\end{DoxyParamCaption}) const}
+
+
+
+Operador menor que. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em L} & \doxyref{Letra}{p.}{classLetra} con la que comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si el valor de la letra es menor que la pasada como argumento. 
+\end{DoxyReturn}
+\mbox{\label{classLetra_af89328eecfd4cb10ec33b34fc2c61604}} 
+\index{Letra@{Letra}!operator=@{operator=}}
+\index{operator=@{operator=}!Letra@{Letra}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Letra}\& Letra\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Letra} \&}]{L }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em L} & \doxyref{Letra}{p.}{classLetra} a asignar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Letra}{p.}{classLetra} asignada. 
+\end{DoxyReturn}
+\mbox{\label{classLetra_a80bf42467a105685d923a3b6f146c2f9}} 
+\index{Letra@{Letra}!operator==@{operator==}}
+\index{operator==@{operator==}!Letra@{Letra}}
+\subsubsection{operator==()}
+{\footnotesize\ttfamily bool Letra\+::operator== (\begin{DoxyParamCaption}\item[{const \textbf{ Letra} \&}]{L }\end{DoxyParamCaption}) const}
+
+
+
+Operador igual igual. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em L} & \doxyref{Letra}{p.}{classLetra} con la que comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si el valor de la letra es igual que la pasada como argumento. 
+\end{DoxyReturn}
+\mbox{\label{classLetra_a3ac983e07d6fc85128780293f1336783}} 
+\index{Letra@{Letra}!set\+Letra@{set\+Letra}}
+\index{set\+Letra@{set\+Letra}!Letra@{Letra}}
+\subsubsection{set\+Letra()}
+{\footnotesize\ttfamily void Letra\+::set\+Letra (\begin{DoxyParamCaption}\item[{const char \&}]{l }\end{DoxyParamCaption})}
+
+
+
+Setter de letra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em l} & \doxyref{Letra}{p.}{classLetra}. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classLetra_a6383eeda06edff7bb8a239193f240dcc}} 
+\index{Letra@{Letra}!set\+Puntos@{set\+Puntos}}
+\index{set\+Puntos@{set\+Puntos}!Letra@{Letra}}
+\subsubsection{set\+Puntos()}
+{\footnotesize\ttfamily void Letra\+::set\+Puntos (\begin{DoxyParamCaption}\item[{const int \&}]{punt }\end{DoxyParamCaption})}
+
+
+
+Setter de puntos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em punt} & Puntuación de la letra. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classLetra_a1d9941c6329b4c240d1d3558c0438bb1}} 
+\index{Letra@{Letra}!set\+Repeticiones@{set\+Repeticiones}}
+\index{set\+Repeticiones@{set\+Repeticiones}!Letra@{Letra}}
+\subsubsection{set\+Repeticiones()}
+{\footnotesize\ttfamily void Letra\+::set\+Repeticiones (\begin{DoxyParamCaption}\item[{const int \&}]{rep }\end{DoxyParamCaption})}
+
+
+
+Setter de repeticiones. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em rep} & Número de repeticiones de la letra. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\label{classLetra_a170b7b3a948da65d478d5dfff59d8912}} 
+\index{Letra@{Letra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Letra@{Letra}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\textbf{ Letra} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de una \doxyref{Letra}{p.}{classLetra} a ostream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida. \\
+\hline
+{\em L} & \doxyref{Letra}{p.}{classLetra} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Se obtiene la \doxyref{Letra}{p.}{classLetra} con el formato adecuado. 
+\end{DoxyPostcond}
+\mbox{\label{classLetra_a96f68357d26362519e5edd8873c98302}} 
+\index{Letra@{Letra}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Letra@{Letra}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\textbf{ Letra} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de una \doxyref{Letra}{p.}{classLetra} desde istream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & Stream de entrada. \\
+\hline
+{\em L} & \doxyref{Letra}{p.}{classLetra} en la que se escribe. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em La} & \doxyref{Letra}{p.}{classLetra} leída. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondición}
+La entrada tiene el siguiente formato\+: \doxyref{Letra}{p.}{classLetra} Puntos Repeticiones 
+\end{DoxyPrecond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ letra.\+h}\end{DoxyCompactItemize}

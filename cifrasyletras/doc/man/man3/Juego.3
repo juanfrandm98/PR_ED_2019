@@ -1,0 +1,75 @@
+.TH "Juego" 3 "Sábado, 4 de Enero de 2020" "CifrasyLetras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Juego \- T\&.D\&.A\&. \fBJuego\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <juego\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBJuego\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBJuego\fP (const \fBDiccionario\fP &D)"
+.br
+.RI "Constructor con parámetros\&. "
+.ti -1c
+.RI "\fBJuego\fP (const \fBJuego\fP &J)"
+.br
+.RI "Constructor de copia\&. "
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.RI "Función principal para jugar\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBJuego\fP\&. 
+
+Una instancia \fIc\fP del tipo de datos abstracto \fC\fBJuego\fP\fP es un objeto con 2 campos: 
+.PP
+.nf
+- Un JuegoLetras que permite jugar partidas de Letras.
+- Un JuegoCifras que permite jugar partidas de Cifras.
+
+.fi
+.PP
+.PP
+Permite almacenar los dos juegos ya instanciados y jugar a ambos cuando se quiera gracias a un menú\&.
+.PP
+Juan Francisco Díaz Moreno  Enero 2020 
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Juego::Juego (const \fBDiccionario\fP & D)"
+
+.PP
+Constructor con parámetros\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBDiccionario\fP con el que se va a jugar en el juego de las letras\&. 
+.RE
+.PP
+
+.SS "Juego::Juego (const \fBJuego\fP & J)"
+
+.PP
+Constructor de copia\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIJ\fP \fBJuego\fP a copiar\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para CifrasyLetras del código fuente\&.

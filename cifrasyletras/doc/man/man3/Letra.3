@@ -1,0 +1,264 @@
+.TH "Letra" 3 "Sábado, 4 de Enero de 2020" "CifrasyLetras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Letra \- T\&.D\&.A\&. \fBLetra\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <letra\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBLetra\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBLetra\fP (const \fBLetra\fP &L)"
+.br
+.RI "Constructor de copia\&. "
+.ti -1c
+.RI "\fBLetra\fP (const char &l, const int &punt, const int &rep)"
+.br
+.RI "Constructor con parámetros\&. "
+.ti -1c
+.RI "\fB~Letra\fP ()"
+.br
+.RI "Destructor de la clase\&. "
+.ti -1c
+.RI "void \fBsetLetra\fP (const char &l)"
+.br
+.RI "Setter de letra\&. "
+.ti -1c
+.RI "char \fBgetLetra\fP () const"
+.br
+.RI "Getter de letra\&. "
+.ti -1c
+.RI "void \fBsetPuntos\fP (const int &punt)"
+.br
+.RI "Setter de puntos\&. "
+.ti -1c
+.RI "int \fBgetPuntos\fP () const"
+.br
+.RI "Getter de puntos\&. "
+.ti -1c
+.RI "void \fBsetRepeticiones\fP (const int &rep)"
+.br
+.RI "Setter de repeticiones\&. "
+.ti -1c
+.RI "int \fBgetRepeticiones\fP () const"
+.br
+.RI "Getter de repeticiones\&. "
+.ti -1c
+.RI "\fBLetra\fP & \fBoperator=\fP (const \fBLetra\fP &L)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBLetra\fP &L) const"
+.br
+.RI "Operador igual igual\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBLetra\fP &L) const"
+.br
+.RI "Operador menor que\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, \fBLetra\fP &L)"
+.br
+.RI "Salida de una \fBLetra\fP a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBLetra\fP &L)"
+.br
+.RI "Entrada de una \fBLetra\fP desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBLetra\fP\&. 
+
+Una instancia \fIc\fP del tipo de datos abstracto \fC\fBLetra\fP\fP es un objeto con cuatro campos: un char y dos enteros\&.
+.PP
+El char indica la letra que se está almacenando y los enteros indican su puntuación y el número de repeticiones que tiene en un diccionario\&.
+.PP
+Juan Francisco Díaz Moreno 
+.PP
+\fBFecha:\fP
+.RS 4
+Diciembre 2019 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Letra::Letra (const \fBLetra\fP & L)"
+
+.PP
+Constructor de copia\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIL\fP \fBLetra\fP que se va a copiar\&. 
+.RE
+.PP
+
+.SS "Letra::Letra (const char & l, const int & punt, const int & rep)"
+
+.PP
+Constructor con parámetros\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIl\fP \fBLetra\fP\&. 
+.br
+\fIpunt\fP Puntuación de la letra\&. 
+.br
+\fIrep\fP Número de repeticiones de la letra en el \fBDiccionario\fP\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "int Letra::getPuntos () const"
+
+.PP
+Getter de puntos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIl\fP \fBLetra\fP\&. 
+.RE
+.PP
+
+.SS "bool Letra::operator< (const \fBLetra\fP & L) const"
+
+.PP
+Operador menor que\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIL\fP \fBLetra\fP con la que comparar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true si el valor de la letra es menor que la pasada como argumento\&. 
+.RE
+.PP
+
+.SS "\fBLetra\fP& Letra::operator= (const \fBLetra\fP & L)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIL\fP \fBLetra\fP a asignar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBLetra\fP asignada\&. 
+.RE
+.PP
+
+.SS "bool Letra::operator== (const \fBLetra\fP & L) const"
+
+.PP
+Operador igual igual\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIL\fP \fBLetra\fP con la que comparar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true si el valor de la letra es igual que la pasada como argumento\&. 
+.RE
+.PP
+
+.SS "void Letra::setLetra (const char & l)"
+
+.PP
+Setter de letra\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIl\fP \fBLetra\fP\&. 
+.RE
+.PP
+
+.SS "void Letra::setPuntos (const int & punt)"
+
+.PP
+Setter de puntos\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIpunt\fP Puntuación de la letra\&. 
+.RE
+.PP
+
+.SS "void Letra::setRepeticiones (const int & rep)"
+
+.PP
+Setter de repeticiones\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIrep\fP Número de repeticiones de la letra\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, \fBLetra\fP & L)\fC [friend]\fP"
+
+.PP
+Salida de una \fBLetra\fP a ostream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIos\fP Stream de salida\&. 
+.br
+\fIL\fP \fBLetra\fP a escribir\&. 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+Se obtiene la \fBLetra\fP con el formato adecuado\&. 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBLetra\fP & L)\fC [friend]\fP"
+
+.PP
+Entrada de una \fBLetra\fP desde istream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIis\fP Stream de entrada\&. 
+.br
+\fIL\fP \fBLetra\fP en la que se escribe\&. 
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fILa\fP \fBLetra\fP leída\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+La entrada tiene el siguiente formato: \fBLetra\fP Puntos Repeticiones 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para CifrasyLetras del código fuente\&.

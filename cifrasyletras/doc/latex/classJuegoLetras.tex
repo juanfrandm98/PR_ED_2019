@@ -1,0 +1,136 @@
+\section{Referencia de la Clase Juego\+Letras}
+\label{classJuegoLetras}\index{Juego\+Letras@{Juego\+Letras}}
+
+
+T.\+D.\+A. \doxyref{Juego\+Letras}{p.}{classJuegoLetras}.  
+
+
+
+
+{\ttfamily \#include $<$juegoletras.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classJuegoLetras_a6ae7603e132ce84a0979ac82838789e8}} 
+\textbf{ Juego\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\textbf{ Juego\+Letras} (const \textbf{ Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\textbf{ Juego\+Letras} (const \textbf{ Juego\+Letras} \&J)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\textbf{ Juego\+Letras} \& \textbf{ operator=} (const \textbf{ Juego\+Letras} \&J)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\mbox{\label{classJuegoLetras_a38d6fe492572811c3993f8bc517efe82}} 
+void \textbf{ play} ()
+\begin{DoxyCompactList}\small\item\em Función para jugar una ronda de Letras. \end{DoxyCompactList}\item 
+int \textbf{ puntuar\+Palabra} (const string \&palabra)
+\begin{DoxyCompactList}\small\item\em Calcula los puntos que tiene una palabra. \end{DoxyCompactList}\item 
+string \textbf{ calcular\+Mejor\+Palabra} (const vector$<$ string $>$ \&posibles)
+\begin{DoxyCompactList}\small\item\em Calcula la mejor palabra de la mano. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Juego\+Letras}{p.}{classJuegoLetras}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \doxyref{Juego\+Letras}{p.}{classJuegoLetras}} es un objeto con 3 campos\+: \begin{DoxyVerb}- Un diccionario que incluye las palabras que se podrán adivinar en
+  la partida de Letras.
+- Una bolsa de letras que incluye las letras disponibles inicialmente
+  y la mano de juego actual.
+- Un conjunto de letras que incluye la información de las letras en
+- juego.
+\end{DoxyVerb}
+
+
+Permite jugar partidas de Letras.
+
+Juan Francisco Díaz Moreno  Enero 2020 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classJuegoLetras_a97ab4a940f995b946761050c6a3209eb}} 
+\index{Juego\+Letras@{Juego\+Letras}!Juego\+Letras@{Juego\+Letras}}
+\index{Juego\+Letras@{Juego\+Letras}!Juego\+Letras@{Juego\+Letras}}
+\subsubsection{Juego\+Letras()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Juego\+Letras\+::\+Juego\+Letras (\begin{DoxyParamCaption}\item[{const \textbf{ Diccionario} \&}]{D }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} con el que se va a jugar. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classJuegoLetras_ac6f9e42369c0b7849bdf10ade43cae95}} 
+\index{Juego\+Letras@{Juego\+Letras}!Juego\+Letras@{Juego\+Letras}}
+\index{Juego\+Letras@{Juego\+Letras}!Juego\+Letras@{Juego\+Letras}}
+\subsubsection{Juego\+Letras()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Juego\+Letras\+::\+Juego\+Letras (\begin{DoxyParamCaption}\item[{const \textbf{ Juego\+Letras} \&}]{J }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em J} & \doxyref{Juego\+Letras}{p.}{classJuegoLetras} que se va a copiar. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classJuegoLetras_aa2fae08bbed3d8af58bf7833fd351f98}} 
+\index{Juego\+Letras@{Juego\+Letras}!calcular\+Mejor\+Palabra@{calcular\+Mejor\+Palabra}}
+\index{calcular\+Mejor\+Palabra@{calcular\+Mejor\+Palabra}!Juego\+Letras@{Juego\+Letras}}
+\subsubsection{calcular\+Mejor\+Palabra()}
+{\footnotesize\ttfamily string Juego\+Letras\+::calcular\+Mejor\+Palabra (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{posibles }\end{DoxyParamCaption})}
+
+
+
+Calcula la mejor palabra de la mano. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve la mejor palabra de la mano. 
+\end{DoxyReturn}
+\mbox{\label{classJuegoLetras_accf75d6adb1bd62d66a1b25a745a46a5}} 
+\index{Juego\+Letras@{Juego\+Letras}!operator=@{operator=}}
+\index{operator=@{operator=}!Juego\+Letras@{Juego\+Letras}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Juego\+Letras}\& Juego\+Letras\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Juego\+Letras} \&}]{J }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em D} & \doxyref{Juego\+Letras}{p.}{classJuegoLetras} a asignar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Juego\+Letras}{p.}{classJuegoLetras} asignado. 
+\end{DoxyReturn}
+\mbox{\label{classJuegoLetras_ab5ceccfbbb4abc13f4c6cd1cf6577aab}} 
+\index{Juego\+Letras@{Juego\+Letras}!puntuar\+Palabra@{puntuar\+Palabra}}
+\index{puntuar\+Palabra@{puntuar\+Palabra}!Juego\+Letras@{Juego\+Letras}}
+\subsubsection{puntuar\+Palabra()}
+{\footnotesize\ttfamily int Juego\+Letras\+::puntuar\+Palabra (\begin{DoxyParamCaption}\item[{const string \&}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Calcula los puntos que tiene una palabra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra cuyos puntos se quieren calcular. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la puntuación de la palabra dada. 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ juegoletras.\+h}\end{DoxyCompactItemize}

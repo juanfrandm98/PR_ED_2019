@@ -1,0 +1,227 @@
+.TH "ConjuntoLetras" 3 "Sábado, 4 de Enero de 2020" "CifrasyLetras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConjuntoLetras \- T\&.D\&.A\&. \fBConjuntoLetras\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <conjuntoletras\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBConjuntoLetras\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBConjuntoLetras\fP (const \fBConjuntoLetras\fP &C)"
+.br
+.RI "Constructor de copia\&. "
+.ti -1c
+.RI "\fBConjuntoLetras\fP (const set< \fBLetra\fP > &conjunto)"
+.br
+.RI "Constructor con parámetros\&. "
+.ti -1c
+.RI "\fB~ConjuntoLetras\fP ()"
+.br
+.RI "Destructor de la clase\&. "
+.ti -1c
+.RI "void \fBsetLetras\fP (const set< \fBLetra\fP > &conjunto)"
+.br
+.RI "Setter de las letras\&. "
+.ti -1c
+.RI "set< \fBLetra\fP > \fBgetLetras\fP ()"
+.br
+.RI "Getter de las letras\&. "
+.ti -1c
+.RI "int \fBsize\fP ()"
+.br
+.RI "Devuelve el tamaño del conjunto de letras\&. "
+.ti -1c
+.RI "char \fBmejorLetra\fP ()"
+.br
+.RI "Devuelve la letra con mejor puntuación\&. "
+.ti -1c
+.RI "int \fBpuntosLetra\fP (const char &letra)"
+.br
+.RI "Devuelve la puntuación de una letra\&. "
+.ti -1c
+.RI "void \fBinsertarLetra\fP (const \fBLetra\fP &L)"
+.br
+.RI "Inserta una nueva letra en el conjunto de letras\&. "
+.ti -1c
+.RI "\fBConjuntoLetras\fP & \fBoperator=\fP (const \fBConjuntoLetras\fP &C)"
+.br
+.RI "Operador de asignación\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, \fBConjuntoLetras\fP &C)"
+.br
+.RI "Salida de un \fBConjuntoLetras\fP a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBConjuntoLetras\fP &C)"
+.br
+.RI "Entrada de un \fBConjuntoLetras\fP desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBConjuntoLetras\fP\&. 
+
+Una instancia \fIc\fP del tipo de datos abstracto \fC\fBConjuntoLetras\fP\fP es un objeto con un conjunto de Letras que permite trabajar con ellas\&.
+.PP
+Juan Francisco Díaz Moreno  Diciembre 2019 
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "ConjuntoLetras::ConjuntoLetras (const \fBConjuntoLetras\fP & C)"
+
+.PP
+Constructor de copia\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIC\fP Conjunto de letras que se va a copiar\&. 
+.RE
+.PP
+
+.SS "ConjuntoLetras::ConjuntoLetras (const set< \fBLetra\fP > & conjunto)"
+
+.PP
+Constructor con parámetros\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIconjunto\fP Set de letras\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void ConjuntoLetras::insertarLetra (const \fBLetra\fP & L)"
+
+.PP
+Inserta una nueva letra en el conjunto de letras\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIL\fP \fBLetra\fP a insertar\&. 
+.RE
+.PP
+
+.SS "char ConjuntoLetras::mejorLetra ()"
+
+.PP
+Devuelve la letra con mejor puntuación\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBLetra\fP con mayor puntuación\&. 
+.RE
+.PP
+
+.SS "\fBConjuntoLetras\fP& ConjuntoLetras::operator= (const \fBConjuntoLetras\fP & C)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIC\fP \fBConjuntoLetras\fP a asignar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBConjuntoLetras\fP asignado\&. 
+.RE
+.PP
+
+.SS "int ConjuntoLetras::puntosLetra (const char & letra)"
+
+.PP
+Devuelve la puntuación de una letra\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIletra\fP \fBLetra\fP cuya puntuación se quiere conocer\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Puntuación de la letra dada o -1 si no se encuentra\&. 
+.RE
+.PP
+
+.SS "void ConjuntoLetras::setLetras (const set< \fBLetra\fP > & conjunto)"
+
+.PP
+Setter de las letras\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIconjunto\fP Set de letras\&. 
+.RE
+.PP
+
+.SS "int ConjuntoLetras::size ()"
+
+.PP
+Devuelve el tamaño del conjunto de letras\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Tamaño del conjunto de letras\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, \fBConjuntoLetras\fP & C)\fC [friend]\fP"
+
+.PP
+Salida de un \fBConjuntoLetras\fP a ostream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIos\fP Stream de salida\&. 
+.br
+\fIC\fP \fBConjuntoLetras\fP a escribir\&. 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+Se obtiene el \fBConjuntoLetras\fP con el formato adecuado\&. 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBConjuntoLetras\fP & C)\fC [friend]\fP"
+
+.PP
+Entrada de un \fBConjuntoLetras\fP desde istream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIis\fP Stream de entrada\&. 
+.br
+\fIC\fP \fBConjuntoLetras\fP en el que se escribe\&. 
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fIEl\fP \fBConjuntoLetras\fP leído\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+La entrada tiene el siguiente formato: Número de letras \fBLetra\fP Puntos Repeticiones \fBLetra\fP Puntos Repeticiones \&.\&.\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para CifrasyLetras del código fuente\&.

@@ -1,0 +1,234 @@
+\section{Referencia de la Clase Conjunto\+Letras}
+\label{classConjuntoLetras}\index{Conjunto\+Letras@{Conjunto\+Letras}}
+
+
+T.\+D.\+A. \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras}.  
+
+
+
+
+{\ttfamily \#include $<$conjuntoletras.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classConjuntoLetras_a6a0499ee4013bcff4f9fca106bdf739f}} 
+\textbf{ Conjunto\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\textbf{ Conjunto\+Letras} (const \textbf{ Conjunto\+Letras} \&C)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\textbf{ Conjunto\+Letras} (const set$<$ \textbf{ Letra} $>$ \&conjunto)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\mbox{\label{classConjuntoLetras_a545cc5009ef7a03632aae56acb922661}} 
+\textbf{ $\sim$\+Conjunto\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \textbf{ set\+Letras} (const set$<$ \textbf{ Letra} $>$ \&conjunto)
+\begin{DoxyCompactList}\small\item\em Setter de las letras. \end{DoxyCompactList}\item 
+\mbox{\label{classConjuntoLetras_adacfb0afaa6875e898fb74cfb82dde6f}} 
+set$<$ \textbf{ Letra} $>$ \textbf{ get\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Getter de las letras. \end{DoxyCompactList}\item 
+int \textbf{ size} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el tamaño del conjunto de letras. \end{DoxyCompactList}\item 
+char \textbf{ mejor\+Letra} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la letra con mejor puntuación. \end{DoxyCompactList}\item 
+int \textbf{ puntos\+Letra} (const char \&letra)
+\begin{DoxyCompactList}\small\item\em Devuelve la puntuación de una letra. \end{DoxyCompactList}\item 
+void \textbf{ insertar\+Letra} (const \textbf{ Letra} \&L)
+\begin{DoxyCompactList}\small\item\em Inserta una nueva letra en el conjunto de letras. \end{DoxyCompactList}\item 
+\textbf{ Conjunto\+Letras} \& \textbf{ operator=} (const \textbf{ Conjunto\+Letras} \&C)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&os, \textbf{ Conjunto\+Letras} \&C)
+\begin{DoxyCompactList}\small\item\em Salida de un \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} a ostream. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&is, \textbf{ Conjunto\+Letras} \&C)
+\begin{DoxyCompactList}\small\item\em Entrada de un \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras}} es un objeto con un conjunto de Letras que permite trabajar con ellas.
+
+Juan Francisco Díaz Moreno  Diciembre 2019 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classConjuntoLetras_a4641813a60306fd2c035d5ed89b63051}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!Conjunto\+Letras@{Conjunto\+Letras}}
+\index{Conjunto\+Letras@{Conjunto\+Letras}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{Conjunto\+Letras()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Conjunto\+Letras\+::\+Conjunto\+Letras (\begin{DoxyParamCaption}\item[{const \textbf{ Conjunto\+Letras} \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em C} & Conjunto de letras que se va a copiar. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classConjuntoLetras_aade19a878cc0ae5f9eb94b024a5970a3}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!Conjunto\+Letras@{Conjunto\+Letras}}
+\index{Conjunto\+Letras@{Conjunto\+Letras}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{Conjunto\+Letras()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Conjunto\+Letras\+::\+Conjunto\+Letras (\begin{DoxyParamCaption}\item[{const set$<$ \textbf{ Letra} $>$ \&}]{conjunto }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conjunto} & Set de letras. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classConjuntoLetras_a56a8674158da0fd41f807ece4b010d56}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!insertar\+Letra@{insertar\+Letra}}
+\index{insertar\+Letra@{insertar\+Letra}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{insertar\+Letra()}
+{\footnotesize\ttfamily void Conjunto\+Letras\+::insertar\+Letra (\begin{DoxyParamCaption}\item[{const \textbf{ Letra} \&}]{L }\end{DoxyParamCaption})}
+
+
+
+Inserta una nueva letra en el conjunto de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em L} & \doxyref{Letra}{p.}{classLetra} a insertar. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classConjuntoLetras_a5d16fab60acd978706b48c96b76c414e}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!mejor\+Letra@{mejor\+Letra}}
+\index{mejor\+Letra@{mejor\+Letra}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{mejor\+Letra()}
+{\footnotesize\ttfamily char Conjunto\+Letras\+::mejor\+Letra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la letra con mejor puntuación. 
+
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Letra}{p.}{classLetra} con mayor puntuación. 
+\end{DoxyReturn}
+\mbox{\label{classConjuntoLetras_ab5ba34427b145dfd19b5c798832aaf26}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!operator=@{operator=}}
+\index{operator=@{operator=}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Conjunto\+Letras}\& Conjunto\+Letras\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Conjunto\+Letras} \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em C} & \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} a asignar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} asignado. 
+\end{DoxyReturn}
+\mbox{\label{classConjuntoLetras_a36ad9d45332141528c9496973b4a32c6}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!puntos\+Letra@{puntos\+Letra}}
+\index{puntos\+Letra@{puntos\+Letra}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{puntos\+Letra()}
+{\footnotesize\ttfamily int Conjunto\+Letras\+::puntos\+Letra (\begin{DoxyParamCaption}\item[{const char \&}]{letra }\end{DoxyParamCaption})}
+
+
+
+Devuelve la puntuación de una letra. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em letra} & \doxyref{Letra}{p.}{classLetra} cuya puntuación se quiere conocer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Puntuación de la letra dada o -\/1 si no se encuentra. 
+\end{DoxyReturn}
+\mbox{\label{classConjuntoLetras_a902e31a34ed99477ef9eb5d927375730}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!set\+Letras@{set\+Letras}}
+\index{set\+Letras@{set\+Letras}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{set\+Letras()}
+{\footnotesize\ttfamily void Conjunto\+Letras\+::set\+Letras (\begin{DoxyParamCaption}\item[{const set$<$ \textbf{ Letra} $>$ \&}]{conjunto }\end{DoxyParamCaption})}
+
+
+
+Setter de las letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conjunto} & Set de letras. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classConjuntoLetras_adb0960e9e7a46a30572a84bb8f154b13}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!size@{size}}
+\index{size@{size}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{size()}
+{\footnotesize\ttfamily int Conjunto\+Letras\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tamaño del conjunto de letras. 
+
+\begin{DoxyReturn}{Devuelve}
+Tamaño del conjunto de letras. 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\label{classConjuntoLetras_a2bf98947859e69ca0855fe70eb0343ff}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\textbf{ Conjunto\+Letras} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de un \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} a ostream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida. \\
+\hline
+{\em C} & \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Se obtiene el \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} con el formato adecuado. 
+\end{DoxyPostcond}
+\mbox{\label{classConjuntoLetras_af5ad9e43f9a723151641010c62c9e8c0}} 
+\index{Conjunto\+Letras@{Conjunto\+Letras}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Conjunto\+Letras@{Conjunto\+Letras}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\textbf{ Conjunto\+Letras} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de un \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} desde istream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & Stream de entrada. \\
+\hline
+{\em C} & \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} en el que se escribe. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em El} & \doxyref{Conjunto\+Letras}{p.}{classConjuntoLetras} leído. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondición}
+La entrada tiene el siguiente formato\+: Número de letras \doxyref{Letra}{p.}{classLetra} Puntos Repeticiones \doxyref{Letra}{p.}{classLetra} Puntos Repeticiones ... 
+\end{DoxyPrecond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ conjuntoletras.\+h}\end{DoxyCompactItemize}

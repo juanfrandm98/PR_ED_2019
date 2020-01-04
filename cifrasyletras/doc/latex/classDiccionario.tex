@@ -1,0 +1,262 @@
+\section{Referencia de la Clase Diccionario}
+\label{classDiccionario}\index{Diccionario@{Diccionario}}
+
+
+T.\+D.\+A. \doxyref{Diccionario}{p.}{classDiccionario}.  
+
+
+
+
+{\ttfamily \#include $<$diccionario.\+h$>$}
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ iterator}
+\begin{DoxyCompactList}\small\item\em Iterador sobre la clase \doxyref{Diccionario}{p.}{classDiccionario}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}} 
+\textbf{ Diccionario} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\textbf{ Diccionario} (const \textbf{ Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\label{classDiccionario_af629109bef2ec53f5c0c24309025ce01}} 
+\textbf{ $\sim$\+Diccionario} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\textbf{ Diccionario} \& \textbf{ operator=} (const \textbf{ Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+\textbf{ Diccionario} \& \textbf{ operator+} (const \textbf{ Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Operador de suma. \end{DoxyCompactList}\item 
+void \textbf{ aniadir\+Palabra} (const string \&palabra)
+\begin{DoxyCompactList}\small\item\em Añade una nueva palabra al \doxyref{Diccionario}{p.}{classDiccionario}. \end{DoxyCompactList}\item 
+bool \textbf{ comprobar\+Palabra} (const string \&palabra)
+\begin{DoxyCompactList}\small\item\em Comprueba si una palabra forma parte del diccionario. \end{DoxyCompactList}\item 
+int \textbf{ frecuencia\+Letra} (const char \&letra)
+\begin{DoxyCompactList}\small\item\em Obtiene la contidad de veces que aparece una letra dada. \end{DoxyCompactList}\item 
+int \textbf{ get\+Num\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número de letras que hay en el \doxyref{Diccionario}{p.}{classDiccionario}. \end{DoxyCompactList}\item 
+\textbf{ Diccionario\+::iterator} \textbf{ begin} () const
+\begin{DoxyCompactList}\small\item\em Construye un iterador que apunta al principio del set de datos. \end{DoxyCompactList}\item 
+\textbf{ Diccionario\+::iterator} \textbf{ end} () const
+\begin{DoxyCompactList}\small\item\em Construye un iterador que apunta al final del set de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \textbf{ operator$<$$<$} (ostream \&os, \textbf{ Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Salida de un \doxyref{Diccionario}{p.}{classDiccionario} a ostream. \end{DoxyCompactList}\item 
+istream \& \textbf{ operator$>$$>$} (istream \&is, \textbf{ Diccionario} \&L)
+\begin{DoxyCompactList}\small\item\em Entrada de un \doxyref{Diccionario}{p.}{classDiccionario} desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Diccionario}{p.}{classDiccionario}. 
+
+Una instancia {\itshape del} tipo de datos abstracto {\ttfamily \doxyref{Diccionario}{p.}{classDiccionario}} es un objeto con un conjunto de strings. Dicho conjunto almacena una serie de strings no repetidos.
+
+El T\+DA proporciona una serie de operaciones para trabajar con los strings y con sus letras, así como un iterador para recorrer el conjunto.
+
+Juan Francisco Díaz Moreno \begin{DoxyDate}{Fecha}
+Diciembre 2019 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classDiccionario_ab255960619bb307c7c930d7be961c671}} 
+\index{Diccionario@{Diccionario}!Diccionario@{Diccionario}}
+\index{Diccionario@{Diccionario}!Diccionario@{Diccionario}}
+\subsubsection{Diccionario()}
+{\footnotesize\ttfamily Diccionario\+::\+Diccionario (\begin{DoxyParamCaption}\item[{const \textbf{ Diccionario} \&}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} que se va a copiar. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classDiccionario_a3f6ec3a773cadf750d9540eac2a50762}} 
+\index{Diccionario@{Diccionario}!aniadir\+Palabra@{aniadir\+Palabra}}
+\index{aniadir\+Palabra@{aniadir\+Palabra}!Diccionario@{Diccionario}}
+\subsubsection{aniadir\+Palabra()}
+{\footnotesize\ttfamily void Diccionario\+::aniadir\+Palabra (\begin{DoxyParamCaption}\item[{const string \&}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Añade una nueva palabra al \doxyref{Diccionario}{p.}{classDiccionario}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Nueva palabra a añadir. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classDiccionario_acec247ee7608618d274b8147167306ef}} 
+\index{Diccionario@{Diccionario}!begin@{begin}}
+\index{begin@{begin}!Diccionario@{Diccionario}}
+\subsubsection{begin()}
+{\footnotesize\ttfamily \textbf{ Diccionario\+::iterator} Diccionario\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Construye un iterador que apunta al principio del set de datos. 
+
+\begin{DoxyReturn}{Devuelve}
+Iterador constuido. 
+\end{DoxyReturn}
+\mbox{\label{classDiccionario_ae7e354257b196040b0a1fa48124d9d5f}} 
+\index{Diccionario@{Diccionario}!comprobar\+Palabra@{comprobar\+Palabra}}
+\index{comprobar\+Palabra@{comprobar\+Palabra}!Diccionario@{Diccionario}}
+\subsubsection{comprobar\+Palabra()}
+{\footnotesize\ttfamily bool Diccionario\+::comprobar\+Palabra (\begin{DoxyParamCaption}\item[{const string \&}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Comprueba si una palabra forma parte del diccionario. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra a comprobar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si la palabra está incuida. 
+\end{DoxyReturn}
+\mbox{\label{classDiccionario_adc92b4d38653c145cac976fbd21b6b56}} 
+\index{Diccionario@{Diccionario}!end@{end}}
+\index{end@{end}!Diccionario@{Diccionario}}
+\subsubsection{end()}
+{\footnotesize\ttfamily \textbf{ Diccionario\+::iterator} Diccionario\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Construye un iterador que apunta al final del set de datos. 
+
+\begin{DoxyReturn}{Devuelve}
+Iterador construido. 
+\end{DoxyReturn}
+\mbox{\label{classDiccionario_a567d2c1d42c7b4c62ced66d9f255d7e5}} 
+\index{Diccionario@{Diccionario}!frecuencia\+Letra@{frecuencia\+Letra}}
+\index{frecuencia\+Letra@{frecuencia\+Letra}!Diccionario@{Diccionario}}
+\subsubsection{frecuencia\+Letra()}
+{\footnotesize\ttfamily int Diccionario\+::frecuencia\+Letra (\begin{DoxyParamCaption}\item[{const char \&}]{letra }\end{DoxyParamCaption})}
+
+
+
+Obtiene la contidad de veces que aparece una letra dada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em letra} & \doxyref{Letra}{p.}{classLetra} cuya frecuencia se quiere calcular. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Ńúmero de apariciones de la letra dada. 
+\end{DoxyReturn}
+\mbox{\label{classDiccionario_ab8db1260b6281fb432892a2ebc665bce}} 
+\index{Diccionario@{Diccionario}!get\+Num\+Letras@{get\+Num\+Letras}}
+\index{get\+Num\+Letras@{get\+Num\+Letras}!Diccionario@{Diccionario}}
+\subsubsection{get\+Num\+Letras()}
+{\footnotesize\ttfamily int Diccionario\+::get\+Num\+Letras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el número de letras que hay en el \doxyref{Diccionario}{p.}{classDiccionario}. 
+
+\begin{DoxyReturn}{Devuelve}
+Número de letras totales. 
+\end{DoxyReturn}
+\mbox{\label{classDiccionario_ad14a953ee11d4623a0d1ddbc90300b41}} 
+\index{Diccionario@{Diccionario}!operator+@{operator+}}
+\index{operator+@{operator+}!Diccionario@{Diccionario}}
+\subsubsection{operator+()}
+{\footnotesize\ttfamily \textbf{ Diccionario}\& Diccionario\+::operator+ (\begin{DoxyParamCaption}\item[{const \textbf{ Diccionario} \&}]{D }\end{DoxyParamCaption})}
+
+
+
+Operador de suma. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} a sumar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Suma de Diccionarios. 
+\end{DoxyReturn}
+\mbox{\label{classDiccionario_a663980fc2b03268f5f41975a13a22fdb}} 
+\index{Diccionario@{Diccionario}!operator=@{operator=}}
+\index{operator=@{operator=}!Diccionario@{Diccionario}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Diccionario}\& Diccionario\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Diccionario} \&}]{D }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} a asignar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Diccionario}{p.}{classDiccionario} asignado. 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\label{classDiccionario_ab113838fe9eefef3cc1c6710e45bde31}} 
+\index{Diccionario@{Diccionario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Diccionario@{Diccionario}}
+\subsubsection{operator$<$$<$}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\textbf{ Diccionario} \&}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de un \doxyref{Diccionario}{p.}{classDiccionario} a ostream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida. \\
+\hline
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Se obtiene un \doxyref{Diccionario}{p.}{classDiccionario} con el formato adecuado. 
+\end{DoxyPostcond}
+\mbox{\label{classDiccionario_a720aaf9de99f12908cdd530726fa604e}} 
+\index{Diccionario@{Diccionario}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Diccionario@{Diccionario}}
+\subsubsection{operator$>$$>$}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\textbf{ Diccionario} \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de un \doxyref{Diccionario}{p.}{classDiccionario} desde istream. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & Stream de entrada. \\
+\hline
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} en el que se escribe. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em El} & \doxyref{Diccionario}{p.}{classDiccionario} leído. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondición}
+La entrada tiene el siguiente formato\+: Palabra1 Palabra2 ... 
+\end{DoxyPrecond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ diccionario.\+h}\end{DoxyCompactItemize}

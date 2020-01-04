@@ -1,0 +1,186 @@
+.TH "BolsaLetras" 3 "Sábado, 4 de Enero de 2020" "CifrasyLetras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BolsaLetras \- T\&.D\&.A\&. \fBBolsaLetras\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bolsaletras\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBBolsaLetras\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBBolsaLetras\fP (const \fBBolsaLetras\fP &B)"
+.br
+.RI "Constructor de copia\&. "
+.ti -1c
+.RI "\fBBolsaLetras\fP (const vector< char > &b)"
+.br
+.RI "Constructor con parámetros\&. "
+.ti -1c
+.RI "\fBBolsaLetras\fP & \fBoperator=\fP (const \fBBolsaLetras\fP &B)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "void \fBsetBolsa\fP (const vector< char > &b)"
+.br
+.RI "Setter de la bolsa de letras\&. "
+.ti -1c
+.RI "vector< char > \fBgetBolsa\fP ()"
+.br
+.RI "Getter de la bolsa de letras\&. "
+.ti -1c
+.RI "vector< char > \fBgetLetrasEnJuego\fP ()"
+.br
+.RI "Getter de las letras en juego\&. "
+.ti -1c
+.RI "vector< string > \fBposibilidades\fP (const \fBDiccionario\fP &D)"
+.br
+.RI "Devuelve las palabras que puedan formarse con letras_en_juego\&. "
+.ti -1c
+.RI "void \fBletrasAleatorias\fP (const int &num_letras)"
+.br
+.RI "Genera una nueva mano de letras_en_juego\&. "
+.ti -1c
+.RI "void \fBimprimirLetrasEnJuego\fP ()"
+.br
+.RI "Muestra por pantalla las letras en juego\&. "
+.ti -1c
+.RI "bool \fBcomprobarPalabra\fP (string palabra)"
+.br
+.RI "Comprueba si una palabra puede formarse con las letras de la mano actual\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBBolsaLetras\fP\&. 
+
+Juan Francisco Díaz Moreno  Enero 2020 
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "BolsaLetras::BolsaLetras (const \fBBolsaLetras\fP & B)"
+
+.PP
+Constructor de copia\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIB\fP Bolsa de letras que se va a copiar\&. 
+.RE
+.PP
+
+.SS "BolsaLetras::BolsaLetras (const vector< char > & b)"
+
+.PP
+Constructor con parámetros\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIb\fP Bolsa con las letras\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "bool BolsaLetras::comprobarPalabra (string palabra)"
+
+.PP
+Comprueba si una palabra puede formarse con las letras de la mano actual\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIpalabra\fP Palabra a comprobar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true si la palabra se puede formar con las letras de letras_en_juego\&. 
+.RE
+.PP
+
+.SS "vector<char> BolsaLetras::getBolsa ()"
+
+.PP
+Getter de la bolsa de letras\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Bolsa\&. 
+.RE
+.PP
+
+.SS "vector<char> BolsaLetras::getLetrasEnJuego ()"
+
+.PP
+Getter de las letras en juego\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Letras_en_juego\&. 
+.RE
+.PP
+
+.SS "void BolsaLetras::letrasAleatorias (const int & num_letras)"
+
+.PP
+Genera una nueva mano de letras_en_juego\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInum_letras\fP Número de letras que se quiere obtener\&. 
+.RE
+.PP
+
+.SS "\fBBolsaLetras\fP& BolsaLetras::operator= (const \fBBolsaLetras\fP & B)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIB\fP \fBBolsaLetras\fP a copiar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBBolsaLetras\fP copiada\&. 
+.RE
+.PP
+
+.SS "vector<string> BolsaLetras::posibilidades (const \fBDiccionario\fP & D)"
+
+.PP
+Devuelve las palabras que puedan formarse con letras_en_juego\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBDiccionario\fP en el que comprobar las palabras\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Palabras que se pueden formar\&. 
+.RE
+.PP
+
+.SS "void BolsaLetras::setBolsa (const vector< char > & b)"
+
+.PP
+Setter de la bolsa de letras\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIb\fP Bolsa\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para CifrasyLetras del código fuente\&.

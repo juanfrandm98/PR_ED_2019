@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classBolsaLetras" kind="class"><name>BolsaLetras</name>
+    <member refid="classBolsaLetras_1a02f39e69f4feff0f2a0b5a06e1fd9cab" kind="variable"><name>bolsa</name></member>
+    <member refid="classBolsaLetras_1aa36cdcb8151ad265921a9d3722227630" kind="variable"><name>letras_en_juego</name></member>
+    <member refid="classBolsaLetras_1a37685bb7aef98f579a687a0f60687956" kind="function"><name>copiarBolsa</name></member>
+    <member refid="classBolsaLetras_1ac6ac71e74e9d21e2d868b553c9e8ae78" kind="function"><name>copiarLetras</name></member>
+    <member refid="classBolsaLetras_1a6885bc889e19078991d8239f051afb71" kind="function"><name>copiarBolsaLetras</name></member>
+    <member refid="classBolsaLetras_1a362ad0f316910699985bfc143d7a92b1" kind="function"><name>ordenarCaracteres</name></member>
+    <member refid="classBolsaLetras_1a2e269014b3a51359195e7b288a4b37c6" kind="function"><name>BolsaLetras</name></member>
+    <member refid="classBolsaLetras_1ad9dd803449733fd51772b82a63c6962f" kind="function"><name>BolsaLetras</name></member>
+    <member refid="classBolsaLetras_1acbba50a7374a1f5bf672d2e7f58f24c8" kind="function"><name>BolsaLetras</name></member>
+    <member refid="classBolsaLetras_1abfd2e3e27f18fc20e674a50d8ee6b0b3" kind="function"><name>operator=</name></member>
+    <member refid="classBolsaLetras_1a2ecf80e5f2fe6866a8fc31a5df59d64b" kind="function"><name>setBolsa</name></member>
+    <member refid="classBolsaLetras_1a2f62af97ee973d8e7b566f97522620d7" kind="function"><name>getBolsa</name></member>
+    <member refid="classBolsaLetras_1ab82225ca3c292135821c84eb057c215e" kind="function"><name>getLetrasEnJuego</name></member>
+    <member refid="classBolsaLetras_1a1ef97ff91356ebbbda756ff762e2a99d" kind="function"><name>posibilidades</name></member>
+    <member refid="classBolsaLetras_1af09636a6a54a08727cd08714ca18f36f" kind="function"><name>letrasAleatorias</name></member>
+    <member refid="classBolsaLetras_1a1ee76f852041be288811182e993ae854" kind="function"><name>imprimirLetrasEnJuego</name></member>
+    <member refid="classBolsaLetras_1abae7d6b4fe48a811ea07504886a724b9" kind="function"><name>comprobarPalabra</name></member>
+  </compound>
+  <compound refid="classConjuntoLetras" kind="class"><name>ConjuntoLetras</name>
+    <member refid="classConjuntoLetras_1a5f715c4846c57d131ccb93af455d2e91" kind="variable"><name>letras</name></member>
+    <member refid="classConjuntoLetras_1af3321229476bf7a6ea8ce8158671188f" kind="function"><name>copiar</name></member>
+    <member refid="classConjuntoLetras_1a00f1fe856f24eee125ceb8a5a4d8b841" kind="function"><name>borrar</name></member>
+    <member refid="classConjuntoLetras_1a6a0499ee4013bcff4f9fca106bdf739f" kind="function"><name>ConjuntoLetras</name></member>
+    <member refid="classConjuntoLetras_1a4641813a60306fd2c035d5ed89b63051" kind="function"><name>ConjuntoLetras</name></member>
+    <member refid="classConjuntoLetras_1aade19a878cc0ae5f9eb94b024a5970a3" kind="function"><name>ConjuntoLetras</name></member>
+    <member refid="classConjuntoLetras_1a545cc5009ef7a03632aae56acb922661" kind="function"><name>~ConjuntoLetras</name></member>
+    <member refid="classConjuntoLetras_1a902e31a34ed99477ef9eb5d927375730" kind="function"><name>setLetras</name></member>
+    <member refid="classConjuntoLetras_1adacfb0afaa6875e898fb74cfb82dde6f" kind="function"><name>getLetras</name></member>
+    <member refid="classConjuntoLetras_1adb0960e9e7a46a30572a84bb8f154b13" kind="function"><name>size</name></member>
+    <member refid="classConjuntoLetras_1a5d16fab60acd978706b48c96b76c414e" kind="function"><name>mejorLetra</name></member>
+    <member refid="classConjuntoLetras_1a36ad9d45332141528c9496973b4a32c6" kind="function"><name>puntosLetra</name></member>
+    <member refid="classConjuntoLetras_1a56a8674158da0fd41f807ece4b010d56" kind="function"><name>insertarLetra</name></member>
+    <member refid="classConjuntoLetras_1ab5ba34427b145dfd19b5c798832aaf26" kind="function"><name>operator=</name></member>
+    <member refid="classConjuntoLetras_1a2bf98947859e69ca0855fe70eb0343ff" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classConjuntoLetras_1af5ad9e43f9a723151641010c62c9e8c0" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="classDiccionario" kind="class"><name>Diccionario</name>
+    <member refid="classDiccionario_1aae047bbcc9d6bc3c7b0b2c308d39048d" kind="variable"><name>datos</name></member>
+    <member refid="classDiccionario_1a8e05fb73424d88319a8ce7a66b78f5ee" kind="function"><name>copiar</name></member>
+    <member refid="classDiccionario_1a9e6dd2420c3d87aefcf626acc954ded6" kind="function"><name>borrar</name></member>
+    <member refid="classDiccionario_1aa0a2191ec706b256c35b5229cc197b15" kind="function"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1ab255960619bb307c7c930d7be961c671" kind="function"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1af629109bef2ec53f5c0c24309025ce01" kind="function"><name>~Diccionario</name></member>
+    <member refid="classDiccionario_1a663980fc2b03268f5f41975a13a22fdb" kind="function"><name>operator=</name></member>
+    <member refid="classDiccionario_1ad14a953ee11d4623a0d1ddbc90300b41" kind="function"><name>operator+</name></member>
+    <member refid="classDiccionario_1a3f6ec3a773cadf750d9540eac2a50762" kind="function"><name>aniadirPalabra</name></member>
+    <member refid="classDiccionario_1ae7e354257b196040b0a1fa48124d9d5f" kind="function"><name>comprobarPalabra</name></member>
+    <member refid="classDiccionario_1a567d2c1d42c7b4c62ced66d9f255d7e5" kind="function"><name>frecuenciaLetra</name></member>
+    <member refid="classDiccionario_1ab8db1260b6281fb432892a2ebc665bce" kind="function"><name>getNumLetras</name></member>
+    <member refid="classDiccionario_1acec247ee7608618d274b8147167306ef" kind="function"><name>begin</name></member>
+    <member refid="classDiccionario_1adc92b4d38653c145cac976fbd21b6b56" kind="function"><name>end</name></member>
+    <member refid="classDiccionario_1ab113838fe9eefef3cc1c6710e45bde31" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classDiccionario_1a720aaf9de99f12908cdd530726fa604e" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="classDiccionario_1_1iterator" kind="class"><name>Diccionario::iterator</name>
+    <member refid="classDiccionario_1_1iterator_1aeb9bb5ac93a06759cc8204d33cdee8cc" kind="variable"><name>it</name></member>
+    <member refid="classDiccionario_1_1iterator_1ab9e28915fedbd1b0b30a8e1c8a70129d" kind="variable"><name>final</name></member>
+    <member refid="classDiccionario_1_1iterator_1ad36be158dde0129b4e0d03d0e454a26b" kind="friend"><name>Diccionario</name></member>
+    <member refid="classDiccionario_1_1iterator_1a09b6773eef10e4563efa069d3d88f4fc" kind="function"><name>iterator</name></member>
+    <member refid="classDiccionario_1_1iterator_1a6ab38d0620a196200714ee04291dea55" kind="function"><name>operator==</name></member>
+    <member refid="classDiccionario_1_1iterator_1a5d51cafd201ab15390e991c6aed327ee" kind="function"><name>operator!=</name></member>
+    <member refid="classDiccionario_1_1iterator_1aa03a8aa59bb2b36d4b6d6540afc18deb" kind="function"><name>operator*</name></member>
+    <member refid="classDiccionario_1_1iterator_1ae3f020050c891ff3a94e599879401729" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="classJuego" kind="class"><name>Juego</name>
+    <member refid="classJuego_1ad6be0be52b112308aebca1cc60b17538" kind="variable"><name>juegoLetras</name></member>
+    <member refid="classJuego_1abac5b33b3aa28e0ac99909f4c8255626" kind="variable"><name>juegoCifras</name></member>
+    <member refid="classJuego_1abbd6df094f0915324599026ba5e93701" kind="function"><name>menu</name></member>
+    <member refid="classJuego_1a64d947a099a343318db817eb34c91273" kind="function"><name>mostrarInstrucciones</name></member>
+    <member refid="classJuego_1ad463565ec7ffea90622b22f7b44df990" kind="function"><name>Juego</name></member>
+    <member refid="classJuego_1a8b557d28f942ee347f44b199d18b57b5" kind="function"><name>Juego</name></member>
+    <member refid="classJuego_1ac38e27ae0dd46167a7f7f8e3409f0d75" kind="function"><name>Juego</name></member>
+    <member refid="classJuego_1a4f5688f77a6b5e5df1fe1ae890f48e60" kind="function"><name>play</name></member>
+  </compound>
+  <compound refid="classJuegoCifras" kind="class"><name>JuegoCifras</name>
+    <member refid="classJuegoCifras_1adac40f3ba260f1b315411e3826d8a943" kind="variable"><name>allNumbers</name></member>
+    <member refid="classJuegoCifras_1ad74483512f80be61798867506c52900b" kind="variable"><name>nums</name></member>
+    <member refid="classJuegoCifras_1a67987acdf119dfcf699b14b57168fca5" kind="variable"><name>operators</name></member>
+    <member refid="classJuegoCifras_1aafe44f2f99a12d0f3b593745b831c9d0" kind="variable"><name>target</name></member>
+    <member refid="classJuegoCifras_1a7c26a451dd12e02be8a18337d8b26a82" kind="function"><name>determine</name></member>
+    <member refid="classJuegoCifras_1a9a6b615a84205e72d5c05bb61ac5ea06" kind="function"><name>printCorrect</name></member>
+    <member refid="classJuegoCifras_1a308de82d664964c7cb41d86f94f23856" kind="function"><name>JuegoCifras</name></member>
+    <member refid="classJuegoCifras_1a2708cbdc61b680335eb8987bad4ca117" kind="function"><name>inicializarTurno</name></member>
+    <member refid="classJuegoCifras_1a0170464447e77073a7dd122f53e20a5f" kind="function"><name>pausaTerminar</name></member>
+    <member refid="classJuegoCifras_1a81398cc3ffcd0f154b943fad2c0e08a1" kind="function"><name>play</name></member>
+  </compound>
+  <compound refid="classJuegoLetras" kind="class"><name>JuegoLetras</name>
+    <member refid="classJuegoLetras_1a0c66ba855da203d7db36627f551da115" kind="variable"><name>diccionario</name></member>
+    <member refid="classJuegoLetras_1a7556129871aed69f0e34c7436bee57c6" kind="variable"><name>bolsaLetras</name></member>
+    <member refid="classJuegoLetras_1a27e495204254b596a8bc3ac15ffa120b" kind="variable"><name>conjuntoLetras</name></member>
+    <member refid="classJuegoLetras_1ade1ac8a8fc1dd7d4120efc5f60a95d4d" kind="function"><name>esta</name></member>
+    <member refid="classJuegoLetras_1ac77c688e781727e34436e71a8dc18852" kind="function"><name>rellenarConjuntos</name></member>
+    <member refid="classJuegoLetras_1a9d817239da8061ab9ea3af4c88565524" kind="function"><name>inicializarLetras</name></member>
+    <member refid="classJuegoLetras_1a6ae7603e132ce84a0979ac82838789e8" kind="function"><name>JuegoLetras</name></member>
+    <member refid="classJuegoLetras_1a97ab4a940f995b946761050c6a3209eb" kind="function"><name>JuegoLetras</name></member>
+    <member refid="classJuegoLetras_1ac6f9e42369c0b7849bdf10ade43cae95" kind="function"><name>JuegoLetras</name></member>
+    <member refid="classJuegoLetras_1accf75d6adb1bd62d66a1b25a745a46a5" kind="function"><name>operator=</name></member>
+    <member refid="classJuegoLetras_1a38d6fe492572811c3993f8bc517efe82" kind="function"><name>play</name></member>
+    <member refid="classJuegoLetras_1ab5ceccfbbb4abc13f4c6cd1cf6577aab" kind="function"><name>puntuarPalabra</name></member>
+    <member refid="classJuegoLetras_1aa2fae08bbed3d8af58bf7833fd351f98" kind="function"><name>calcularMejorPalabra</name></member>
+  </compound>
+  <compound refid="classLetra" kind="class"><name>Letra</name>
+    <member refid="classLetra_1ab6874ca1760bcadadd3fc79b03a4da0a" kind="variable"><name>letra</name></member>
+    <member refid="classLetra_1a99d49643328a9499041049518aa85528" kind="variable"><name>puntos</name></member>
+    <member refid="classLetra_1ad65e9215bcd675578674e9c3d74db277" kind="variable"><name>repeticiones</name></member>
+    <member refid="classLetra_1a2e236c67e3630258c6d3d9f2a9e66709" kind="function"><name>Letra</name></member>
+    <member refid="classLetra_1a4a9043a661643c729024bb36f93e5530" kind="function"><name>Letra</name></member>
+    <member refid="classLetra_1a5585e6c2b66b02ae83498883d2391ed6" kind="function"><name>Letra</name></member>
+    <member refid="classLetra_1a3b9ef1dfc6861f580023b22c3904f44e" kind="function"><name>~Letra</name></member>
+    <member refid="classLetra_1a3ac983e07d6fc85128780293f1336783" kind="function"><name>setLetra</name></member>
+    <member refid="classLetra_1a8762606c8207c44f6693016202d8a0b4" kind="function"><name>getLetra</name></member>
+    <member refid="classLetra_1a6383eeda06edff7bb8a239193f240dcc" kind="function"><name>setPuntos</name></member>
+    <member refid="classLetra_1a032d3df56fbd01acfce1e667d1e2297c" kind="function"><name>getPuntos</name></member>
+    <member refid="classLetra_1a1d9941c6329b4c240d1d3558c0438bb1" kind="function"><name>setRepeticiones</name></member>
+    <member refid="classLetra_1af943473b6ed3beec0ba8f203fca78eca" kind="function"><name>getRepeticiones</name></member>
+    <member refid="classLetra_1af89328eecfd4cb10ec33b34fc2c61604" kind="function"><name>operator=</name></member>
+    <member refid="classLetra_1a80bf42467a105685d923a3b6f146c2f9" kind="function"><name>operator==</name></member>
+    <member refid="classLetra_1a34ee9760a2ccf4f2dbfadd2597eca29f" kind="function"><name>operator&lt;</name></member>
+    <member refid="classLetra_1a170b7b3a948da65d478d5dfff59d8912" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classLetra_1a96f68357d26362519e5edd8873c98302" kind="friend"><name>operator&gt;&gt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="bolsaletras_8h" kind="file"><name>bolsaletras.h</name>
+  </compound>
+  <compound refid="conjuntoletras_8h" kind="file"><name>conjuntoletras.h</name>
+  </compound>
+  <compound refid="diccionario_8h" kind="file"><name>diccionario.h</name>
+  </compound>
+  <compound refid="juego_8h" kind="file"><name>juego.h</name>
+  </compound>
+  <compound refid="juegocifras_8h" kind="file"><name>juegocifras.h</name>
+  </compound>
+  <compound refid="juegoletras_8h" kind="file"><name>juegoletras.h</name>
+  </compound>
+  <compound refid="letra_8h" kind="file"><name>letra.h</name>
+  </compound>
+</doxygenindex>

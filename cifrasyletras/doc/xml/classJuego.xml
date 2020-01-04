@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classJuego" kind="class" language="C++" prot="public">
+    <compoundname>Juego</compoundname>
+    <includes refid="juego_8h" local="no">juego.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJuego_1ad6be0be52b112308aebca1cc60b17538" prot="private" static="no" mutable="no">
+        <type><ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref></type>
+        <definition>JuegoLetras Juego::juegoLetras</definition>
+        <argsstring></argsstring>
+        <name>juegoLetras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="39" column="1" bodyfile="juego.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJuego_1abac5b33b3aa28e0ac99909f4c8255626" prot="private" static="no" mutable="no">
+        <type><ref refid="classJuegoCifras" kindref="compound">JuegoCifras</ref></type>
+        <definition>JuegoCifras Juego::juegoCifras</definition>
+        <argsstring></argsstring>
+        <name>juegoCifras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="40" column="1" bodyfile="juego.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classJuego_1abbd6df094f0915324599026ba5e93701" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Juego::menu</definition>
+        <argsstring>()</argsstring>
+        <name>menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="43" column="1" bodyfile="juego.h" bodystart="43" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuego_1a64d947a099a343318db817eb34c91273" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Juego::mostrarInstrucciones</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarInstrucciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="68" column="1" bodyfile="juego.h" bodystart="68" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJuego_1ad463565ec7ffea90622b22f7b44df990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Juego::Juego</definition>
+        <argsstring>()</argsstring>
+        <name>Juego</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="101" column="1" bodyfile="juego.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuego_1a8b557d28f942ee347f44b199d18b57b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Juego::Juego</definition>
+        <argsstring>(const Diccionario &amp;D)</argsstring>
+        <name>Juego</name>
+        <param>
+          <type>const <ref refid="classDiccionario" kindref="compound">Diccionario</ref> &amp;</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parámetros. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDiccionario" kindref="compound">Diccionario</ref> con el que se va a jugar en el juego de las letras. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuego_1ac38e27ae0dd46167a7f7f8e3409f0d75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Juego::Juego</definition>
+        <argsstring>(const Juego &amp;J)</argsstring>
+        <name>Juego</name>
+        <param>
+          <type>const <ref refid="classJuego" kindref="compound">Juego</ref> &amp;</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>J</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classJuego" kindref="compound">Juego</ref> a copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuego_1a4f5688f77a6b5e5df1fe1ae890f48e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Juego::play</definition>
+        <argsstring>()</argsstring>
+        <name>play</name>
+        <briefdescription>
+<para>Función principal para jugar. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juego.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classJuego" kindref="compound">Juego</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de datos abstracto <computeroutput><ref refid="classJuego" kindref="compound">Juego</ref></computeroutput> es un objeto con 2 campos: <verbatim>- Un JuegoLetras que permite jugar partidas de Letras.
+- Un JuegoCifras que permite jugar partidas de Cifras.
+</verbatim></para><para>Permite almacenar los dos juegos ya instanciados y jugar a ambos cuando se quiera gracias a un menú.</para><para>Juan Francisco Díaz Moreno  Enero 2020 </para>    </detaileddescription>
+    <location file="juego.h" line="35" column="1" bodyfile="juego.h" bodystart="35" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classJuego_1ad463565ec7ffea90622b22f7b44df990" prot="public" virt="non-virtual"><scope>Juego</scope><name>Juego</name></member>
+      <member refid="classJuego_1a8b557d28f942ee347f44b199d18b57b5" prot="public" virt="non-virtual"><scope>Juego</scope><name>Juego</name></member>
+      <member refid="classJuego_1ac38e27ae0dd46167a7f7f8e3409f0d75" prot="public" virt="non-virtual"><scope>Juego</scope><name>Juego</name></member>
+      <member refid="classJuego_1abac5b33b3aa28e0ac99909f4c8255626" prot="private" virt="non-virtual"><scope>Juego</scope><name>juegoCifras</name></member>
+      <member refid="classJuego_1ad6be0be52b112308aebca1cc60b17538" prot="private" virt="non-virtual"><scope>Juego</scope><name>juegoLetras</name></member>
+      <member refid="classJuego_1abbd6df094f0915324599026ba5e93701" prot="private" virt="non-virtual"><scope>Juego</scope><name>menu</name></member>
+      <member refid="classJuego_1a64d947a099a343318db817eb34c91273" prot="private" virt="non-virtual"><scope>Juego</scope><name>mostrarInstrucciones</name></member>
+      <member refid="classJuego_1a4f5688f77a6b5e5df1fe1ae890f48e60" prot="public" virt="non-virtual"><scope>Juego</scope><name>play</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+.TH "JuegoLetras" 3 "Sábado, 4 de Enero de 2020" "CifrasyLetras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+JuegoLetras \- T\&.D\&.A\&. \fBJuegoLetras\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <juegoletras\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBJuegoLetras\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBJuegoLetras\fP (const \fBDiccionario\fP &D)"
+.br
+.RI "Constructor con parámetros\&. "
+.ti -1c
+.RI "\fBJuegoLetras\fP (const \fBJuegoLetras\fP &J)"
+.br
+.RI "Constructor de copia\&. "
+.ti -1c
+.RI "\fBJuegoLetras\fP & \fBoperator=\fP (const \fBJuegoLetras\fP &J)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.RI "Función para jugar una ronda de Letras\&. "
+.ti -1c
+.RI "int \fBpuntuarPalabra\fP (const string &palabra)"
+.br
+.RI "Calcula los puntos que tiene una palabra\&. "
+.ti -1c
+.RI "string \fBcalcularMejorPalabra\fP (const vector< string > &posibles)"
+.br
+.RI "Calcula la mejor palabra de la mano\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBJuegoLetras\fP\&. 
+
+Una instancia \fIc\fP del tipo de datos abstracto \fC\fBJuegoLetras\fP\fP es un objeto con 3 campos: 
+.PP
+.nf
+- Un diccionario que incluye las palabras que se podrán adivinar en
+  la partida de Letras.
+- Una bolsa de letras que incluye las letras disponibles inicialmente
+  y la mano de juego actual.
+- Un conjunto de letras que incluye la información de las letras en
+- juego.
+
+.fi
+.PP
+.PP
+Permite jugar partidas de Letras\&.
+.PP
+Juan Francisco Díaz Moreno  Enero 2020 
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "JuegoLetras::JuegoLetras (const \fBDiccionario\fP & D)"
+
+.PP
+Constructor con parámetros\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBDiccionario\fP con el que se va a jugar\&. 
+.RE
+.PP
+
+.SS "JuegoLetras::JuegoLetras (const \fBJuegoLetras\fP & J)"
+
+.PP
+Constructor de copia\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIJ\fP \fBJuegoLetras\fP que se va a copiar\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "string JuegoLetras::calcularMejorPalabra (const vector< string > & posibles)"
+
+.PP
+Calcula la mejor palabra de la mano\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve la mejor palabra de la mano\&. 
+.RE
+.PP
+
+.SS "\fBJuegoLetras\fP& JuegoLetras::operator= (const \fBJuegoLetras\fP & J)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBJuegoLetras\fP a asignar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBJuegoLetras\fP asignado\&. 
+.RE
+.PP
+
+.SS "int JuegoLetras::puntuarPalabra (const string & palabra)"
+
+.PP
+Calcula los puntos que tiene una palabra\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIpalabra\fP Palabra cuyos puntos se quieren calcular\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve la puntuación de la palabra dada\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para CifrasyLetras del código fuente\&.

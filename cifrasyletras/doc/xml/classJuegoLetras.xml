@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classJuegoLetras" kind="class" language="C++" prot="public">
+    <compoundname>JuegoLetras</compoundname>
+    <includes refid="juegoletras_8h" local="no">juegoletras.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJuegoLetras_1a0c66ba855da203d7db36627f551da115" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiccionario" kindref="compound">Diccionario</ref></type>
+        <definition>Diccionario JuegoLetras::diccionario</definition>
+        <argsstring></argsstring>
+        <name>diccionario</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="45" column="1" bodyfile="juegoletras.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJuegoLetras_1a7556129871aed69f0e34c7436bee57c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classBolsaLetras" kindref="compound">BolsaLetras</ref></type>
+        <definition>BolsaLetras JuegoLetras::bolsaLetras</definition>
+        <argsstring></argsstring>
+        <name>bolsaLetras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="46" column="1" bodyfile="juegoletras.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJuegoLetras_1a27e495204254b596a8bc3ac15ffa120b" prot="private" static="no" mutable="no">
+        <type><ref refid="classConjuntoLetras" kindref="compound">ConjuntoLetras</ref></type>
+        <definition>ConjuntoLetras JuegoLetras::conjuntoLetras</definition>
+        <argsstring></argsstring>
+        <name>conjuntoLetras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="47" column="1" bodyfile="juegoletras.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classJuegoLetras_1ade1ac8a8fc1dd7d4120efc5f60a95d4d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool JuegoLetras::esta</definition>
+        <argsstring>(const vector&lt; char &gt; &amp;vector_bolsa, const char &amp;caracter)</argsstring>
+        <name>esta</name>
+        <param>
+          <type>const vector&lt; char &gt; &amp;</type>
+          <declname>vector_bolsa</declname>
+        </param>
+        <param>
+          <type>const char &amp;</type>
+          <declname>caracter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="50" column="1" bodyfile="juegoletras.h" bodystart="50" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1ac77c688e781727e34436e71a8dc18852" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoLetras::rellenarConjuntos</definition>
+        <argsstring>(set&lt; Letra &gt; &amp;set_conjunto, vector&lt; char &gt; &amp;vector_bolsa)</argsstring>
+        <name>rellenarConjuntos</name>
+        <param>
+          <type>set&lt; <ref refid="classLetra" kindref="compound">Letra</ref> &gt; &amp;</type>
+          <declname>set_conjunto</declname>
+        </param>
+        <param>
+          <type>vector&lt; char &gt; &amp;</type>
+          <declname>vector_bolsa</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="62" column="1" bodyfile="juegoletras.h" bodystart="62" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1a9d817239da8061ab9ea3af4c88565524" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoLetras::inicializarLetras</definition>
+        <argsstring>()</argsstring>
+        <name>inicializarLetras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="92" column="1" bodyfile="juegoletras.h" bodystart="92" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJuegoLetras_1a6ae7603e132ce84a0979ac82838789e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JuegoLetras::JuegoLetras</definition>
+        <argsstring>()</argsstring>
+        <name>JuegoLetras</name>
+        <briefdescription>
+<para>Constructor por defecto. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="114" column="1" bodyfile="juegoletras.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1a97ab4a940f995b946761050c6a3209eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JuegoLetras::JuegoLetras</definition>
+        <argsstring>(const Diccionario &amp;D)</argsstring>
+        <name>JuegoLetras</name>
+        <param>
+          <type>const <ref refid="classDiccionario" kindref="compound">Diccionario</ref> &amp;</type>
+          <declname>D</declname>
+        </param>
+        <briefdescription>
+<para>Constructor con parámetros. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classDiccionario" kindref="compound">Diccionario</ref> con el que se va a jugar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1ac6f9e42369c0b7849bdf10ade43cae95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JuegoLetras::JuegoLetras</definition>
+        <argsstring>(const JuegoLetras &amp;J)</argsstring>
+        <name>JuegoLetras</name>
+        <param>
+          <type>const <ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref> &amp;</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copia. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>J</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref> que se va a copiar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1accf75d6adb1bd62d66a1b25a745a46a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref> &amp;</type>
+        <definition>JuegoLetras&amp; JuegoLetras::operator=</definition>
+        <argsstring>(const JuegoLetras &amp;J)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref> &amp;</type>
+          <declname>J</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>D</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref> a asignar. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref> asignado. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1a38d6fe492572811c3993f8bc517efe82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JuegoLetras::play</definition>
+        <argsstring>()</argsstring>
+        <name>play</name>
+        <briefdescription>
+<para>Función para jugar una ronda de Letras. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1ab5ceccfbbb4abc13f4c6cd1cf6577aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int JuegoLetras::puntuarPalabra</definition>
+        <argsstring>(const string &amp;palabra)</argsstring>
+        <name>puntuarPalabra</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>palabra</declname>
+        </param>
+        <briefdescription>
+<para>Calcula los puntos que tiene una palabra. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>palabra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Palabra cuyos puntos se quieren calcular. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve la puntuación de la palabra dada. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJuegoLetras_1aa2fae08bbed3d8af58bf7833fd351f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string JuegoLetras::calcularMejorPalabra</definition>
+        <argsstring>(const vector&lt; string &gt; &amp;posibles)</argsstring>
+        <name>calcularMejorPalabra</name>
+        <param>
+          <type>const vector&lt; string &gt; &amp;</type>
+          <declname>posibles</declname>
+        </param>
+        <briefdescription>
+<para>Calcula la mejor palabra de la mano. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve la mejor palabra de la mano. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="juegoletras.h" line="163" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. <ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>c</emphasis> del tipo de datos abstracto <computeroutput><ref refid="classJuegoLetras" kindref="compound">JuegoLetras</ref></computeroutput> es un objeto con 3 campos: <verbatim>- Un diccionario que incluye las palabras que se podrán adivinar en
+  la partida de Letras.
+- Una bolsa de letras que incluye las letras disponibles inicialmente
+  y la mano de juego actual.
+- Un conjunto de letras que incluye la información de las letras en
+- juego.
+</verbatim></para><para>Permite jugar partidas de Letras.</para><para>Juan Francisco Díaz Moreno  Enero 2020 </para>    </detaileddescription>
+    <location file="juegoletras.h" line="41" column="1" bodyfile="juegoletras.h" bodystart="41" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classJuegoLetras_1a7556129871aed69f0e34c7436bee57c6" prot="private" virt="non-virtual"><scope>JuegoLetras</scope><name>bolsaLetras</name></member>
+      <member refid="classJuegoLetras_1aa2fae08bbed3d8af58bf7833fd351f98" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>calcularMejorPalabra</name></member>
+      <member refid="classJuegoLetras_1a27e495204254b596a8bc3ac15ffa120b" prot="private" virt="non-virtual"><scope>JuegoLetras</scope><name>conjuntoLetras</name></member>
+      <member refid="classJuegoLetras_1a0c66ba855da203d7db36627f551da115" prot="private" virt="non-virtual"><scope>JuegoLetras</scope><name>diccionario</name></member>
+      <member refid="classJuegoLetras_1ade1ac8a8fc1dd7d4120efc5f60a95d4d" prot="private" virt="non-virtual"><scope>JuegoLetras</scope><name>esta</name></member>
+      <member refid="classJuegoLetras_1a9d817239da8061ab9ea3af4c88565524" prot="private" virt="non-virtual"><scope>JuegoLetras</scope><name>inicializarLetras</name></member>
+      <member refid="classJuegoLetras_1a6ae7603e132ce84a0979ac82838789e8" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>JuegoLetras</name></member>
+      <member refid="classJuegoLetras_1a97ab4a940f995b946761050c6a3209eb" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>JuegoLetras</name></member>
+      <member refid="classJuegoLetras_1ac6f9e42369c0b7849bdf10ade43cae95" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>JuegoLetras</name></member>
+      <member refid="classJuegoLetras_1accf75d6adb1bd62d66a1b25a745a46a5" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>operator=</name></member>
+      <member refid="classJuegoLetras_1a38d6fe492572811c3993f8bc517efe82" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>play</name></member>
+      <member refid="classJuegoLetras_1ab5ceccfbbb4abc13f4c6cd1cf6577aab" prot="public" virt="non-virtual"><scope>JuegoLetras</scope><name>puntuarPalabra</name></member>
+      <member refid="classJuegoLetras_1ac77c688e781727e34436e71a8dc18852" prot="private" virt="non-virtual"><scope>JuegoLetras</scope><name>rellenarConjuntos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

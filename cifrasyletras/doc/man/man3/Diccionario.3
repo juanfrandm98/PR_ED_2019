@@ -1,0 +1,265 @@
+.TH "Diccionario" 3 "Sábado, 4 de Enero de 2020" "CifrasyLetras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Diccionario \- T\&.D\&.A\&. \fBDiccionario\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <diccionario\&.h>\fP
+.SS "Clases"
+
+.in +1c
+.ti -1c
+.RI "class \fBiterator\fP"
+.br
+.RI "Iterador sobre la clase \fBDiccionario\fP\&. "
+.in -1c
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBDiccionario\fP ()"
+.br
+.RI "Constructor por defecto\&. "
+.ti -1c
+.RI "\fBDiccionario\fP (const \fBDiccionario\fP &D)"
+.br
+.RI "Constructor de copia\&. "
+.ti -1c
+.RI "\fB~Diccionario\fP ()"
+.br
+.RI "Destructor\&. "
+.ti -1c
+.RI "\fBDiccionario\fP & \fBoperator=\fP (const \fBDiccionario\fP &D)"
+.br
+.RI "Operador de asignación\&. "
+.ti -1c
+.RI "\fBDiccionario\fP & \fBoperator+\fP (const \fBDiccionario\fP &D)"
+.br
+.RI "Operador de suma\&. "
+.ti -1c
+.RI "void \fBaniadirPalabra\fP (const string &palabra)"
+.br
+.RI "Añade una nueva palabra al \fBDiccionario\fP\&. "
+.ti -1c
+.RI "bool \fBcomprobarPalabra\fP (const string &palabra)"
+.br
+.RI "Comprueba si una palabra forma parte del diccionario\&. "
+.ti -1c
+.RI "int \fBfrecuenciaLetra\fP (const char &letra)"
+.br
+.RI "Obtiene la contidad de veces que aparece una letra dada\&. "
+.ti -1c
+.RI "int \fBgetNumLetras\fP ()"
+.br
+.RI "Obtiene el número de letras que hay en el \fBDiccionario\fP\&. "
+.ti -1c
+.RI "\fBDiccionario::iterator\fP \fBbegin\fP () const"
+.br
+.RI "Construye un iterador que apunta al principio del set de datos\&. "
+.ti -1c
+.RI "\fBDiccionario::iterator\fP \fBend\fP () const"
+.br
+.RI "Construye un iterador que apunta al final del set de datos\&. "
+.in -1c
+.SS "Amigas"
+
+.in +1c
+.ti -1c
+.RI "ostream & \fBoperator<<\fP (ostream &os, \fBDiccionario\fP &D)"
+.br
+.RI "Salida de un \fBDiccionario\fP a ostream\&. "
+.ti -1c
+.RI "istream & \fBoperator>>\fP (istream &is, \fBDiccionario\fP &L)"
+.br
+.RI "Entrada de un \fBDiccionario\fP desde istream\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. \fBDiccionario\fP\&. 
+
+Una instancia \fIdel\fP tipo de datos abstracto \fC\fBDiccionario\fP\fP es un objeto con un conjunto de strings\&. Dicho conjunto almacena una serie de strings no repetidos\&.
+.PP
+El TDA proporciona una serie de operaciones para trabajar con los strings y con sus letras, así como un iterador para recorrer el conjunto\&.
+.PP
+Juan Francisco Díaz Moreno 
+.PP
+\fBFecha:\fP
+.RS 4
+Diciembre 2019 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Diccionario::Diccionario (const \fBDiccionario\fP & D)\fC [inline]\fP"
+
+.PP
+Constructor de copia\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBDiccionario\fP que se va a copiar\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Diccionario::aniadirPalabra (const string & palabra)"
+
+.PP
+Añade una nueva palabra al \fBDiccionario\fP\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIpalabra\fP Nueva palabra a añadir\&. 
+.RE
+.PP
+
+.SS "\fBDiccionario::iterator\fP Diccionario::begin () const"
+
+.PP
+Construye un iterador que apunta al principio del set de datos\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Iterador constuido\&. 
+.RE
+.PP
+
+.SS "bool Diccionario::comprobarPalabra (const string & palabra)"
+
+.PP
+Comprueba si una palabra forma parte del diccionario\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIpalabra\fP Palabra a comprobar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Devuelve true si la palabra está incuida\&. 
+.RE
+.PP
+
+.SS "\fBDiccionario::iterator\fP Diccionario::end () const"
+
+.PP
+Construye un iterador que apunta al final del set de datos\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Iterador construido\&. 
+.RE
+.PP
+
+.SS "int Diccionario::frecuenciaLetra (const char & letra)"
+
+.PP
+Obtiene la contidad de veces que aparece una letra dada\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIletra\fP \fBLetra\fP cuya frecuencia se quiere calcular\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Ńúmero de apariciones de la letra dada\&. 
+.RE
+.PP
+
+.SS "int Diccionario::getNumLetras ()"
+
+.PP
+Obtiene el número de letras que hay en el \fBDiccionario\fP\&. 
+.PP
+\fBDevuelve:\fP
+.RS 4
+Número de letras totales\&. 
+.RE
+.PP
+
+.SS "\fBDiccionario\fP& Diccionario::operator+ (const \fBDiccionario\fP & D)"
+
+.PP
+Operador de suma\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBDiccionario\fP a sumar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+Suma de Diccionarios\&. 
+.RE
+.PP
+
+.SS "\fBDiccionario\fP& Diccionario::operator= (const \fBDiccionario\fP & D)"
+
+.PP
+Operador de asignación\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fID\fP \fBDiccionario\fP a asignar\&. 
+.RE
+.PP
+\fBDevuelve:\fP
+.RS 4
+\fBDiccionario\fP asignado\&. 
+.RE
+.PP
+
+.SH "Documentación de las funciones relacionadas y clases amigas"
+.PP 
+.SS "ostream& operator<< (ostream & os, \fBDiccionario\fP & D)\fC [friend]\fP"
+
+.PP
+Salida de un \fBDiccionario\fP a ostream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIos\fP Stream de salida\&. 
+.br
+\fID\fP \fBDiccionario\fP a escribir\&. 
+.RE
+.PP
+\fBPostcondición:\fP
+.RS 4
+Se obtiene un \fBDiccionario\fP con el formato adecuado\&. 
+.RE
+.PP
+
+.SS "istream& operator>> (istream & is, \fBDiccionario\fP & L)\fC [friend]\fP"
+
+.PP
+Entrada de un \fBDiccionario\fP desde istream\&. 
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIis\fP Stream de entrada\&. 
+.br
+\fID\fP \fBDiccionario\fP en el que se escribe\&. 
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fIEl\fP \fBDiccionario\fP leído\&. 
+.RE
+.PP
+\fBPrecondición:\fP
+.RS 4
+La entrada tiene el siguiente formato: Palabra1 Palabra2 \&.\&.\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para CifrasyLetras del código fuente\&.

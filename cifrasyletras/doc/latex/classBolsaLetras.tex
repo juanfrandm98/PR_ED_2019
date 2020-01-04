@@ -1,0 +1,194 @@
+\section{Referencia de la Clase Bolsa\+Letras}
+\label{classBolsaLetras}\index{Bolsa\+Letras@{Bolsa\+Letras}}
+
+
+T.\+D.\+A. \doxyref{Bolsa\+Letras}{p.}{classBolsaLetras}.  
+
+
+
+
+{\ttfamily \#include $<$bolsaletras.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{classBolsaLetras_a2e269014b3a51359195e7b288a4b37c6}} 
+\textbf{ Bolsa\+Letras} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\textbf{ Bolsa\+Letras} (const \textbf{ Bolsa\+Letras} \&B)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\textbf{ Bolsa\+Letras} (const vector$<$ char $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\textbf{ Bolsa\+Letras} \& \textbf{ operator=} (const \textbf{ Bolsa\+Letras} \&B)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+void \textbf{ set\+Bolsa} (const vector$<$ char $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Setter de la bolsa de letras. \end{DoxyCompactList}\item 
+vector$<$ char $>$ \textbf{ get\+Bolsa} ()
+\begin{DoxyCompactList}\small\item\em Getter de la bolsa de letras. \end{DoxyCompactList}\item 
+vector$<$ char $>$ \textbf{ get\+Letras\+En\+Juego} ()
+\begin{DoxyCompactList}\small\item\em Getter de las letras en juego. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \textbf{ posibilidades} (const \textbf{ Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Devuelve las palabras que puedan formarse con letras\+\_\+en\+\_\+juego. \end{DoxyCompactList}\item 
+void \textbf{ letras\+Aleatorias} (const int \&num\+\_\+letras)
+\begin{DoxyCompactList}\small\item\em Genera una nueva mano de letras\+\_\+en\+\_\+juego. \end{DoxyCompactList}\item 
+\mbox{\label{classBolsaLetras_a1ee76f852041be288811182e993ae854}} 
+void \textbf{ imprimir\+Letras\+En\+Juego} ()
+\begin{DoxyCompactList}\small\item\em Muestra por pantalla las letras en juego. \end{DoxyCompactList}\item 
+bool \textbf{ comprobar\+Palabra} (string palabra)
+\begin{DoxyCompactList}\small\item\em Comprueba si una palabra puede formarse con las letras de la mano actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \doxyref{Bolsa\+Letras}{p.}{classBolsaLetras}. 
+
+Juan Francisco Díaz Moreno  Enero 2020 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\label{classBolsaLetras_ad9dd803449733fd51772b82a63c6962f}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!Bolsa\+Letras@{Bolsa\+Letras}}
+\index{Bolsa\+Letras@{Bolsa\+Letras}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{Bolsa\+Letras()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bolsa\+Letras\+::\+Bolsa\+Letras (\begin{DoxyParamCaption}\item[{const \textbf{ Bolsa\+Letras} \&}]{B }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em B} & Bolsa de letras que se va a copiar. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classBolsaLetras_acbba50a7374a1f5bf672d2e7f58f24c8}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!Bolsa\+Letras@{Bolsa\+Letras}}
+\index{Bolsa\+Letras@{Bolsa\+Letras}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{Bolsa\+Letras()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bolsa\+Letras\+::\+Bolsa\+Letras (\begin{DoxyParamCaption}\item[{const vector$<$ char $>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em b} & Bolsa con las letras. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\label{classBolsaLetras_abae7d6b4fe48a811ea07504886a724b9}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!comprobar\+Palabra@{comprobar\+Palabra}}
+\index{comprobar\+Palabra@{comprobar\+Palabra}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{comprobar\+Palabra()}
+{\footnotesize\ttfamily bool Bolsa\+Letras\+::comprobar\+Palabra (\begin{DoxyParamCaption}\item[{string}]{palabra }\end{DoxyParamCaption})}
+
+
+
+Comprueba si una palabra puede formarse con las letras de la mano actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra} & Palabra a comprobar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve true si la palabra se puede formar con las letras de letras\+\_\+en\+\_\+juego. 
+\end{DoxyReturn}
+\mbox{\label{classBolsaLetras_a2f62af97ee973d8e7b566f97522620d7}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!get\+Bolsa@{get\+Bolsa}}
+\index{get\+Bolsa@{get\+Bolsa}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{get\+Bolsa()}
+{\footnotesize\ttfamily vector$<$char$>$ Bolsa\+Letras\+::get\+Bolsa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de la bolsa de letras. 
+
+\begin{DoxyReturn}{Devuelve}
+Bolsa. 
+\end{DoxyReturn}
+\mbox{\label{classBolsaLetras_ab82225ca3c292135821c84eb057c215e}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!get\+Letras\+En\+Juego@{get\+Letras\+En\+Juego}}
+\index{get\+Letras\+En\+Juego@{get\+Letras\+En\+Juego}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{get\+Letras\+En\+Juego()}
+{\footnotesize\ttfamily vector$<$char$>$ Bolsa\+Letras\+::get\+Letras\+En\+Juego (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de las letras en juego. 
+
+\begin{DoxyReturn}{Devuelve}
+Letras\+\_\+en\+\_\+juego. 
+\end{DoxyReturn}
+\mbox{\label{classBolsaLetras_af09636a6a54a08727cd08714ca18f36f}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!letras\+Aleatorias@{letras\+Aleatorias}}
+\index{letras\+Aleatorias@{letras\+Aleatorias}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{letras\+Aleatorias()}
+{\footnotesize\ttfamily void Bolsa\+Letras\+::letras\+Aleatorias (\begin{DoxyParamCaption}\item[{const int \&}]{num\+\_\+letras }\end{DoxyParamCaption})}
+
+
+
+Genera una nueva mano de letras\+\_\+en\+\_\+juego. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em num\+\_\+letras} & Número de letras que se quiere obtener. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classBolsaLetras_abfd2e3e27f18fc20e674a50d8ee6b0b3}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!operator=@{operator=}}
+\index{operator=@{operator=}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{operator=()}
+{\footnotesize\ttfamily \textbf{ Bolsa\+Letras}\& Bolsa\+Letras\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Bolsa\+Letras} \&}]{B }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em B} & \doxyref{Bolsa\+Letras}{p.}{classBolsaLetras} a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxyref{Bolsa\+Letras}{p.}{classBolsaLetras} copiada. 
+\end{DoxyReturn}
+\mbox{\label{classBolsaLetras_a1ef97ff91356ebbbda756ff762e2a99d}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!posibilidades@{posibilidades}}
+\index{posibilidades@{posibilidades}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{posibilidades()}
+{\footnotesize\ttfamily vector$<$string$>$ Bolsa\+Letras\+::posibilidades (\begin{DoxyParamCaption}\item[{const \textbf{ Diccionario} \&}]{D }\end{DoxyParamCaption})}
+
+
+
+Devuelve las palabras que puedan formarse con letras\+\_\+en\+\_\+juego. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em D} & \doxyref{Diccionario}{p.}{classDiccionario} en el que comprobar las palabras. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Palabras que se pueden formar. 
+\end{DoxyReturn}
+\mbox{\label{classBolsaLetras_a2ecf80e5f2fe6866a8fc31a5df59d64b}} 
+\index{Bolsa\+Letras@{Bolsa\+Letras}!set\+Bolsa@{set\+Bolsa}}
+\index{set\+Bolsa@{set\+Bolsa}!Bolsa\+Letras@{Bolsa\+Letras}}
+\subsubsection{set\+Bolsa()}
+{\footnotesize\ttfamily void Bolsa\+Letras\+::set\+Bolsa (\begin{DoxyParamCaption}\item[{const vector$<$ char $>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Setter de la bolsa de letras. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em b} & Bolsa. \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ bolsaletras.\+h}\end{DoxyCompactItemize}
